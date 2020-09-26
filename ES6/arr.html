@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+
+<script>
+
+    console.log(...[1, 2, 3])
+    // 1 2 3
+
+    console.log(1, ...[2, 3, 4], 5)
+
+    console.log(document.querySelectorAll('div'))
+    console.log(...document.querySelectorAll('div'))
+
+    let x=0;
+
+    const arr = [
+      ...(x > 0 ? ['a'] : []),'b',
+    ];
+
+    console.log(arr)
+
+
+    //字符串转数组
+    let str='hello';
+    let a1= [...str]
+    console.log(a1)
+
+    //数组拼接
+    let arr1 =[1,2,3], arr2=[3,4,5]
+    console.log([...arr1,...arr2])
+    console.log([...arr1,...'abc'])
+
+    //数组填充
+    console.log([1,2,3].fill(7))    //[7, 7, 7]
+    console.log(new Array(3).fill(7))   //[7, 7, 7]
+    console.log(new Array(3).fill(['a']))   //数组里填充3个数组
+
+
+
+
+</script>
+
+</body>
+</html>

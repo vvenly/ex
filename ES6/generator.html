@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Generator 函数有多种理解角度。语法上，首先可以把它理解成，Generator 函数是一个状态机，封装了多个内部状态。
+
+    // 形式上，Generator 函数是一个普通函数，但是有两个特征。
+    // 一是，function关键字与函数名之间有一个星号； ***星号紧跟在function关键字后面
+    // 二是，函数体内部使用yield表达式，定义不同的内部状态（yield在英语里的意思就是“产出”）。
+    function* myGener() {
+        console.log('first function');
+
+        let res = yield "pause1";
+
+        console.log(res);
+
+        console.log('second');
+
+        yield "pause2";
+
+        console.log('third');
+
+        return 'finish'
+    }
+
+
+    //直接调用无效
+    console.log(myGener())      //什么都没有
+
+    //正确调用：
+
+    //执行 Generator 函数会返回一个遍历器对象，如：{value: "pause1", done: false}
+    //返回对象中的done 表示遍历是否已结束 false未结束、true已结束
+    // 也就是说，Generator 函数除了状态机，还是一个遍历器对象生成函数。
+    // 返回的遍历器对象，可以依次遍历 Generator 函数内部的每一个状态。
+
+
+
+    // 下一步，必须调用遍历器对象的next方法，使得指针移向下一个状态。也就是说，每次调用next方法，内部指针就从函数头部或上一次停下来的地方开始执行，
+    // 直到遇到下一个yield表达式（或return语句）为止。换言之，Generator 函数是分段执行的，yield表达式是暂停执行的标记，而next方法可以恢复执行。
+    let runGener = myGener();
+    console.log(1,runGener.next())        //输出第一句：first function， 这里传参是没有任何意义的，因为他启动的是普通函数，并不是yield语句
+
+
+    console.log(2,runGener.next('argments'))        //输出截至至下一句 yield （含）未知  argments为 yield接收到的参数
+
+
+
+    console.log(3,runGener.next())        //输出第一句：first function
+
+
+
+</script>
+
+</body>
+</html>

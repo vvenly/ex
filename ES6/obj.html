@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let name = 'lucy', age=18;
+    const obj1={name,age}
+
+    console.log({name})     //直接输出键值对 {name: "lucy"}
+    console.log(obj1)   //{name: "lucy", age: 18}
+
+    console.log({name:age})     //{name: 18}
+    console.log({[name]:age})     //{lucy: 18}  []中括号直接取变量的值
+
+    //assign 浅拷贝shallow copy             deep copy深拷贝
+    let obj2 = {sex:'woman'};
+    let obj3 = Object.assign(obj1,obj2);
+    console.log("old_ obj3: ",obj3)   //{name: "lucy", age: 18, sex: "woman"}
+
+    //获取对象所有的key
+    let objK = Object.keys(obj3)
+    console.log('所有key: ', objK);
+    for(let key of objK){
+        console.log(key)
+    }
+
+    //获取对象所有的value
+    let objV = Object.values(obj3)
+    console.log('所有value: ',objV)
+    for(let v of objV){
+        console.log(v)
+    }
+
+    //以数组形式获取对象所有的key & value
+    let objKV = Object.entries(obj3)
+    console.log('所有key & value : ',objKV)
+    for(let v of objKV){
+        console.log(v)
+    }
+
+
+    //扩展运算符   ...只能放在最后一个，一次性获取剩余的全部
+    let {a,b,...v} = {a:'aa',b:'bb',c:'cc',d:'dd',e:'ee'}
+    console.log(a,b,v)  //aa bb {c: "cc", d: "dd", e: "ee"}
+    // ...
+
+
+</script>
+
+</body>
+</html>

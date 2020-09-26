@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a1 = v =>v;
+    //等同于：
+    let a2 = function (v) {return v;};
+    console.log('a1:',a1(123), 'a2:',a2(123))
+    //备注： 当形参只有一个的时候，小括号可以省略， 没有参数，或参数>1 时，不能省略
+
+
+    let a3 = v=>v+10;
+    console.log('a3:',a3(5))
+
+    let a4 = (v1,v2)=>v1*v2;
+    console.log('a4:',a4(5,4))
+    //备注：当函数代码只有一句的时候，可以省略大括号、箭头函数会直接将值 return 出来，
+
+    // 由于大括号被解释为代码块，所以如果箭头函数直接返回一个对象，必须在对象外面加上括号，否则会报错。
+    //let a5 = id =>{ id:id,name:'zzzz'};     //报错
+    let a5 = id =>({ id:id,name:'zzzz'});   //正常执行
+    console.log(a5(1))
+
+</script>
+</body>
+</html>

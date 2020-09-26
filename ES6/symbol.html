@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="myLott.next()">抽奖</button>
+
+<br><br><br><br><br>
+<button onclick="essay.next()">详情请求</button>
+
+<script src="../jQuery-3.3.1.min.js"></script>
+<script>
+    //symbol  es6 新的数据类型，
+    let s1 = Symbol('');
+
+    //通过for 出来的方法定义的symbol,会在全局注册一个key - symbol 的键值对
+    let s2 = Symbol.for('second');
+    let s3 = Symbol.for('second');
+    console.log(s2 === s3)   //true
+
+    //可以用于重复的属性定义
+    let name = Symbol('name')
+    let obj = {
+        name:'lucy',age:18,[name]:'tom'
+    }
+    console.log(obj)
+
+    //demo1: 抽奖次数
+    function* Lottery(count) {
+        while (count>0){
+            count --;
+            yield console.log('抽奖次数还剩：' , count)
+        }
+    }
+
+    let myLott = Lottery(4);
+
+    //demo2:    generator异步请求
+    function* genAjax() {
+
+        let desc = yield getData("http://testweb.xaltserver.com/phone/learn_article/get_list?project_id=101203001&page=1&page_size=1");
+
+
+        yield getData(desc);
+    }
+
+    function getData(url) {
+        $.get(url,(res)=>{
+            console.log(res)
+
+
+            // let d =res.data[0]
+
+            // return res
+            // console.log(desc)
+
+            essay.next("http://testweb.xaltserver.com/phone/learn_article/get_list?project_id=101203001&page=2&page_size=1")
+        })
+    }
+
+    let essay = genAjax();
+    essay.next();
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //通过Generator 部署 iterator
+    let obj={
+        name:'TOM', age:8, sex:'boy'
+    }
+
+    //手动部署iterator 接口，所有能够使用for of 遍历的对象，iterator接口都能部署再Symbol.iterator属性
+    obj[Symbol.iterator]=function*(){
+        for(let k in obj){
+            yield obj[k];
+        }
+    }
+
+    for(let v of obj){
+        console.log(v)
+    }
+
+
+    // console.log(obj)
+
+
+
+</script>
+
+</body>
+</html>

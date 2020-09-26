@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr = ['a1','b1'];
+    //这里之所以能够使用concat 是因为arr的原型中包含concat这个方法，所以可以直接拿来使用
+    console.log(arr.concat('c1'))
+
+    let obj1 = {};
+
+
+    //输出obj1的原型对象中的方法, 这里的getPrototypeOf 也是原型中的方法
+    console.log(Object.getPrototypeOf(obj1))
+    // console.log(obj1)
+
+
+    let obj2 = {name:'lucy'};
+    //没有原型对象的数据 --完全数据字典对象
+    let obj3 = Object.create(null,{
+        name:{value:'harry'}
+    });
+
+    console.log(obj3)
+</script>
+</body>
+</html>

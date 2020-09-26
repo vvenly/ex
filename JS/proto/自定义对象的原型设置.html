@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //1、setPrototypeOf
+    let a1={name:'lucy'};
+    let a2 ={name:'harry'};
+    //此时a1的__proto__ 还是Object的prototype
+
+    //修改原型继承
+    Object.setPrototypeOf(a1,a2);
+    console.log(a1) //修改后a1的__proto__ ===a2
+    console.log(a1.__proto__ === a2)
+</script>
+</body>
+</html>

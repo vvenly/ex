@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //函数拥有多个“长辈”  既有__proto__，也有prototype
+    function Abc() {}
+    Abc.__proto__.show1=function(){
+        console.log('abc.__proto__')
+    }
+
+    Abc.prototype.show2=function(){
+        console.log('abc.prototype')
+    }
+
+    //函数也可以使用对象的方法， 如：Abc.apply() …………
+
+    console.dir(Abc)
+    //同时拥有__proto__   &&  prototype
+
+    //实例化一个构造函数
+    let fn = new Abc();
+    console.log('fn:',fn)
+
+ //   fn.show1()   //报错： Uncaught TypeError: fn.show1 is not a function
+    fn.show2()      //可以继承使用， 输出 abc.prototype
+
+    //fn 的 __proto__  == Abc的prototype
+
+    function user() {}
+    //函数原型对象中原型 就是原型的原型
+    console.dir(user.prototype.__proto__  === user.__proto__.__proto__) //true
+</script>
+</body>
+</html>

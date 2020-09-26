@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>11111111111111</div>
+
+
+<script src="../../jQuery-3.3.1.min.js"></script>
+<script>
+    //503201001 苏州地铁5号线做测试
+
+    window.MAIN_URL = 'http://testweb.xaltserver.com/'
+    //promise 约定，  有两个回调函数 resolve成功解析   reject失败拒绝
+    let pro = new Promise((resolve,reject)=>{
+        $.ajax({
+            type: "post",
+            url:MAIN_URL+"phone/learn_article/get_list",
+            // data:{page:1,page_size:10,project_id:503201001},
+            data:{ project_id: 101203001, page: 1, page_size: 1, with_trashed: 0},
+            success: function (data) {
+                resolve(data);
+            },
+            error:function () {
+                reject('执行失败123')
+            }
+        });
+    });
+
+    //then方法需要两个参数，1、异步执行resolve后， 2、reject后
+    pro.then(
+        myData=>{
+            console.log(myData)
+        },
+        err=>{
+            console.log(err)
+        }
+
+    )
+
+
+
+</script>
+</body>
+</html>

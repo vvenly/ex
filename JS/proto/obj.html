@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //给对象里添加方法
+    let obj={
+        show(){
+            console.log('I am obj.show')
+        }
+    };
+
+    //子给父添加方法
+    obj.__proto__.show = {
+        show(){
+            console.log('I am obj.__proto__.show')
+        }
+    }
+    //console.log(obj.__proto__)
+
+    //对象的原型 就是 Object构造函数的原型对象
+    console.log(obj.__proto__ ==Object.prototype)
+
+    //执行对象里的方法时优先获取自己的，没有时才会去原型中查找，
+    //原型没有会继续向原型的原型查找，一直到找到为止，到最后都没有的话直接报错
+    obj.show()
+
+    //类似于  Object()   Array()  Number()等，基本上都可以说是顶级对象了，
+    //再往上找就是null了，  如果给他们添加方法或者其他，基本上都会被继承，
+    Object.prototype.abc=function(n){
+        return n++
+    };
+
+    let obj1 = {};
+    let obj2 = new Object();
+    // 只要是对象， 都可以使用show() 和 abc()的方法
+    console.log("obj1 ",obj1  ," . . obj2 ",obj2)
+
+
+
+
+
+</script>
+</body>
+</html>
