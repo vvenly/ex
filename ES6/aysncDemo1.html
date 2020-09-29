@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<script src="../../jQuery-3.3.1.min.js"></script>-->
+<script>
+
+    function User(name) {
+        this.name = name;
+        console.log( this)
+    }
+
+
+    User.prototype.setAge=function () {
+        this.age = 18;
+        console.log('setAge:',this)
+    }
+
+    User.prototype.setFriend=function () {
+        this.friend = 'harry';
+        console.log('setFriend:',this)
+    }
+
+    User.prototype.setParent=function () {
+        this.Parent = 'cat';
+        this.Parentfriend = this.friend;        //这里就可以调用this.friend
+        console.log('setParent:',this)
+    }
+
+
+    let test1 = new User('lucy');
+
+    async function sendData() {
+        await test1.setAge();
+        await test1.setFriend();
+        await test1.setParent();
+    }
+
+    sendData()
+
+</script>
+</body>
+</html>

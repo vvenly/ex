@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="../JS/jQuery-3.3.1.min.js"></script>
+<script>
+
+    const vlRequest = (arg)=>{
+        return new Promise((resolve,reject)=>{
+            $.ajax({
+                type: "get",
+                url: arg.url,
+                data: arg.data,
+                success: function (json) {
+                    resolve(json)
+                },
+                error:function (err) {
+                    reject(err)
+                }
+            })
+        })
+    };
+
+    async function getList(){
+        try {
+            const res = await vlRequest({
+                url: "https://xuexi-dev.xaltserver.com/phone/learn_article/get_list",
+                data: {
+                    project_id: 101203001,
+                    page:1,
+                    page_size:1
+                },
+            });
+
+            console.log('res: ', res)
+
+        }catch(err){      //处理一些错误
+            console.log('catch.err: ', err)
+        }
+
+
+        //引用then
+        // const res = await vlRequest({
+        //     url: "https://xuexi-dev.xaltserver.com/phone/learn_article/get_list",
+        //     data: {
+        //         project_id: 101203001,
+        //         page:1,
+        //         page_size:1
+        //     },
+        // }).then(
+        //     myData=>{
+        //         console.log('myData: ', myData)
+        //
+        //         return myData
+        //     },
+        //     err=>{
+        //         console.log('err',err)
+        //     }
+        // )
+    }
+
+    getList();
+
+
+    async function getList2(){
+        try {
+            const res = await vlRequest({
+                url: "http://train.sxltserver.com/api/security/get_list_no_login/default?project_id=201501001&page=1&page_size=10&start_time=2020-10-01+00:01&end_time=2020-10-06+23:59:59",
+            });
+
+            let d = res.data[1].ww;     //这里引用了不存在的数据，报错，直接进入catch
+
+            console.log('2-res: ', res)
+            console.log('d: ', d)
+
+        }catch(err){      //处理一些错误
+            console.log('2-catch.err: ', err)
+        }
+    }
+
+    getList2()
+</script>
+</body>
+</html>
