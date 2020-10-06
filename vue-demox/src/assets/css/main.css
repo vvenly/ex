@@ -1,0 +1,82 @@
+*{padding: 0;margin: 0;}
+#app, body, html {
+    width: 100vw;
+		height: 100vh;
+		color: #fff;
+}
+#app{
+	background-image: linear-gradient(#126FFF, #EEB4FC);
+	overflow: auto;
+}
+a{color: #fff;}
+.bodyMain{
+	position: relative;
+	top:60px;left: 0;
+	display:flex;
+}
+
+li{display: inline-block;}
+a{text-decoration: none;}
+
+p{margin-bottom: 10px;}
+
+
+code{font-size: 15px;}
+
+hr{
+	height: 5px;
+	background-image:linear-gradient(to right,#4DEAFF, #4D34FF);
+	margin:10px 0;
+}
+
+pre{
+	font-size: 14px;
+    background: #3a5186;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.leftMenu,.rightMenu{
+	border: 2px solid #fff;
+  border-radius: 5px;
+	padding: 1vh 0.5vw;
+}
+.leftMenu{
+    width: 12.5%;
+    margin-right: 20px;
+}
+
+.leftMenu li{
+	display: block;
+	margin-bottom: 2vh;
+	font-size: 1.1vw;
+}
+
+.leftMenu a{
+    display: block;
+    padding: 5px;
+}
+
+.leftMenu a:hover{
+    background: #301d91;
+    color:#ddd;
+}
+
+.rightMenu {
+    width: 84%;
+}
+
+.rightMenu a{
+	color:#30ff53;
+	text-decoration: underline;
+}
+
+.rightMenu li{
+	display: block;
+	margin:15px 20px;
+}
+
+
+/* #titleLogo{
+    background: url("");
+} */

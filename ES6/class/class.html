@@ -6,5 +6,23 @@
 </head>
 <body>
 
+	<script>
+		class Person{
+			//构造方法， 用constructor 表示, 将一些需要共用的this参数存储
+			constructor(name,age){
+				this.name = name;
+				this.age = age;
+			}
+
+			//普通方法， 这里的函数一定要用简写的方式，省略function,否则会报错
+			show(){
+				console.log('class show')
+			}
+		}
+
+		//用class声明的方法不能直接调用
+		let p = new Person();
+		p.show()
+	</script>
 </body>
 </html>
