@@ -13,23 +13,43 @@
                                    <div class="ivu-input-group-prepend" style=""><span><i class="ivu-icon ivu-icon-ios-person" style="font-size: 16px;"></i></span>
                                    </div>
                                    <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
-                                    <input autocomplete="off" spellcheck="false" type="text" placeholder="请输入用户名" class="ivu-input ivu-input-default"> 
+                  <input v-model="loginForm.username" type="text" placeholder="请输入用户名" class="ivu-input ivu-input-default"> 
                                     </div> </div></div>
                         <div class="ivu-form-item ivu-form-item-required">
                             <div class="ivu-form-item-content">
                                 <div class="ivu-input-wrapper ivu-input-wrapper-default ivu-input-type ivu-input-group ivu-input-group-default ivu-input-group-with-prepend">
                                     <div class="ivu-input-group-prepend" style=""><span><i class="ivu-icon ivu-icon-md-lock" style="font-size: 14px;"></i></span></div> <!----> 
                                     <i class="ivu-icon ivu-icon-ios-loading ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i> 
-                                    <input autocomplete="off" spellcheck="false" type="password" placeholder="请输入密码" class="ivu-input ivu-input-default"></div> <!----></div></div>
+                  <input v-model="loginForm.password" autocomplete="off" spellcheck="false" type="password" placeholder="请输入密码" class="ivu-input ivu-input-default"></div> <!----></div></div>
                                     <div class="ivu-form-item"><!----> <div class="ivu-form-item-content">
-                                       
-                                        <router-link to="comMenu" class="ivu-btn"><span>登录</span></router-link>
+
+									<button type="button" class="ivu-btn" @click="subLogin"><span>登录</span></button>                     
+                  <!-- <router-link to="comMenu" class="ivu-btn"><span>登录</span></router-link> -->
                                         
 
                         </div></div><p class="login-tip">输入任意用户名和密码即可</p></div></div></div></div>
     </div>
 </template>
 
+<script>
+export default {
+	data () {
+        return{
+						loginForm: {
+							username : "",
+							password : ""
+            }
+        }
+		},
+		methods:{
+			subLogin(){
+				let _this = this;
+				// this.axios.post('/api/ch')
+				console.log(this.axios)
+			}
+		}
+}
+</script>>
 
 
 <style scoped>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+	<script src="index.js"></script>
+
+	<script>
+
+		window.onload = function(){
+			const colorList = ['pink','red','blue','green','yellow','purple','violet','cyan'];
+
+			Card.i=0;
+			for(let i=0;i<50;i++){
+				let w = parseInt(Math.random()*100)+50;
+
+				let h = parseInt(Math.random()*100)+70;
+
+				let x = parseInt(Math.random()*(document.documentElement.clientWidth - w));
+
+				// console.log(document.documentElement)
+
+				let y = parseInt(Math.random()*(document.documentElement.clientHeight - h));
+			
+				let color = colorList[parseInt(Math.random()*colorList.length)]
+
+				let temp;
+
+				if(i%2===0){
+					//偶数情况下 div没有倒角
+					temp = new Card(x,y,w,h,color);
+				}else{
+					//奇数情况下 div有倒角
+					temp = new RoundCard(x,y,w,h,color);
+				}
+
+				temp.render()
+			}
+
+		}
+		
+	</script>
+</body>
+</html>

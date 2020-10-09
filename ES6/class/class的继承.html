@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+	<script>
+		class Cat{
+			constructor(name,color){
+				this.name = name;
+				this.color = color;
+			}
+
+			eat(){
+				console.log(this.name , 'eating');
+			}
+
+			drink(){
+				console.log(this.name , 'drink');
+			}
+		}
+
+		//设置继承Cat的方法，并使原型指向自身
+		class Rabbit extends Cat{
+			constructor(name,color,age){
+				//子类通过super调用的父类的构造函数，必须放在第一行
+					super(name,color);
+					this.age = age;
+			}
+
+			//子类如果有自己的方法，优先
+			eat(){
+				console.log('Rabbit. eat 覆盖继承的原eat方法')
+			}
+
+			test(){
+				//super就是调用当前原型对象中原型对象的方法，简单理解就是调用父级的方法
+				super.drink();
+			}
+		}
+
+		let rab = new Rabbit('兔子','white',2);
+		rab.eat();
+		rab.test();
+		console.log(rab)
+
+	</script>
+</body>
+</html>

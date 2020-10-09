@@ -20,8 +20,8 @@ export default {
     return {
       menuList:[
         { "id":"comMenu", "name":"组件通信相关", "icon":"fa-home" },
-        { "id":"mn2", "name":"文档", "icon":"fa-server" },
-        { "id":"mn3", "name":"踩坑日记", "icon":"fa-gavel" }
+        { "id":"mn2", "name":"缓存", "icon":"fa-server" },
+        { "id":"mn3", "name":"文档 & 踩坑日记", "icon":"fa-gavel" }
       ]
     }
   },

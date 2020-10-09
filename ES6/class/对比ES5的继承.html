@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+	<script>
+		function Cat(name,color){
+			this.name = name;
+			this.color = color;
+		}
+
+		Cat.prototype.eat = function(){
+			console.log(this.name , 'eating');
+		}
+
+		Cat.prototype.drink = function(){
+			console.log(this.name , 'drink');
+		}
+
+		function dog(name,color,age){
+			//this 指向；
+			Cat.call(this,arguments);
+
+			this.age = age;
+		}
+
+		dog.prototype = Cat.prototype;	//dog继承cat 的原型方法
+		dog.prototype.constructor = dog	//将原型指到dog上
+		console.dir(dog)
+
+		let rabbit = new dog('兔子','white',2);
+		
+
+		rabbit.eat()
+		rabbit.drink()
+
+	</script>
+</body>
+</html>

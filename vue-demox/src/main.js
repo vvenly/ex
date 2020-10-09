@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
 
 import '../src/assets/css/main.css';
 import '../src/assets/css/font-awesome.css';
+
+Vue.prototype.axios = axios;
 
 Vue.config.productionTip = false
 
