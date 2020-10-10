@@ -20,9 +20,22 @@
 			}
 		}
 
-		//用class声明的方法不能直接调用
-		let p = new Person();
+		//给Person 新增方法 , 同ES5
+		Person.prototype.plus = function(){
+			console.log('plus')
+		}
+
+		//给Person 同时新增多个方法
+		Object.assign(Person.prototype, {
+			toString(){},
+			toValue(){}
+		});
+
+		//用class声明的方法不能直接调用，必须实例化
+		let p = new Person('lucy',18);
 		p.show()
+
+		console.log(p)
 	</script>
 </body>
 </html>
