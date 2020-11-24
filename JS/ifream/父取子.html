@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #p-d1{
+            width: 600px;
+            height: 500px;
+            border: 2px solid #ddd;
+            padding: 20px;
+        }
+        iframe{
+            border: 1px solid #c00;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="p-d1">
+
+
+        <iframe src="iframe.html" id="testM" name="testM" frameborder="0" width="100%" height="100%"></iframe>
+
+
+    </div>
+
+    <script>
+        //父元素的数据
+        window.parentData = {name:'parent'}
+
+
+        //一定要写在 window.onload 里， 否则获取不到iframe 内部元素
+        window.onload=function(){
+
+            //按name 取元素
+            let s1 = window.frames['testM'];
+            console.log(s1.document.getElementById("d2"))             //取标签
+            console.log('s1 : ', s1.aSonData)             //取变量
+            console.log('s1 : ', s1)
+
+
+            //按id 取元素
+            let s2 =document.getElementById("testM").contentWindow;
+            console.log(s2.document.getElementById("d2"))       //取标签
+            console.log('s2 : ', s2.aSonData)            //取变量
+        }
+
+
+    </script>
+</body>
+</html>

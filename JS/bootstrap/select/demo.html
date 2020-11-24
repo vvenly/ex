@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-select.css">
+</head>
+<body>
+<div>
+    <select name="" id="s1"></select>
+</div>
+
+<script src="../../jQuery-3.3.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script src="bootstrap-select.js"></script>
+<script>
+    let data=[
+        {id:1,name:'选项一'},
+        {id:2,name:'选项二'},
+        {id:3,name:'选项三'}
+    ], html = "" ;
+
+    for(let v of data){
+        html += `<option value='${v.id}'>${v.name}</option>`;
+    }
+
+    $("#s1").html(html).selectpicker('refresh').selectpicker('val',2);
+</script>
+</body>
+</html>

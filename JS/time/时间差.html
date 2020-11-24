@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let startTime = new Date();
+    alert('开始计算时间差');
+
+    let endTime = new Date();
+
+    let MSEL = endTime.getTime() - startTime.getTime();             //时间差毫秒数
+    console.log(MSEL / 1000);       //时间差 - 秒
+
+    let hour = 3600000 ;   //每小时毫秒数
+
+    console.log(Math.round(MSEL / (3600000*24)));
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            margin: 100px;
+            border: 2px solid #00B7FF;
+        }
+        canvas{
+            border: 2px solid #f0f;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+</div>
+
+
+<script src="tool.js"></script>
+<script>
+    window.onload=function(){
+        let cans = document.getElementById("myCanvas");
+        let ctx = cans.getContext("2d");
+
+        let mouse=tools.getMouse(cans);
+
+        let x1,x2,y1,y2;
+
+        cans.onmousedown=function (e) {
+
+            x1 = mouse.x;
+            y1 = mouse.y;
+
+            //按下后可移动
+            cans.onmousemove = function(e){
+                x2 = mouse.x;
+                y2 = mouse.y;
+                ctx.clearRect(0,0,500,500);
+                ctx.strokeRect(x1,y1,x2-x1,y2-y1);
+            };
+
+            //鼠标抬起清除绑定事件
+            cans.onmouseup = function(){
+                cans.onmousemove = null;
+                cans.onmouseup = null;
+            };
+        }
+
+    }
+</script>
+</body>
+</html>

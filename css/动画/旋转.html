@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画翻转</title>
+
+    <style>
+        /*将两张图设定在同一个位置*/
+        #parentEm{
+            position: relative;
+            text-align: center;
+            margin:100px 200px;
+        }
+
+        .firstImg{
+            position: absolute;
+        }
+
+        #parentEm>div{
+            width:100%;
+        }
+
+        /*设定好想要的旋转的效果*/
+        @-webkit-keyframes rotateStart {
+            from {
+                transform: perspective(1500px);
+            }
+
+            40% {
+                transform: perspective(1500px) rotate3d(0, 1, 0, 60deg);
+                opacity: 1;
+            }
+
+            50% {
+                transform: perspective(1500px) rotate3d(0, 1, 0, 90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: perspective(1500px) rotate3d(0, 1, 0, 180deg);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes rotateEnd {
+            from {
+                transform: perspective(1500px) rotate3d(0, 1, 0, -180deg);
+                opacity: 0;
+            }
+
+            50% {
+                transform: perspective(1500px) rotate3d(0, 1, 0, -90deg);
+                opacity: 0;
+            }
+
+            60% {
+                transform: perspective(1500px) rotate3d(0, 1, 0, -60deg);
+                opacity: 1;
+            }
+
+            to {
+                transform: perspective(1500px);
+                opacity: 1;
+            }
+        }
+
+        /*执行动画的时间效果*/
+        .rotate1{
+            animation: rotateStart 0.8s linear;
+            animation-fill-mode: both;
+        }
+
+        .rotate2{
+            animation: rotateEnd 0.8s linear;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="parentEm" onmouseenter="mouseIn(this)" onmouseleave="mouseOut(this)">
+
+        <div class="firstImg">
+            <img src="bi1.png" />
+        </div>
+
+        <div class="secondImg">
+            <img src="bi2.png" />
+        </div>
+</div>
+
+<script>
+
+    function mouseIn(that) {    //鼠标移入效果
+        var first=that.getElementsByTagName("img")[0],second=that.getElementsByTagName("img")[1];
+
+        first.setAttribute("class","");
+        second.setAttribute("class","");
+        first.setAttribute("class","rotate1");
+        second.setAttribute("class","rotate2");
+    }
+
+    function mouseOut(that) {  //鼠标移出效果
+        var first=that.getElementsByTagName("img")[0],second=that.getElementsByTagName("img")[1];
+
+        first.setAttribute("class","");
+        second.setAttribute("class","");
+        first.setAttribute("class","rotate2");
+        second.setAttribute("class","rotate1");
+    }
+
+</script>
+
+</body>
+</html>

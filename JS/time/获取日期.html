@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间与时间戳互相转换</title>
+</head>
+<body>
+
+
+<script>
+    //---------时间转换时间戳
+
+    //1、转换指定的时间
+    //声明一个正常页面上显示的时间：
+    let data1="2018-02-16 12:11:11";
+
+    //返回的是13位毫秒的数值
+    let time1=new Date(Date.parse(data1.replace(/-/g, "/"))).getTime();
+
+    //不过一般后台传输时只需要精确到秒就可以了，再除以1000即可
+    document.write("时间转换时间戳 :  <br/>       time1 : "+time1/1000  +" <br/> ");
+
+    //2、转换当前时间：
+    let data2=new Date();
+
+    let time2=Number(data2);            //精确到毫秒
+
+    let time3=Date.parse(data2);        //虽然也是到毫秒，不过毫秒数并不准确，以000显示
+
+    let time4= +data2;                  //精确到毫秒
+
+    document.write("time2: "+time2+" <br/> time3: "+time3+" <br/> time4: "+time4  +" <br/> ");
+
+
+    //---------时间戳转换页面显示的时间格式
+
+    //括号里填写指定的时间戳  不填默认当前的时间戳
+    let data3 = new Date(1518754271 * 1000);   //精确到毫秒的就不用 *1000  了
+
+    let y=data3.getFullYear(),
+        month=data3.getMonth() + 1,
+        m=month<10 ? "0"+month : month,
+        d=(data3.getDate()<10) ? "0"+data3.getDate() : data3.getDate(),
+        h=(data3.getHours()<10) ? "0"+data3.getHours() : data3.getHours(),
+        mi=(data3.getMinutes()<10) ? "0"+data3.getMinutes() : data3.getMinutes(),
+        s=(data3.getSeconds()<10) ? "0"+data3.getSeconds() : data3.getSeconds();
+
+    sendDate=y + "-" +m + "-" +d + " " +h + ":" +mi + ":" +s;
+
+    document.write("  <br/> 时间转换时间戳 :  <br/>       sendDate: "+sendDate +" <br/> ");
+
+
+    //传入年份和月份 获取该年对应月份的天数
+    function getMonthDays(year,month){
+        var thisDate = new Date(year,month,0); //当天数为0 js自动处理为上一月的最后一天
+        return thisDate.getDate();
+    }
+
+    document.write(2, getMonthDays(2020,2));
+
+
+
+</script>
+
+</body>
+</html>

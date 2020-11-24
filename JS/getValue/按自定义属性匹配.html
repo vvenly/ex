@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input type="text" name="a1" data-id="a1">
+<input type="text" name="b2" data-id="b2">
+<input type="text" name="c3" data-id="c3">
+
+<button onclick="getVal()">获取</button>
+
+<script src="../jQuery-3.3.1.min.js"></script>
+<script>
+    let data = {
+        a1:" I'M a1",
+        b2:" I'M b2",
+        c3:" I'M c3"
+    }
+
+    function setName() {
+        for(let k in data){
+            // $('[name="'+k+'"]').val(data[k])
+
+            $('[data-id="'+k+'"]').val(data[k])
+        }
+
+
+        // $('input[name="t_id"]').val()
+    }
+
+    setName();
+
+    function getVal() {
+        console.log($('[data-id="a1"]').val())
+    }
+
+
+</script>
+</body>
+</html>

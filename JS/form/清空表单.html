@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="testForm">
+    <input type="text">
+    <select name="" id="">
+        <option value="">----------</option>
+        <option value="2">2</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <textarea cols="30" rows="10"></textarea>
+
+    <button type="submit" id="testBtn"> 清空表单 </button>
+</form>
+
+
+<script>
+    document.getElementById('testBtn').onsubmit= function () {
+        document.getElementById("testForm").reset();
+    }
+</script>
+</body>
+</html>

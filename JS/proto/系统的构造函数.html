@@ -9,19 +9,22 @@
 <script>
     //构造函数一定会有一个 prototype, 实例化后的对象都自动继承了构造函数的prototype 变为 __proto__
     let arr=[]; //new Array
-    console.log(arr.__proto__ == Array.prototype);
+    console.log(arr.__proto__ == Array.prototype);      //true
 
     let str=""; //new String
-    console.log(str.__proto__ == String.prototype);
+    console.log(str.__proto__ == String.prototype);      //true
 
     let bool=true; //new Boolean
-    console.log(bool.__proto__ == Boolean.prototype);
+    console.log(bool.__proto__ == Boolean.prototype);      //true
 
     let reg=/s/i; //new RegExp
-    console.log(reg.__proto__ == RegExp.prototype);
+    console.log(reg.__proto__ == RegExp.prototype);      //true
 
     let obj={}; //new Object
-    console.log(obj.__proto__ == Object.prototype);
+    console.log(obj.__proto__ == Object.prototype);      //true
+
+    let time = new Date();
+    console.log('time ',time.__proto__ == Date.prototype)      //true
 </script>
 </body>
 </html>

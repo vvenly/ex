@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function comNum(x,y,p){
+        let ds = Math.sqrt((x - p.x1) * (x - p.x1) + (y - p.y1) * (y - p.y1));
+        let de = Math.sqrt((x - p.x2) * (x - p.x2) + (y - p.y2) * (y - p.y2));
+        let dl = Math.sqrt((p.x2 - p.x1) * (p.x2 - p.x1) + (p.y2 - p.y1) * (p.y2 - p.y1));
+        console.log(ds, de , ' +=: ',ds+de , dl)
+        if (ds + de <= dl + 0.5) {
+            return true;
+        }
+        return false;
+    }
+
+
+    var p1 ={x:1,y:2};
+    var p2 = {x:2,y:10};
+
+    var a = p1.y - p2.y;
+    var b = p1.x - p2.x;
+    var g = gcd(Math.abs(a),Math.abs(b));//计算最大公倍数
+    a = a / g;
+    b = b / g;
+    var  k = [a,b]; //向量 k
+
+    console.log(k)
+</script>
+</body>
+</html>

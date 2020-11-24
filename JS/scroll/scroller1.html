@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{width: 500px;}
+        #d1{height: 858px;overflow-y: auto;background: #ffa}
+        #d2{height: 4071px;background: #afa}
+        h1{height: 500px;}
+
+        #h1{overflow-y: auto;}
+        #h1>div{
+            height: 900px;background: #aff
+        }
+    </style>
+</head>
+<body>
+
+<div id="d1">
+    <div id="d2">
+        <h1 id="h1">
+            <div>1111111</div>
+        </h1>
+        <h1>2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+    </div>
+</div>
+
+<script>
+    var data=[{
+        show_approval:1,            //审批
+        complete_status: 1,          //冲突检测
+        show_update_del : 1,         //作废
+    }]
+
+    document.getElementById('h1').onscroll=function (e) {
+        e.stopPropagation();
+    }
+</script>
+</body>
+</html>

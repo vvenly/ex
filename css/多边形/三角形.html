@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画图</title>
+    <style type="text/css">
+        div{
+            margin: 50px;
+        }
+        #p1{display: flex}
+        #d1 {
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            /*设置边框的像素，类型，并设置颜色为transparent透明。此时从页面上时看不到任何东西的*/
+            border-left-color: #acf;
+            /*设置左边框的颜色，因为上面设置的全透明，此时只能见到设置了颜色的一边，便是一个三角形*/
+        }
+        #d2 {
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-top-color: #acf;
+        }
+        #d3 {
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-right-color: #acf;
+        }
+        #d4 {
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-bottom-color: #acf;
+        }
+    </style>
+</head>
+<body>
+
+<div id="p1">
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+</div>
+
+</body>
+</html>

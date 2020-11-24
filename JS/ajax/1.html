@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery-3.3.1.min.js"></script>
+<script>
+
+    function fullData(id) {
+        $.ajax({              //  AJAX 请求设置。所有选项都是可选的。
+            async:false,        //请求是同步或异步    默认为true  为true时不用写
+            type: "GET",            //设置类型
+            url: "http://testweb.xaltserver.com/api/command/get_list/default?bureau_id=2015&page=1&page_size=7&project_id=201501001",           //数据传输地址
+            dataType: "json",               //获取的数据类型
+            // data: {"id":id},            //传参
+            success: function (json) {      //请求成功之后调用
+                // console.log(json);
+                console.log(json);
+            },
+            error: function () {        //请求出错时调用
+                console.log("请求失败");
+            }
+        })
+    }
+
+
+    fullData()
+
+
+
+</script>
+</body>
+</html>
