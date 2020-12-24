@@ -40,9 +40,9 @@ export default {
 	},
     data () {
         return{
-					 title :'',
-					 num:0
-        }
+			title :'',
+			num:0
+        	}
 		},
 		methods:{
 			//1、获取父元素， 然后调用想用的方法

@@ -30,7 +30,6 @@ export default {
     data () {
         return{
 						menuList: [
-						//  {"id":"comMenu", "name":"组件", "url":"","icon":""},
                 {"id":"ch1-1", "name":"父子组件通信", "url":"","icon":""},
                 {"id":"ch1-2", "name":"路由", "url":"","icon":""},
                 {"id":"ch1-3", "name":"页面1-3", "url":"","icon":""}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script type='text/javascript'>
+
+
+    console.log(/e/.exec("The best things in life are free!"));
+
+
+    //提取数字部分
+    console.log("/#/100101022".replace(/[^0-9]/ig,""));
+
+    console.log("http://t4.xaltserver.com:83/web/personnel/100101022".replace(/[^0-9]{5}/ig,""));
+
+
+    var nomuch = function (e) {
+        e.value = e.value.replace(/[^\d.]/g, ""); //清除"数字"和"."以外的字符
+        e.value = e.value.replace(/^\./g, ""); //验证第一个字符是数字而不是
+        e.value = e.value.replace(/\.{2,}/g, "."); //只保留第一个. 清除多余的
+        e.value = e.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
+        e.value = e.value.replace(/^(\-)*(\d+)\.(\d).*$/, '$1$2.$3'); //只能输入一个小数
+        e.value = e.value.replace(/^(\-)*(\d+)\.(\d\d).*$/, '$1$2.$3'); //只能输入两个小数
+    };
+
+
+    //按字段提取
+    let obj={
+        operation_agree_id:123,operation_commit_title:123,operation_agree_title:123,operation_refused_id:123,operation_xiao_dian_title:123,
+        seq:123,num:123,
+    }
+    let arr = [];
+    for(let v in obj){
+        if(v.match(RegExp(/operation/))){
+            arr.push(v)
+        }
+    }
+    console.log("arr", arr);
+</script>
+</body>
+</html>

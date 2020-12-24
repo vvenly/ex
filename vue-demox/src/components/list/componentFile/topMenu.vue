@@ -21,7 +21,8 @@ export default {
       menuList:[
         { "id":"comMenu", "name":"组件通信相关", "icon":"fa-home" },
         { "id":"mn2", "name":"缓存", "icon":"fa-server" },
-        { "id":"mn3", "name":"文档 & 踩坑日记", "icon":"fa-gavel" }
+        { "id":"mn3", "name":"ex-demo", "icon":"fa-server" },
+        // { "id":"mn3", "name":"文档 & 踩坑日记", "icon":"fa-gavel" }
       ]
     }
   },
@@ -38,7 +39,7 @@ export default {
 }
 .router-link-active{
 	/* background: #ffa; */
-	color:#3d3d3d;
+	color:#ffa3a3;
 }
 
 #topTitle ul{

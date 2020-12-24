@@ -37,7 +37,7 @@ export default {
     data () {
         return{
            val1:''
-        }
+        } 
 		},
 		methods:{
 			toParent(){
@@ -45,6 +45,10 @@ export default {
 
 				//getSon 父组件调用子组件的方法
 				// this.$emit('getSon','from son val')
+			},
+			//父组件调用子组件的方法2
+			click3(){
+				// this.$refs.mychild.
 			}
 		}
    

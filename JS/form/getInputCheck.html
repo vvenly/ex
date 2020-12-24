@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" name="test" value="1"/><span>1</span>
+
+<input type="checkbox" name="test" value="2"/><span>2</span>
+
+<input type="checkbox" name="test" value="3"/><span>3</span>
+
+<input type="checkbox" name="test" value="4"/><span>4</span>
+
+<input type="checkbox" name="test" value="5"/><span>5</span>
+
+<input type='button' value='提交' onclick="fun()"/>
+
+
+<script>
+    function fun(){
+        let obj = document.getElementsByName("test"),
+        check_val = [];
+        for(let k in obj){
+            if(obj[k].checked)
+                check_val.push(obj[k].value);
+        }
+        console.log(check_val);
+    }
+</script>
+</body>
+</html>

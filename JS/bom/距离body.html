@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;padding: 0;
+        }
+        div{
+            width: 300px;height: 300px;
+            border: 1px solid #000;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+<h3>css小记：hover 鼠标滑过让该元素的子元素或者其他元素改变样式</h3>
+
+<div id="d1">
+    <div id="d2">
+        <div id="d3"></div>
+    </div>
+</div>
+
+<script>
+
+    //获取当前元素距离body的距离
+    function getPoint(obj) { //获取某元素以浏览器左上角为原点的坐标
+        console.log(obj)
+        var t = obj.offsetTop; //获取该元素对应父容器的上边距
+        var l = obj.offsetLeft; //对应父容器的上边距
+        //判断是否有父容器，如果存在则累加其边距
+        while (obj = obj.offsetParent) {//等效 obj = obj.offsetParent;while (obj != undefined)
+            t += obj.offsetTop; //叠加父容器的上边距
+            l += obj.offsetLeft; //叠加父容器的左边距
+        }
+        alert("top: " + t + " left: " + l);
+    }
+
+    document.getElementById('d3').onclick = function (e) {
+        console.log(getPoint(this))
+    }
+
+
+    //
+</script>
+</body>
+</html>

@@ -21,21 +21,7 @@
         </transition>
 
       </div>
-
-
-
-      <br><br><br><br><br><br><br><br>
-	      <div style="background:#8E6BB1;height: 300px;color:#fff;padding:20px;">
-
-	       输出显示：  <br/>  <br/>
-
-	        {{s1}}   <br/>  <br/>
-
-	        {{ o1 }}   <br/>  <br/>
-
-	        {{f1}}
-
-	      </div>
+	      
 
 	  </div>
 	</div>
@@ -50,10 +36,14 @@ import datas from '@/data/data.json'   //引入json文件
 
 import { str , obj, fn1 } from "@/assets/js/m2"    //引入m2.js
 import vlTopMenu from "@/components/list/componentFile/topMenu.vue"
-
 import vux from "@/components/list/componentFile/l2/vueX.vue"
+import state from "@/components/list/componentFile/l2/state.vue"
+import mutation from "@/components/list/componentFile/l2/mutation.vue"
+import action from "@/components/list/componentFile/l2/action.vue"
+import getter from "@/components/list/componentFile/l2/getter.vue"
+import dataYinRu from "@/components/list/componentFile/l2/dataYinRu.vue"
 export default {
-    components: { vlTopMenu,vux},
+    components: { vlTopMenu,vux,state,mutation,action, getter,dataYinRu},
     data () {
       return {
         data: datas.menuList[1].children,
@@ -62,7 +52,12 @@ export default {
         f1:fn1(3),
         view:'vux',
         menuList: [
-            {"id":1, "name":"vueX", "url":"vux","icon":""}
+            {"id":1, "name":"vueX", "url":"vux","icon":""},
+            {"id":2, "name":"state", "url":"state","icon":""},
+            {"id":3, "name":"mutation", "url":"mutation","icon":""},
+            {"id":4, "name":"action", "url":"action","icon":""},
+            {"id":5, "name":"getter", "url":"getter","icon":""},
+            {"id":8, "name":"数据引入", "url":"dataYinRu","icon":""},
         ]
       }
     },

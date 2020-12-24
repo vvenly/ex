@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #30313F;
+        }
+    </style>
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+
+
+<div style="height:500px;">
+    <div id="ec2" style="height: 98%;padding: 15px;"></div>
+</div>
+
+
+<script>
+    var dom2 = document.getElementById("ec2");
+    var myChart2 = echarts.init(dom2);
+    option2 = null;
+
+    let data = [
+        ['2020-11-25 18:01:01',3048.1],
+        ['2020-11-25 18:31:01',3148.2],
+        ['2020-11-25 19:01:01',3248.3],
+        ['2020-11-25 19:11:01',2048.4],
+        ['2020-11-25 19:61:01',2948.5],
+        ['2020-11-25 20:05:01',3948.3],
+        ['2020-11-25 21:01:01',3648.3],
+        ['2020-11-25 22:01:01',3648.3],
+        ['2020-11-25 22:31:01',3648.3],
+        ['2020-11-25 23:01:01',3648.3],
+        ['2020-11-25 23:21:01',3648.3],
+        ['2020-11-25 23:61:01',3648.3],
+    ];
+
+    let axisLine1 ={
+        lineStyle:{
+            color: {
+                type: 'linear',
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [{      //#ef7e13,#edae3a
+                    offset: 0, color: '#ef6300' // 0% 处的颜色
+                }, {
+                    offset: 1, color: '#edae3a' // 100% 处的颜色
+                }],
+                global: false // 缺省为 false
+            }
+        }
+    };
+
+    option2 = {
+        xAxis: {
+            type: 'time',
+            name: '小时',
+            min: "2020-11-25 18:00:00",
+            max: "2020-11-26 18:00:00",
+            splitNumber: 24,
+            splitLine: {show: false},
+            axisLabel: {
+                fontSize:16,
+                formatter: function (value) {
+                    let t = new Date(value);
+                    let hour = t.getHours();
+                    if(hour===0){
+                        return t.getHours() +"\n" +(t.getMonth()+1) + '-'+t.getDate();
+                    }else if(hour===18){
+                        return t.getHours() +"\n" +(t.getMonth()+1) + '-'+t.getDate();
+                    }else{
+                        return t.getHours();
+                    }
+                },
+                color:'#fff'
+            },
+            axisLine:axisLine1
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                show:true,
+                formatter: '{value} L',
+                fontSize:16,
+                color:'#fff'
+            },
+            axisLine:axisLine1
+        },
+        visualMap: {
+            show: false,
+            dimension: 1,
+            pieces: [{
+                lte: 66,
+                color: 'green'
+            }, {
+                gt: 66,
+                lte: 3000,
+                color: 'red'
+            }, {
+                gt: 3000,
+                color: 'green'
+            }]
+        },
+        series:
+            {
+                type: 'line',
+                showSymbol:false,
+                data: data,
+            }
+    };
+    if (option2 && typeof option2 === "object") {
+        myChart2.setOption(option2, true);
+    }
+</script>
+</body>
+</html>

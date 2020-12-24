@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="down()">download</button>
+
+<button onclick="addJS()">download</button>
+
+
+<a href="http://192.168.124.228:8867/exportCsv?trainId=93&startDate=2020-11-03%2000:00:00&endDate=2020-11-03%2023:59:59&columnFieldNameList=projectId,trainId,name,pos,subline,direction,speed,speedLimit,slope,rtime,lng,lat,pressure1,pipePressure,brakePressure,pressure2,handlePosition,dieselSpeed,fuel,trainNumber,trainRole,brakeOperation,brakingReason,brakingType&projectId=100101012">链接下载</a>
+
+<script src="jQuery-3.3.1.min.js"></script>
+<script id="script1"></script>
+<script>
+
+    function down() {
+        let url = "http://192.168.124.228:8867/exportCsv?trainId=93&startDate=2020-11-03%2000:00:00&endDate=2020-11-03%2023:59:59&columnFieldNameList=projectId,trainId,name,pos,subline,direction,speed,speedLimit,slope,rtime,lng,lat,pressure1,pipePressure,brakePressure,pressure2,handlePosition,dieselSpeed,fuel,trainNumber,trainRole,brakeOperation,brakingReason,brakingType&projectId=100101012";
+
+        // $.ajax({  
+        //     type: "GET",
+        //     url: "http://192.168.124.228:8867/exportCsv?trainId=93&startDate=2020-12-03%2000:00:00&endDate=2020-12-03%2023:59:59&columnFieldNameList=projectId,trainId,name,pos,subline,direction,speed,speedLimit,slope,rtime,lng,lat,pressure1,pipePressure,brakePressure,pressure2,handlePosition,dieselSpeed,fuel,trainNumber,trainRole,brakeOperation,brakingReason,brakingType&projectId=100101012",
+        //     dataType: "json",
+        //     success: function (json) {
+        //         // console.log(json);
+        //         console.log(json);
+        //     },
+        //     error: function () {
+        //         console.log("请求失败");
+        //     }
+        // })
+
+        let a = document.createElement('a')
+        a.href =url
+        a.click();
+
+        // window.location.href="http://192.168.124.228:8867/exportCsv?trainId=93&startDate=2020-12-03%2000:00:00&endDate=2020-12-03%2023:59:59&columnFieldNameList=projectId,trainId,name,pos,subline,direction,speed,speedLimit,slope,rtime,lng,lat,pressure1,pipePressure,brakePressure,pressure2,handlePosition,dieselSpeed,fuel,trainNumber,trainRole,brakeOperation,brakingReason,brakingType&projectId=100101012"
+    }
+    console.log($("#script1"))
+    
+    // function addJs() {
+    //
+    // }
+</script>
+</body>
+</html>

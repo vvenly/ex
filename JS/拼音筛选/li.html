@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script src="Convert_Pinyin.js"></script>
+<script>
+    (function () {
+        ConvertName()
+    })();
+
+    function ConvertName() {
+        var parentTr=$('.material_name');
+
+        for(var i=0,len=parentTr.length;i<len;i++){
+            var chinaName = $('.material_name')[i].innerHTML;
+
+            var fullName = pinyin.getFullChars(chinaName);
+
+            $(".pinyin:eq("+i+")").attr("data-content",fullName);
+        }
+    }
+</script>
+</body>
+</html>

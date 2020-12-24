@@ -45,7 +45,9 @@ export default {
 			subLogin(){
 				let _this = this;
 				// this.axios.post('/api/ch')
-				console.log(this.axios)
+				// console.log(this.axios)
+
+                this.$router.push('/comMenu')
 			}
 		}
 }

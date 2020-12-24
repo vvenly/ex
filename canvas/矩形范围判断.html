@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #c1{
+            border: 1px solid #ccc;
+            margin: 50px 100px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="c1" width="600" height="500"></canvas>
+
+<script src="tool.js"></script>
+<script>
+
+    let data = [
+        {x1:50,x2:100, y1:50,y2:80},
+        {x1:150,x2:100, y1:150,y2:80},
+        {x1:250,x2:100, y1:250,y2:80},
+        {x1:300,x2:100, y1:300,y2:80}
+    ]
+
+    function draw() {
+        let canvas = document.getElementById('c1');
+        let ctx = canvas.getContext("2d");
+        for(let v of data){
+            ctx.strokeRect(v.x1,v.y1,v.x2,v.y2)
+        }
+
+        let mouse=tools.getMouse(canvas);
+
+        let x1,x2,y1,y2;
+        canvas.onclick = function (e) {
+            let x = mouse.x,y = mouse.y;
+            // ctx.strokeRect(x,y,2,2)
+            for(let i=0;i<data.length;i++){
+                let it = data[i];
+                x1=it.x1; x2=it.x1+it.x2;
+                y1=it.y1;  y2=it.y1+it.y2;
+                if(x > x1 && x < x2 && y >= y1 && y <= y2){
+                    console.log("点击的是第"+ i+ "个", it)
+                }
+            }
+
+        }
+    }
+    draw()
+
+    //判断冲突区域
+    function isOverlap (r1, r2) {
+        var mx1 = Math.max(+r1[1], +r2[1]);
+        var mx2 = Math.min(+r1[2], +r2[2]);
+        var my1 = Math.max(+r1[3], +r2[3]);
+        var my2 = Math.min(+r1[4], +r2[4]);
+
+        var bool = mx1 <= mx2 && my1 <= my2;
+
+        if (bool) {
+            var w = mx2 - mx1;
+            var h = parseInt(my2 - my1);
+            this.blockCtx.fillRect(mx1, my1, w, h);
+        }
+    }
+</script>
+</body>
+</html>

@@ -5,13 +5,14 @@
 		color: #fff;
 }
 #app{
-	background-image: linear-gradient(#126FFF, #EEB4FC);
+	background-image: linear-gradient(#0c52bd, #672882);
 	overflow: auto;
 }
 a{color: #fff;}
 .bodyMain{
 	position: relative;
 	top:60px;left: 0;
+	height: 90vh;
 	display:flex;
 }
 
