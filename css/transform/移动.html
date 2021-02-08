@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            position:relative;
+            width: 500px;height: 500px;
+            margin: 200px;
+            overflow: hidden;
+        }
+        .son{
+            position: absolute;
+            top:0;
+            width: 100%;height: 100%;
+            transition: all .2s linear;
+        }
+        .s1{
+            left: 0;
+            background: #ffa;
+        }
+        .s2{
+            left: 500px;
+            background: #faa;
+        }
+        .s3{
+            left: 1000px;
+            background: #afa;
+        }
+        .s4{
+            left: 1500px;
+            background: #aaf;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+        <div class="son s1"></div>
+        <div class="son s2"></div>
+        <div class="son s3"></div>
+        <div class="son s4"></div>
+    </div>
+
+<button onclick="moveLeft()"> 移动 </button>
+    <script>
+        let index = 1;
+        function moveLeft() {
+            index++;
+            console.log(index)
+            if(index < 5){
+                document.getElementsByClassName('s'+index)[0].style.left = 0
+            }else{
+                index = 1
+            }
+        }
+    </script>
+</body>
+</html>

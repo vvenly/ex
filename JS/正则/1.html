@@ -41,6 +41,13 @@
         }
     }
     console.log("arr", arr);
+
+
+    //替换指定内容
+    let str1 = '你 好 世 界 1 1';
+    console.log(str1.replace(/\s+/g,"，"))       //把所有空格 替换为 逗号
+    console.log(str1.replace(/1/g,'2'))         //把所有的1  替换为2
+    console.log(str1.replace(/1/,'2'))          //不加g 只替换第一个，加g 替换全部
 </script>
 </body>
 </html>

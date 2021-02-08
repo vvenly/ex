@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    var str="2018-05-05 18:10:03";
+
+
+    //1、substring(start,stop)        start：必需值   stop：可选  另外：substring() 不接受负的参数
+    //返回的字符串是从 start 处到 stop-1 处的所有字符，长度为 stop 减 start。
+    //如果不写 stop  默认返回 start位置开始  后面全部的内容
+
+    console.log(str.substring(0,4));        //2018
+
+    console.log(str.substring(5));        //05-05 18:10:03
+
+
+
+
+    //2、substr(start,length)        start：必需值   length：可选
+
+    //返回从start（包括 start） 开始的 length 个字符
+    console.log(str.substr(2,8));  //18-05-05
+
+    // start如果是负数 就倒着开始数
+    //如果不写 length可选  默认返回 start位置开始  后面全部的内容
+
+    console.log(str.substr(-2));       //03    返回倒数的2位
+
+    //需要注意的是 ： ECMAscript 没有对该方法进行标准化  目前不太建议使用
+
+
+
+    //3、split(separator,maxLength)  separator	：必需值    maxLength：可选
+    //separator  按照指定的字符或正则切割字符串，返回一个数组， maxLength规定返回数组的最大长度
+
+    console.log(str.split(" "));   //按空格切割  返回length为2的数组  ["2018-05-05", "18:10:03"]
+
+
+    //4、slice(start,end)    start：必需值    end：可选
+    //slice()  和 substring() 用起来比较相像，相对的slice稍微灵活一些，毕竟这个方法是可以传负数的
+
+    console.log(str.slice(5,10)); //05-05
+
+    console.log(str.slice(-8)); //18:10:03
+
+    console.log(66, str.slice(0,-1)); //删除最后一个
+
+    //5、 charAt(index)   index:必需值
+    //返回在指定的index位置的字符，这里需要注意下坐标是从0开始算的，可以理解成数组形式的那种，所有下标以0开始
+    console.log(str.charAt(1));  //0   返回的是2018中的0   第二位数字
+</script>
+
+</body>
+</html>

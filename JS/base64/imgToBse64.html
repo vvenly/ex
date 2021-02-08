@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="file" name="security_pic" id="file" class="uploadInput" style="width:80px;height:75px;left:50px;" accept="image/jpg,image/jpeg,image/png,image/bmp"
+       onchange="gen_base64()" multiple />
+
+<script>
+    function $_(id) {
+        return document.getElementById(id);
+    }
+
+    function gen_base64() {
+
+        var file = $_('file').files[0];
+        console.log(file)
+        if(!/image\/\w+/.test(file.type)){
+            alert("请确保文件为图像类型");
+            // $_('upload_file').disabled = false;
+            return false;
+        }
+        var r = new FileReader();  //本地预览
+        console.log(r)
+        r.readAsDataURL(file);    //Base64
+        r.onload = function(){
+
+            var tmpData = r.result;
+
+            console.log(1, tmpData);
+
+        };
+
+
+    }
+</script>
+</body>
+</html>

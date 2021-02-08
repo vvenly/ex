@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+        }
+        #d2{
+            position: absolute;
+            top:0;left: 0;
+            width: 200px;
+            height: 200px;
+            border: 20px solid #0FAAEA;
+            border-top: 20px solid #fff;
+            border-left: 20px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 35px #2187e7;
+            transform:rotate(0deg);
+            animation: rotaR 1s infinite linear;
+            -moz-animation: rotaR 1s infinite linear;	/* Firefox */
+            -webkit-animation: rotaR 1s infinite linear;	/* Safari 和 Chrome */
+            -o-animation: rotaR 1s infinite linear;	/* Opera */
+        }
+        #d3{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            border: 20px solid #0FAAEA;
+            border-top: 20px solid #fff;
+            border-left: 20px solid #fff;
+            border-radius: 50%;
+            transform:rotate(360deg);
+            animation: rotaL 1s infinite linear;
+            -moz-animation: rotaL 1s infinite linear;	/* Firefox */
+            -webkit-animation: rotaL 1s infinite linear;	/* Safari 和 Chrome */
+            -o-animation: rotaL 1s infinite linear;	/* Opera */
+        }
+
+        @keyframes rotaR {
+            0% {transform:rotate(0deg)}
+            100% {transform:rotate(360deg)}
+        }
+        @-moz-keyframes rotaR {
+            0% {transform:rotate(0deg)}
+            100% {transform:rotate(360deg)}
+        }
+
+        @-webkit-keyframes rotaR {
+            0% {transform:rotate(360deg)}
+            100% {transform:rotate(0deg)}
+        }
+
+
+        @-o-keyframes rotaL {
+            0% {transform:rotate(360deg)}
+            100% {transform:rotate(0deg)}
+        }
+
+        @keyframes rotaL {
+            0% {transform:rotate(360deg)}
+            100% {transform:rotate(0deg)}
+        }
+        @-moz-keyframes rotaL {
+            0% {transform:rotate(360deg)}
+            100% {transform:rotate(0deg)}
+        }
+
+        @-webkit-keyframes rotaL {
+            0% {transform:rotate(360deg)}
+            100% {transform:rotate(0deg)}
+        }
+
+        @-o-keyframes rotaL {
+            0% {transform:rotate(360deg)}
+            100% {transform:rotate(0deg)}
+        }
+    </style>
+</head>
+<body>
+
+<div id="d1">
+    <div id="d2"></div>
+    <div id="d3"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id='canvas'></canvas>
+<script src="../jQuery-3.3.1.min.js"></script>
+<script>
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');//返回一个用于在画布上绘图的环境，当前唯一的合法值是 "2d"，它指定了二维绘图，返回一个 CanvasRenderingContext2D 对象，使用它可以绘制到 Canvas 元素中
+    //img/h1.png
+    // var url = '../../img/h1.png';//图片URL
+    var url = 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2970380969,27010587&fm=26&gp=0.jpg';//图片URL
+    var urlNumber = 1;//要渲染的图片数
+    var w = 300;//canvas的宽
+    var h = 300;//canvas的高
+
+    var img = new Image();
+    img.crossOrigin = 'Anonymous';//解决Canvas.toDataURL 图片跨域问题
+    img.src = url;
+
+    //渲染方法
+    var imgs = function () {
+        context.drawImage(img, 0, 0, w, h);
+        //导出
+        var base64Img = canvas.toDataURL('image/jpg');
+        console.log(1, base64Img);
+    }
+
+    img.onload = function () {
+        urlNumber -= 1;
+        if (urlNumber === 0) {
+            imgs();
+        }
+    }
+</script>
+</body>
+</html>

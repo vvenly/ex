@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<select name="" id="s1" onchange="getVal()">
+    <option value="1" data-val="a">11111</option>
+    <option value="2" data-val="b">22222</option>
+    <option value="3" data-val="c">33333</option>
+</select>
+
+
+<script src="../jQuery-3.3.1.min.js"></script>
+<script>
+    // 原声版
+    var currentSel = document.getElementById('s1');
+
+    var index = currentSel.selectedIndex;   //获取选中的索引值
+
+    console.log(  index  );
+
+    console.log(  currentSel.options[index].text  );    //获取选中的文本
+
+    console.log(  currentSel.options[index].value  );   //获取选中的值
+
+
+    //jQuery版
+    function getVal() {
+        //获取选中值 value
+        // console.log($("#s1").val());
+
+        //获取选中文本
+        // console.log($("#s1").find("option:selected").text());
+        // 或
+        // console.log($("#s1 option:selected").text());
+
+        //获取选中的属性值
+        // console.log($("#s1").find("option:selected").attr("data-val"));
+        // 或
+        // console.log($("#s1 option:selected").attr("data-val"));
+
+        //获取选中的索引:
+        //console.log($("#s1").get(0).selectedIndex);
+    }
+
+    function setVal() {
+        //设置选中项
+        //$("#s1").val(2);
+        // 或
+        $("#s1").get(0).selectedIndex =2;
+    }
+
+    $(document).ready(function () {
+        setVal();
+    })
+</script>
+
+
+
+
+</body>
+</html>

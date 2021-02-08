@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+ //   1、数组转字符串 : toString()
+    var arr1=["a","b","c","d",5,8];
+
+    console.log(arr1.toString());
+
+
+  //  2、字符串转数组 : split
+    var str1 = "周一，周二，周三，周四，周五，周六，周末";
+    var arr4 = str1.split("，");
+    console.log(arr4);
+
+   // 3、对象转数组 :
+        var obj1 = {
+            "a":71,"bg":22,"dw":37,"th":17,"ij":17,
+            "ku":258,"qq":369,"ww":"abs","ee":"ddd"
+        };
+    var arr2=[],arr3=[];
+
+    for(var i in obj1){
+        var keys=i;
+        arr2.push(keys);         //将“键名” 保存在数组中
+        var vals=obj1[i];
+        arr3.push(vals);         //将“值” 保存在数组中
+    }
+    console.log(arr3);      // console.log(arr2);
+
+  //  4、附加一点，将一个 JSON 字符串转换为对象 : JSON.parse()
+  //  JSON.stringify() 方法将对象转JSON字符 。 (IE7及其以下版本不支持)
+    var str2 = '{"name":"hello","age":"666"}';
+
+    console.log(JSON.parse(str2));   //字符串转json对象
+
+    var str3 = {"name":"hello","age":"666"};
+
+    console.log(JSON.stringify(str3));   //对象转字符串   IE7及其以下版本不支持
+</script>
+</body>
+</html>

@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+    "dingtalk-jsapi": "^2.13.9",
     "vue": "^2.5.2",
+    "vue-drag-resize": "^1.4.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.5.1"
   },
