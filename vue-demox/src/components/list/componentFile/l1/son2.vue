@@ -1,18 +1,15 @@
 <template>
   <div>
-		<div><input type="text" v-model="val1"></div>
+		<div class="headline"><input type="text" v-model="val1"></div>
 		<button @click='toParent'>点击给父组件传数据</button>
 
 		<hr>
-
 		<div>
 			<ol>
 				<li>父组件定义一个方法，并在组件标签上绑定该方法</li>
 				<li>在子组件调用这个方法，并传参</li>
 			</ol>
 		</div>
-
-
 		<hr>
 
 
@@ -38,19 +35,19 @@ export default {
         return{
            val1:''
         } 
-		},
-		methods:{
-			toParent(){
-				this.$emit('getSon',this.val1)
+	},
+	methods:{
+		toParent(){
+			this.$emit('getSon',this.val1)
 
-				//getSon 父组件调用子组件的方法
-				// this.$emit('getSon','from son val')
-			},
-			//父组件调用子组件的方法2
-			click3(){
-				// this.$refs.mychild.
-			}
+			//getSon 父组件调用子组件的方法
+			// this.$emit('getSon','from son val')
+		},
+		//父组件调用子组件的方法2
+		click3(){
+			// this.$refs.mychild.
 		}
+	}
    
 }
 

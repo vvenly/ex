@@ -64,7 +64,8 @@ pre{
 }
 
 .rightMenu {
-    width: 84%;
+	width: 84%;
+	overflow: auto;
 }
 
 .rightMenu a{

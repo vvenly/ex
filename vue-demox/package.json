@@ -12,6 +12,8 @@
   "dependencies": {
     "axios": "^0.20.0",
     "dingtalk-jsapi": "^2.13.9",
+    "marked": "^2.0.0",
+    "mavon-editor": "^2.9.1",
     "vue": "^2.5.2",
     "vue-drag-resize": "^1.4.2",
     "vue-router": "^3.0.1",

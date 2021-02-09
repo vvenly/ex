@@ -16,15 +16,15 @@
 	    <div class="rightMenu">
 					
 	        <transition name="component-fade" mode="out-in">
-
-	          <component :fData='toData' v-bind:is="view" @toSon222='toSon2' @getSon='getSon'></component>
+				
+				<!-- 父组件 -->
+	          <component :fData='toData' :is="view" @toSon222='toSon2' @getSon='getSon'></component>
 
 	        </transition>
 
-
-					<div v-if='sonShow'>
-						子组件传来的数据： {{sonData}}
-					</div>
+			<div v-if='sonShow'>
+				子组件传来的数据： {{sonData}}
+			</div>
 
 	    </div>
 		</div>
@@ -41,9 +41,9 @@
 import vlTopMenu from "@/components/list/componentFile/topMenu.vue"
 
 import switchCom from "@/components/list/componentFile/l1/switchComponents.vue"
-import parentToSon from "@/components/list/componentFile/l1/parent-son.vue"
+import son1 from "@/components/list/componentFile/l1/son1.vue"
 
-import sonToParent from "@/components/list/componentFile/l1/son-parent.vue"
+import son2 from "@/components/list/componentFile/l1/son2.vue"
 
 import luyou from "@/components/list/componentFile/l1/router.vue"
 
@@ -53,22 +53,22 @@ import routerMode from "@/components/list/componentFile/l1/routerMode.vue"
 
 export default {
 		//第二步，注册components
-    components: { vlTopMenu,switchCom, parentToSon,sonToParent,luyou,luyou2,routerMode },
+    components: { vlTopMenu,switchCom, son1,son2,luyou,luyou2,routerMode },
 			 data () {
         return{
             menuList: [
                 {"id":1, "name":"切换组件", "url":"switchCom","icon":""},
-                {"id":2, "name":"父组件通信子组件", "url":"parentToSon","icon":""},
-								{"id":3, "name":"子组件通信父组件", "url":"sonToParent","icon":""},
-								{"id":4, "name":"路由1", "url":"luyou","icon":""},
-								{"id":5, "name":"路由2", "url":"luyou2","icon":""},
-								{"id":6, "name":"路由模式", "url":"routerMode","icon":""}
+                {"id":2, "name":"父组件通信子组件", "url":"son1","icon":""},
+				{"id":3, "name":"子组件通信父组件", "url":"son2","icon":""},
+				{"id":4, "name":"路由1", "url":"luyou","icon":""},
+				{"id":5, "name":"路由2", "url":"luyou2","icon":""},
+				{"id":6, "name":"路由模式", "url":"routerMode","icon":""}
             ],
             //默认显示第一个
-						view: 'parentToSon',
-						toData:'父元素的数据',
-						sonData:'',
-						sonShow:false
+			view: 'son1',
+			toData:'父元素的数据',
+			sonData:'',
+			sonShow:false
         }
 		},
 		methods:{
