@@ -7,11 +7,13 @@
 <body>
 
 <script>
-    let name = 'lucy', age=18;
-    const obj1={name,age}
+    let name = 'lucy', age=18, sex2='boy';
+    const obj1={name,age,sex2}
 
     console.log({name})     //直接输出键值对 {name: "lucy"}
     console.log(obj1)   //{name: "lucy", age: 18}
+    delete obj1.sex2            // 删除对象中某个属性
+    console.log('delete:' ,obj1 )
 
     console.log({name:age})     //{name: 18}
     console.log({[name]:age})     //{lucy: 18}  []中括号直接取变量的值

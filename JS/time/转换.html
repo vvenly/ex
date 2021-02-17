@@ -9,8 +9,8 @@
 
 <script src="zhuanhuan.js"></script>
 <script>
-    console.log(DateFormat(new Date(), 'yyyy-MM-dd'))
-    console.log(DateFormat(new Date(), 'yyyy-MM-dd hh:mm'))
+    // console.log(DateFormat(new Date(), 'yyyy-MM-dd'))
+    // console.log(DateFormat(new Date(), 'yyyy-MM-dd hh:mm'))
 
     Object.assign(Date.prototype, {
         Format(format){     //转换时间
@@ -42,19 +42,24 @@
         getOtherTime(v1, v2 , format ){      //获取其他时间
             let time = new Date(Date.parse(v1.replace(/-/g, "/"))).getTime();
 
-            console.log('234', new Date().format())
-            console.log('v222', time + v2)
+            // console.log('234', new Date().format())
+            console.log('v222', time)
             if(!format){    //返回时间戳
                 return time + v2;
             }else{
                 return new Date(time + v2)
                 // return new Date(time + v2).format(format)
             }
+        },
+        //获取时间戳
+        timeStamp(v1){
+            return new Date(Date.parse(v1.replace(/-/g, "/"))).getTime()
         }
     });
 
 
     console.log(new Date().Format())
+    console.log(new Date().timeStamp('2020-02-09'))
 </script>
 </body>
 </html>
