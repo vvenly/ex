@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<a href="https://uniapp.dcloud.io/frame?id=%e8%bf%90%e8%a1%8c%e7%8e%af%e5%a2%83%e5%88%a4%e6%96%ad">关于环境变量的文档</a>
+<p>一般就两种： 点击“运行”编译出来的代码是开发环境，点击“发行”编译出来的代码是生产环境 </p>
+<br>
+
+<div>
+    <h5>如果需要配置更多的环境，可以在package.json中配置： (如下：)</h5>
+
+    <textarea name="" id="" cols="90" rows="50">
+        {
+    "uni-app": {
+        "scripts": {
+            "mp-dingtalk": {
+                "title":"钉钉小程序",
+                "env": {
+                    "UNI_PLATFORM": "mp-alipay"
+                },
+                "define": {
+                    "MP-DINGTALK": true
+                }
+            },
+			"h5-test": {
+			    "title":"h5测试环境",
+			    "env": {
+			        "MAIN_URL": "/test",
+					"UNI_PLATFORM": "h5"
+			    },
+			    "define": {
+			        "H5": true
+			    }
+			},
+			"h5-dev": {
+			    "title":"h5开发环境",
+			    "env": {
+			        "MAIN_URL": "/dev",
+					"UNI_PLATFORM": "h5"
+			    },
+			    "define": {
+			        "H5": true
+			    }
+			},
+			"h5-pro": {
+			    "title":"h5正式环境",
+			    "env": {
+			        "MAIN_URL": "/pro",
+					"UNI_PLATFORM": "h5"
+			    },
+			    "define": {
+			        "H5": true
+			    }
+			}
+        }
+    }
+}
+
+    </textarea>
+</div>
+</body>
+</html>

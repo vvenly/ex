@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            width: 300px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+
+        /*#d2{*/
+            /*width: 100px;*/
+            /*display: -webkit-box;*/
+            /*-webkit-box-orient: vertical;*/
+            /*-webkit-line-clamp: 3;*/
+            /*overflow: hidden;*/
+        /*}*/
+
+        #d2{
+            width: 200px;
+            position: relative; line-height: 20px; max-height: 40px;overflow: hidden;
+        }
+        #d2::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+            background: -webkit-linear-gradient(left, transparent, #fff 55%);
+            background: -o-linear-gradient(right, transparent, #fff 55%);
+            background: -moz-linear-gradient(right, transparent, #fff 55%);
+            background: linear-gradient(to right, transparent, #fff 55%);
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="d1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem eaque esse est sint velit vero! Ad alias, consectetur corporis maxime necessitatibus nihil omnis perferendis quasi repudiandae veritatis. Accusamus, deserunt?
+</div>
+
+
+<br><br>
+
+<div id="d2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae eligendi et minus natus perferendis temporibus velit voluptate voluptatibus voluptatum. Adipisci assumenda commodi inventore ipsum laboriosam nihil officia, possimus quis?
+</div>
+</body>
+</html>

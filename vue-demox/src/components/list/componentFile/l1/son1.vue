@@ -86,7 +86,7 @@ export default {
         	}
 		},
 		methods:{
-			//1、获取父元素， 然后调用想用的方法
+			//1、获取父元素， 然后调用想用的方法 
 			click1(){
 				console.log(this.$parent)	
 				this.title = this.$parent.toSon()

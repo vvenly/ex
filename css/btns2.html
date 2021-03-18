@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        #d1{
+            width: 100px;
+            margin: 100px auto;
+            font-size: 14px;
+            line-height: 26px;
+            color: #fff;
+        }
+        #d1>div{margin-bottom: 15px;}
+        .key{display: none;}
+        .key-bg{
+            position: relative;
+            display: inline-block;
+            width: 70px;
+            height: 28px;
+            background-color: #ccc;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .circle{
+            position: absolute;
+            top: 1px;left: 1px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #fff;
+        }
+        .on { padding-left: 10px;display:none;}
+        .off { padding-left: 45px;display: block;color: #000;}
+
+        .key-bg .circle{left: 1px;transition: all 0.5s;}
+        .key:checked + .key-bg .circle{left: 43px;}
+        .key:checked + .key-bg{
+            background: linear-gradient(to right,#aa6dff, #28bcff);
+        }
+        .key:checked + .key-bg .on{
+            display: block;
+        }
+        .key:checked + .key-bg .off{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="d1">
+    <div>
+        <input type="checkbox" id="in1" class="key">
+        <label for="in1" class="key-bg">
+            <span class="circle"></span>
+            <span class="on">开</span>
+            <span class="off">关</span>
+        </label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="in2" class="key">
+        <label for="in2" class="key-bg">
+            <span class="circle"></span>
+            <span class="on">开</span>
+            <span class="off">关</span>
+        </label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="in3" class="key">
+        <label for="in3" class="key-bg">
+            <span class="circle"></span>
+            <span class="on">开</span>
+            <span class="off">关</span>
+        </label>
+    </div>
+
+</div>
+
+</body>
+</html>

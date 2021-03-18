@@ -46,6 +46,10 @@ export default {
 		//父组件调用子组件的方法2
 		click3(){
 			// this.$refs.mychild.
+		},
+
+		getVal1(v){
+			console.log(v)
 		}
 	}
    

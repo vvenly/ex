@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+// js是一种区分大小写的语言，但是我们在使用模糊匹配的时候，又不能确定被匹配内容的大小写；
+
+// 那么我们可以转换思路，把输入项与被匹配项全部转化成统一格式：
+
+// js转化大小写方法： 
+// toUpperCase()：把字符串转换为大写； 
+// toLowerCase() ：把字符串转换为小写。 
+
+
+//从数组中匹配字符串是否存在，不区分大小写
+var arr = ['Tom', '你好', 'BOB']
+var str = 'tOM'
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i].toLowerCase() === str.toLowerCase()) {
+    alert('数组中存在' + str)
+  }
+}
+
+</script>
+</body>
+</html>

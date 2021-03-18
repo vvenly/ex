@@ -5,12 +5,493 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0e7b13-e499-41e3-a01d-850b2523bb91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JS/数据处理/fn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/数据处理/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/各种判断/switch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/数据处理/arr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/数据处理/arrOrder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/数据处理/arrSearch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/数据处理/栈.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp/url相关.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniapp/环境配置.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/time/转换.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/time/转换.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/数据处理/arr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据处理/arrES6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据处理/fn.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/数据处理/fn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/数据处理/obj.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/数据处理/obj.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据处理/转换.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/数据处理/转换.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/PacktDataStructuresAlgorithms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/PacktDataStructuresAlgorithms.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/01-HelloWorld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/01-HelloWorld.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/02-Variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/02-Variables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/03-Operators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/03-Operators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/04-TruthyFalsy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/04-TruthyFalsy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/05-EqualsOperators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/05-EqualsOperators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/06-ConditionalStatements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/06-ConditionalStatements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/07-Loops.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/07-Loops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/08-Functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/08-Functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/09-ObjectOrientedJS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/09-ObjectOrientedJS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/10-ES2015-ES6-letconst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/10-ES2015-ES6-letconst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/11-ES2015-ES6-variableScope.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/11-ES2015-ES6-variableScope.html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/12-ES2015-ES6-StringTemplates.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/12-ES2015-ES6-StringTemplates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/13-ES2015-ES6-ArrowFunctions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/13-ES2015-ES6-ArrowFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/14-ES2015-ES6-ParameterHandling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/14-ES2015-ES6-ParameterHandling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/15-ES2015-ES6-EnhancedObjectProperties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/15-ES2015-ES6-EnhancedObjectProperties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/16-ES2015-ES6-Classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/16-ES2015-ES6-Classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-Book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-CalcArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-ES6-Modules-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-ES6-Modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-ES6-Modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-Modules-node/17-Book.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-Modules-node/17-CalcArea.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-Modules-node/17-ES2015-ES6-Modules.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/18-ES2016-ES7-ExponentiationOperator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/18-ES2016-ES7-ExponentiationOperator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/lib/17-Book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/lib/17-CalcArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/lib/17-ES2015-ES6-Modules-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/lib/17-ES2015-ES6-Modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/typescript/hello-world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/typescript/hello-world.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/01-Introduction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/01-Introduction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/02-CreatingAndInitialingArrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/02-CreatingAndInitialingArrays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/03-AddingRemovingElements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/03-AddingRemovingElements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/04-TwoDimensionalMultiDimensional.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/04-TwoDimensionalMultiDimensional.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/05-ArrayMethods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/05-ArrayMethods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/06-ES2015Methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/06-ES2015Methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/07-Sorting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/07-Sorting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/08-Searching.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/08-Searching.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/09-TypedArrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/09-TypedArrays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter03/10-ArraysAndTypeScript.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/01-Stack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/01-Stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/01-StackSymbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/01-StackWeakMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/02-BalancedSymbols.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/02-BalancedSymbols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/03-DecimalToBinary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/03-DecimalToBinary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/04-TowerOfHanoi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter04/04-TowerOfHanoi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/01-Queue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/01-Queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/02-Deque.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/02-Deque.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/03-HotPotato.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/03-HotPotato.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/04-PalindromeChecker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter05/04-PalindromeChecker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/01-LinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/01-LinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/02-DoublyLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/02-DoublyLinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/03-CircularLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/03-CircularLinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/04-SortedLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/04-SortedLinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/05-StackLinkedList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter06/05-StackLinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter07/01-Set.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter07/01-Set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter07/02-SetOperations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter07/02-SetOperations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter07/03-ES2015Set.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter07/03-ES2015Set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/01-Dictionaries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/01-Dictionaries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/02-HashTable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/02-HashTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/03-HashCollisionSeparateChaining.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/03-HashCollisionSeparateChaining.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/04-HashCollisionLinearProbing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/04-HashCollisionLinearProbing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/05-ES2015Map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/05-ES2015Map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/06-ES2015WeakMap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/06-ES2015WeakMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/07-ES2015WeakSet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter08/07-ES2015WeakSet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/01-IntroRecursion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/01-IntroRecursion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/02-Factorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/02-Factorial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/03-JSCallStack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/03-JSCallStack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/04-Fibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter09/04-Fibonacci.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter11/01-UsingMinHeap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter11/01-UsingMinHeap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter11/02-UsingMaxHeap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter11/02-UsingMaxHeap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter11/03-HeapSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter11/03-HeapSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/01-UsingGraphs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/01-UsingGraphs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/02-BFS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/02-BFS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/03-DFS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/03-DFS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/04-Dijkstra.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/04-Dijkstra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/05-Floyd-Warshall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/05-Floyd-Warshall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/06-Prim.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/06-Prim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/07-Kruskal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter12/07-Kruskal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-BubbleSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-BubbleSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-BucketSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-BucketSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-CountingSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-CountingSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-InsertionSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-InsertionSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-MergeSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-MergeSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-QuickSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-QuickSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-RadixSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-RadixSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-SelectionSort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter13/01-SelectionSort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/01-DC-BinarySearch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/01-DC-BinarySearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/02-MinCoinChangeDP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/02-MinCoinChangeDP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/03-MinCoinChangeGreedy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/03-MinCoinChangeGreedy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/04-KnapsackProblemDP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/04-KnapsackProblemDP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/05-KnapSackProblemRecursive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/05-KnapSackProblemRecursive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/06-KnapSackProblemGreedy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/06-KnapSackProblemGreedy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/07-LongestCommonSubsequenceDP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/07-LongestCommonSubsequenceDP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/08-LongestCommonSubsequenceRecursive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/08-LongestCommonSubsequenceRecursive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/09-MatrixChainMultiplicationDP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/09-MatrixChainMultiplicationDP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/10-MatrixChainMultiplicationRecursive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/10-MatrixChainMultiplicationRecursive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/11-RatInMaze.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/11-RatInMaze.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/12-SudokuSolver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/12-SudokuSolver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/13-IntroFunctionalProgramming.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter14/13-IntroFunctionalProgramming.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter15/01-BigONotation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter15/01-BigONotation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter15/bigOChart/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter15/bigOChart/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/examples-screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/backtracking/rat-in-maze.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/backtracking/sudoku-solver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/dynamic-programing/knapsack-recursive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/dynamic-programing/knapsack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/dynamic-programing/longest-common-subsequence-print.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/dynamic-programing/longest-common-subsequence.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/dynamic-programing/matrix-chain-multiplication.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/dynamic-programing/min-coin-change.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/graph/breadth-first-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/graph/depth-first-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/graph/dijkstra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/graph/floyd-warshall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/graph/kruskal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/graph/prim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/greedy/knapsack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/greedy/longest-common-subsequence.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/greedy/matrix-chain-multiplication.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/greedy/min-coin-change.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/search/binary-search-recursive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/search/binary-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/search/interpolation-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/search/min-max-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/search/sequential-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/shuffle/fisher–yates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/bubble-sort-improved.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/bubble-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/bucket-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/counting-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/heap-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/insertion-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/merge-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/quicksort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/radix-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/selection-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/algorithms/sorting/shell-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/avl-tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/binary-search-tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/circular-linked-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/deque.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/dictionary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/doubly-linked-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/hash-table-linear-probing-lazy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/hash-table-linear-probing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/hash-table-separate-chaining.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/hash-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/heap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/linked-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/models/linked-list-models.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/models/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/models/value-pair-lazy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/models/value-pair.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/sorted-linked-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/stack-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/stack-linked-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/balanced-symbols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/base-converter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/factorial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/fibonacci.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/hanoi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/hot-potato.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/others/palindrome-checker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/backtracking/rat-in-maze.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/backtracking/sudoku-solver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/dynamic-programing/knapsack-recursive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/dynamic-programing/knapsack.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/dynamic-programing/longest-common-subsequence-print.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/dynamic-programing/longest-common-subsequence.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/dynamic-programing/matrix-chain-multiplication.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/dynamic-programing/min-coin-change.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/graph/breadth-first-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/graph/depth-first-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/graph/dijkstra.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/graph/floyd-warshall.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/graph/kruskal.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/graph/prim.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/greedy/knapsack.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/greedy/longest-common-subsequence.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/greedy/matrix-chain-multiplication.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/greedy/min-coin-change.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/math/find-divisors.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/math/gcd.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/math/greatest-difference.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/math/lcm.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/math/primality-test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/math/sieve-eratosthenes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/search/binary-search-recursive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/search/binary-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/search/interpolation-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/search/min-max-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/search/sequential-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/shuffle/fisher–yates.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/bubble-sort-improved.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/bubble-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/bucket-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/counting-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/heap-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/insertion-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/merge-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/quicksort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/radix-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/selection-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/sorting/shell-sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/string/brute-force.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/string/huffman.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/string/knuth-morris-pratt.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/string/longest-common-substring.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/algorithms/string/rabin-karp.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/avl-tree.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/binary-search-tree.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/circular-linked-list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/deque.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/dictionary.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/doubly-linked-list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/graph.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/hash-table-linear-probing-lazy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/hash-table-linear-probing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/hash-table-separate-chaining.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/hash-table.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/heap.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/linked-list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/models/linked-list-models.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/models/node.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/models/red-black-node.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/models/value-pair-lazy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/models/value-pair.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/priority-queue-array.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/queue.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/red-black-tree.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/set.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/sorted-linked-list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/stack-array.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/stack-linked-list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/data-structures/stack.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/balanced-symbols.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/base-converter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/factorial.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/fibonacci.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/hanoi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/hot-potato.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/others/palindrome-checker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/ts/util.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/backtracking/rat-in-maze.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/backtracking/sudoku-solver.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/dynamic-programming/knapsack-recursive.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/dynamic-programming/knapsack.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/dynamic-programming/longest-common-subsequence-print.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/dynamic-programming/longest-common-subsequence.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/dynamic-programming/matrix-chain-multiplication.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/dynamic-programming/min-coin-change.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/greedy/knapsack.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/greedy/longest-common-subsequence.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/greedy/matrix-chain-multiplication.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/greedy/min-coin-change.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/search/binary-search-recursive.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/search/binary-search.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/search/interpolation-search.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/search/min-max-search.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/search/search-algorithms-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/search/sequential-search.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/shuffle/fisher–yates.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/bubble-sort-improved.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/bubble-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/bucket-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/counting-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/heap-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/insertion-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/merge-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/quicksort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/radix-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/selection-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/shell-sort.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/algorithms/sorting/sort-algorithm-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/avl-tree.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/binary-search-tree.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/circular-linked-list.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/deque.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/dictionary.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/doubly-linked-list.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/hash-table-linear-probing-lazy.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/hash-table-linear-probing.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/hash-table-separate-chaining.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/hash-table.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/heap.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/linked-list.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/my-obj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/queue.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/set.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/sorted-linked-list.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/stack-array.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/stack-linked-list.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/data-structures/stack.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/balanced-symbols.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/base-converter.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/factorial.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/fibonacci.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/hanoi.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/hot-potato.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/js/others/palindrome-checker.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/backtracking/rat-in-maze.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/backtracking/sudoku-solver.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/dynamic-programming/knapsack-recursive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/dynamic-programming/knapsack.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/dynamic-programming/longest-common-subsequence-print.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/dynamic-programming/longest-common-subsequence.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/dynamic-programming/matrix-chain-multiplication.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/dynamic-programming/min-coin-change.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/greedy/knapsack.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/greedy/longest-common-subsequence.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/greedy/matrix-chain-multiplication.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/greedy/min-coin-change.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/search/binary-search-recursive.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/search/binary-search.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/search/interpolation-search.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/search/min-max-search.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/search/search-algorithms-tests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/search/sequential-search.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/shuffle/fisher–yates.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/bubble-sort-improved.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/bubble-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/bucket-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/counting-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/heap-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/insertion-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/merge-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/quicksort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/radix-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/selection-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/shell-sort.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/algorithms/sorting/sort-algorithm-tests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/avl-tree.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/binary-search-tree.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/circular-linked-list.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/deque.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/dictionary.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/doubly-linked-list.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/hash-table-linear-probing-lazy.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/hash-table-linear-probing.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/hash-table-separate-chaining.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/hash-table.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/heap.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/linked-list.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/my-obj.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/queue.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/red-black-tree.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/set.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/sorted-linked-list.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/stack-array.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/stack-linked-list.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/data-structures/stack.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/balanced-symbols.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/base-converter.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/factorial.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/fibonacci.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/hanoi.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/hot-potato.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/test/ts/others/palindrome-checker.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-demox/src/components/list/componentFile/l1/son1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-demox/src/components/list/componentFile/l1/son1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-demox/src/components/list/l1-hxtongxin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-demox/src/components/list/l1-hxtongxin.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,58 +499,103 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1594831415">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="13" />
+          <entry key="mjs" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ECMAScript 6" value="3" />
+          <entry key="HTML" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="1290" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1290" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/16-ES2015-ES6-Classes.js">
+        <entry file="file://$PROJECT_DIR$/uniapp/环境配置.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="368">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/数据处理/test1.html">
+        <entry file="file://$PROJECT_DIR$/JS/数据处理/arr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="2369">
+              <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/数据处理/string.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/数据处理/arrOrder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="851">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/数据处理/arrSearch.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/数据处理/栈.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/数据处理/fn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/数据处理/obj.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/05-EqualsOperators.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/数据处理/转换.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="345">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -105,15 +631,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JS/compute/字符串的倍数.html" />
-        <option value="$PROJECT_DIR$/JS/ajax/1.html" />
-        <option value="$PROJECT_DIR$/canvas/tool.js" />
-        <option value="$PROJECT_DIR$/canvas/drawRect.html" />
-        <option value="$PROJECT_DIR$/JS/time/获取日期.html" />
-        <option value="$PROJECT_DIR$/JS/echarts/echarts.min.js" />
-        <option value="$PROJECT_DIR$/JS/echarts/bing1.html" />
-        <option value="$PROJECT_DIR$/JS/echarts/bing2.html" />
-        <option value="$PROJECT_DIR$/css/多边形/1.html" />
         <option value="$PROJECT_DIR$/css/多边形/demo1.html" />
         <option value="$PROJECT_DIR$/css/多边形/三角形.html" />
         <option value="$PROJECT_DIR$/JS/bootstrap/select/demo.html" />
@@ -153,15 +670,101 @@
         <option value="$PROJECT_DIR$/JS/arr/arr.html" />
         <option value="$PROJECT_DIR$/ES6/arr.html" />
         <option value="$PROJECT_DIR$/JS/time/转换.html" />
-        <option value="$PROJECT_DIR$/JS/数据处理/obj.html" />
         <option value="$PROJECT_DIR$/JS/数据处理/to.html" />
         <option value="$PROJECT_DIR$/JS/数据处理/fn.html" />
+        <option value="$PROJECT_DIR$/JS/url.html" />
+        <option value="$PROJECT_DIR$/JS/各种判断/switch.html" />
+        <option value="$PROJECT_DIR$/uniapp/url相关.html" />
+        <option value="$PROJECT_DIR$/uniapp/环境配置.html" />
+        <option value="$PROJECT_DIR$/JS/数据处理/arrES6.html" />
+        <option value="$PROJECT_DIR$/JS/数据处理/obj.html" />
+        <option value="$PROJECT_DIR$/JS/数据处理/arr.html" />
+        <option value="$PROJECT_DIR$/JS/数据处理/arrOrder.html" />
+        <option value="$PROJECT_DIR$/JS/数据处理/arrSearch.html" />
+        <option value="$PROJECT_DIR$/JS/数据处理/栈.html" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/server/server/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue-demox/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/JS/数据结构与算法/Data/Code/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/ejs/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/express-generator/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/send/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/sorted-object/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/toidentifier/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/server/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/server/server/package.json" />
+      <path value="$PROJECT_DIR$/vue-demox/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="488" />
+    <option name="x" value="12" />
+    <option name="y" value="97" />
     <option name="width" value="1937" />
     <option name="height" value="1057" />
   </component>
@@ -173,65 +776,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
+              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
+              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="JS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="time" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
+              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="JS" type="462c0819:PsiDirectoryNode" />
               <item name="数据处理" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
+              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="JS" type="462c0819:PsiDirectoryNode" />
               <item name="数据结构与算法" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="数据结构与算法" type="462c0819:PsiDirectoryNode" />
-              <item name="Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="数据结构与算法" type="462c0819:PsiDirectoryNode" />
-              <item name="Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master" type="462c0819:PsiDirectoryNode" />
-              <item name="LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex_mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex_mine" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="数据结构与算法" type="462c0819:PsiDirectoryNode" />
-              <item name="Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master" type="462c0819:PsiDirectoryNode" />
-              <item name="LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex" type="462c0819:PsiDirectoryNode" />
+              <item name="uniapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,17 +924,20 @@
       <workItem from="1611277366014" duration="2055000" />
       <workItem from="1612409603809" duration="2370000" />
       <workItem from="1613460980576" duration="4459000" />
+      <workItem from="1613701718464" duration="5258000" />
+      <workItem from="1613905171656" duration="2455000" />
+      <workItem from="1614044931692" duration="5101000" />
+      <workItem from="1614132870681" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148217000" />
+    <option name="totallyTimeSpent" value="161058000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1742" height="1126" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27078384" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,80 +961,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JS/form/清空表单.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/form/getInputCheck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/正则/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="9" selection-start-line="38" selection-start-column="8" selection-end-line="40" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/tool.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/bom/距离body.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/bootstrap/table/demo1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/echarts/xTime.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/echarts/xTime按时间变色.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/echarts/xTime标记.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/time/时间差.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/drawRect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="25" selection-start-line="34" selection-start-column="11" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/拖拽/Index_3.html" />
     <entry file="file://$PROJECT_DIR$/img/h1.png">
       <provider selected="true" editor-type-id="images" />
@@ -548,9 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,48 +1086,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/01-HelloWorld.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/01-HelloWorld.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/02-Variables.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/02-Variables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/06-ConditionalStatements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/08-Functions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/README.md" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/01-HelloWorld.html" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/01-HelloWorld.js" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/02-Variables.html" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/02-Variables.js" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/06-ConditionalStatements.js" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/08-Functions.js" />
     <entry file="file://$PROJECT_DIR$/JS/time/转换.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -634,55 +1107,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/16-ES2015-ES6-Classes.js">
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/16-ES2015-ES6-Classes.js" />
+    <entry file="file://$PROJECT_DIR$/JS/数据处理/test1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="276">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据处理/string.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据处理/arr.html">
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/05-EqualsOperators.js" />
+    <entry file="file://$PROJECT_DIR$/uniapp/url.html" />
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/17-ES2015-Modules-node/17-Book.mjs" />
+    <entry file="file://$PROJECT_DIR$/uniapp/url相关.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="368">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/各种判断/switch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/数据处理/转换.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="644">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Learning-JavaScript-Data-Structures-and-Algorithms-Third-Edition-master/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/examples/chapter01_02/05-EqualsOperators.js">
+    <entry file="file://$PROJECT_DIR$/JS/url.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="250">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/数据处理/obj.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="1032">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/数据处理/test1.html">
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Data/Code/examples/chapter01_02/17-ES2015-Modules-node/17-Book.mjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="115">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据结构与算法/Data/Code/examples/chapter01_02/17-ES2015-Modules-node/17-ES2015-ES6-Modules.mjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniapp/环境配置.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据处理/arr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2369">
+          <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据处理/string.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据处理/arrOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据处理/arrSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/数据处理/fn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="345">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/数据处理/栈.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>

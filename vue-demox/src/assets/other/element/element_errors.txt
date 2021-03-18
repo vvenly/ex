@@ -1,0 +1,13 @@
+踩坑统计：
+
+一、表格问题
+1、表格切换时错位处理：
+    setTimeout(() => {
+        this.$nextTick(() => {
+        console.log(this.$refs.tabs)
+            this.$refs.table.doLayout()
+        })
+    }, 500)
+
+2、表格未对齐：
+（1）、 .el-table th.gutter{ display: table-cell!important;  }

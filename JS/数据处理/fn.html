@@ -9,7 +9,18 @@
 <script>
     // 箭头函数如果只有一句，可直接省略return
     let fn1 = n =>n*3
-    console.log(fn1(2))     // 6 
+    // console.log(fn1(2))     // 6
+
+    let fn2 = (x,y,z)=>x+y+z
+    //展开运算符
+    let arg1= [1,2,3]
+    // console.log(...arg1, fn2(...arg1))      //...arg1 将数组拆成了单独的三个数字， 配合上面的方法，结果：6
+
+    let fn3 = (x,y,...z) =>{
+        console.log(...z)
+    }
+
+    fn3(0,0,12)
 </script>
 </body>
 </html>

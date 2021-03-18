@@ -36,6 +36,7 @@ const store = new Vuex.Store({
             state.count-= num
         }
     },
+    // action 和 mutations 也很类似，主要的区别在于mutations 只能是同步操作，，action 可以包含异步操作，而且可以通过 action 来提交 mutations
     actions:{
         //在actions中修改state的数据，需要调用commit触发对应的mutations才可以
         //触发actions 的第一种方式： this.$store.dispatch('')

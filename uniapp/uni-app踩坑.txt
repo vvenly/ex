@@ -1,0 +1,70 @@
+rpx 满值： 750
+
+tabBar 建议只在底部用，
+虽然有top值，但是使用top后不再支持icon图表， 
+css 在H5中可以把bottom 改为 top,  但是微信小程序及其他不支持；
+
+原JS表单元素不支持，其他标签也使用有限，需注意
+
+
+uni.navigateBack()  只是返回页面，返回后的页面没有任何请求或刷新
+一般建议使用 uni.navigateTo({url: "XXX"})
+
+
+css3的很多属性、 选择器都不支持， 
+不允许使用标签选择器、属性选择器、id选择器
+
+设置样式或其他，不要使用元素选择器，会有兼容性问题，尽量使用class
+
+
+uniapp scroll事件不生效，是因为必须给要滚动的元素设置宽 或 高；
+
+
+跳转页面：
+微信小程序中：
+uni.navigateTo（） 只触发一次，返回后再次触发有问题，
+微信小程序建议使用
+uni.redirectTo({url: '/pages/essay/desc?id='+id})
+
+小程序下
+未请求成功：
+1、 参数错误，微信小程序下参数错误不报做，直接就不请求了
+
+
+uni-app 获取dom元素:
+官方文档：
+https://uniapp.dcloud.io/api/ui/nodes-info?id=createselectorquery
+
+每次打包建议把之前的全部删掉再重新打包
+
+
+小程序空白页面
+一般肯定有一些意料之外的bug, 没有报错的话跟缓存也有关系， 重启开发者工具-》真机联调
+
+
+需要的数据全部声明在
+data() {
+    return {}
+}    里， 放在其他地方h5没有问题，但是小程序或其他会报错
+
+
+新建项目时，如果有HBuilder有其他项目报错的，下载新项目也是失败的。
+
+
+js中的window 在小程序里是不存在的，当然，与其相关的全部不能用
+
+
+v-for  不加 key 过不了小程序
+
+
+TypeError: Cannot read property 'forceUpdate' of undefined
+微信小程序配置一个AppID就可以了
+
+给input 赋值时必须属性详细的必须写在return里， 否则v-model无效
+
+//钉钉
+调用组件时， 每个组件外面用view 再包一层，有的组件兼容性并不好，class不识别，所以样式不生效
+
+is not yet implemented   各个平台兼容性问题
+
+第一次表单内容没有渲染， 检查下v-model  里面的 form参数是否填写正确

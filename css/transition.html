@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        ul{border-bottom: 1px solid #ccc;}
+        ul:after{display: table;content: " ";clear: both;}
+        ul>li{
+            float: left;
+            list-style: none;
+        }
+        a{
+            display: block;
+            width:60px;
+            height:25px;
+            margin: 10px 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            border-bottom: 0;
+            text-align: center;
+            color: #435153;
+            /*定义过渡要求*/
+            transition: all .5s linear;
+        }
+
+        /*过渡动画最后效果*/
+        a:hover {
+            background:#aaefff;
+            margin-top: 0;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li><a href="#">标题11</a></li>
+    <li><a href="#">标题22</a></li>
+    <li><a href="#">标题33</a></li>
+</ul>
+
+</body>
+</html>

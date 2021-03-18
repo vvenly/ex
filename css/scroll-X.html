@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1,#d2{width: 800px;margin: 100px auto;}
+
+        ul,#d2{           /*最外层父元素*/
+            max-width: 400px;
+            padding: 0 15px;
+            border-bottom: 2px solid #d1e4ec;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+        li ,#d2>div{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        li>a {
+            display: block;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 15px;
+            color: #3d3d3d;
+        }
+    </style>
+</head>
+<body>
+
+<div id="d1">
+    <ul>
+        <li><a href="#">aaa</a></li>
+        <li><a href="#">bbb</a></li>
+        <li><a href="#">ccc</a></li>
+        <li><a href="#">ddd</a></li>
+        <li><a href="#">eee</a></li>
+        <li><a href="#">fff</a></li>
+        <li><a href="#">ggg</a></li>
+    </ul>
+</div>
+
+<div id="d2">
+    <div>111111</div>
+    <div>222222</div>
+    <div>333333</div>
+    <div>444444</div>
+    <div>555555</div>
+    <div>666666</div>
+    <div>777777</div>
+    <div>888888</div>
+</div>
+
+</body>
+</html>

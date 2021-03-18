@@ -1,0 +1,21 @@
+return{
+	formData:{
+					visitorName:undefined,		//访客姓名
+					visitorPhoto:undefined,		//本人照片,
+					phoneNumber:'',		//访客电话
+					departmentName:'',		//访客单位名称
+					idCard:'',		//访客身份证号
+					identitycardPhotoA:'',		//身份证正面照,
+					identitycardPhotoB:'',		//身份证反面照,
+					applyTimeEntrance:'',	//访问开始时间
+					applyTimeLeave:'',	//访问结束时间
+					visitedId:'',	//被访人id
+					visitedDeptId:'',
+					deptName: '',
+					fellowNum:'',
+					visitiorContent:''		//来访事由
+				}
+}
+
+
+return 里面的表单数据必须全，否则验证不生效

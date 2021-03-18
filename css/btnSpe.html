@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>纯css编写开关按钮（一）</title>
+    <style type="text/css">
+        .chooseBtn {
+            display: none;
+        }
+
+        .choose-label {
+            position: relative;
+            box-shadow: #ccc 0 0 0 1px;
+            width: 40px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 20px;
+            /*position: relative;*/
+            background-color: #bdbdbd;
+            /*overflow: hidden;*/
+        }
+
+        .choose-label span {
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 20px;
+            background-color: #000;
+            z-index: 20;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .chooseBtn:checked + label.choose-label span {
+            left: 20px;
+        }
+
+        .chooseBtn:checked + label.choose-label {
+            background-color: #51ccee;
+        }
+    </style>
+</head>
+<body>
+
+<label class="choose-label">
+    <input type="checkbox" name="sex" class="chooseBtn" />
+    <span></span>
+</label>
+</body>
+</html>

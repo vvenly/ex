@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr1 = [1,2,3,4,5,10,20]
+    // console.log(arr1.reverse())     //倒序 [5, 4, 3, 2, 1]
+
+    // console.log(arr1.reverse())   //再倒回来
+
+
+    //sort  语法  array.sort(sortfunction)   这种方法会改变原始数组
+    // console.log(arr1.sort())        //[1, 10, 2, 20, 3, 4, 5]   sort会把元素做为字符串再相互比较， 所以10 在2前面
+
+    console.log(arr1.sort((a,b)=>a-b))      //升序
+    //这句用es5的 写法更简单理解一点 arr1.sort(function(a,b){return b-a});
+    //a - b 小于零，在排序后的数组中 a 应该出现在 b 之前 所以按升序排， a - b 大于零, 则是降序
+
+    console.log(arr1.sort((a,b)=>b-a))      //倒序
+
+    //demo1
+    let arr2 = [{name:'aa',age:20},{name:'aa',age:10},{name:'aa',age:15}]
+    let fn = (a,b)=>{
+        if(a.age<b.age){
+            return -1
+        }else if(a.age>b.age){
+            return 1
+        }else{
+            return 0
+        }
+    }
+    console.log(arr2.sort(fn))
+
+    // 字符串排序时是按照字符本身的ASCII值来比较的，
+</script>
+</body>
+</html>

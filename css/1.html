@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            width:300px;
+            margin: 100px auto;
+            border: 1px solid #FF00FF;
+            min-height: 100px;
+            padding: 20px;
+        }
+        .btnOnOff{
+            opacity: 0;
+            width: 100%;
+            height:100%;
+        }
+
+        #d1 label{
+            display: inline-block;
+            position: relative;
+            width:80px;
+            height:30px;
+            background: #ccc;
+            box-shadow: #ccc 0 0 0 2px;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        #d1 label>span{
+            position: absolute;
+            top:0;
+        }
+
+        .btnOn {
+            color: #fff;
+            left:10px;
+            text-indent: 10px;
+        }
+        .btnOff {
+            color: #000;
+            right:10px;
+            text-indent: 34px;
+        }
+
+        .circle{
+            left: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .btnOnOff:checked + .circle{
+            left:50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="d1">
+    <label class="xcv">
+        <input type="checkbox" class="btnOnOff">
+        <span class="circle"></span>
+        <span class="btnOn">开</span>
+        <span class="btnOff">关</span>
+    </label>
+
+
+    <label class="xcv">
+        <input type="checkbox" class="btnOnOff" checked>
+        <span class="circle"></span>
+        <span class="btnOn">开</span>
+        <span class="btnOff">关</span>
+    </label>
+</div>
+
+
+<div>
+    <input type="checkbox">
+    <input type="checkbox" checked>
+</div>
+
+<script>
+
+</script>
+
+
+</body>
+</html>

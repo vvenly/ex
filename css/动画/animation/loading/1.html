@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #facebook{
+            margin-top:30px;
+            float:left;
+        }
+        .facebook_block{
+            background-color:#9FC0FF;
+            border:2px solid #3B5998;
+            float:left;
+            height:60px;
+            margin-left:5px;
+            width:16px;
+            opacity:0.1;
+            -webkit-transform:scale(0.7);
+            -webkit-animation-name: loading;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+        #block_1{
+            -webkit-animation-delay: .3s;
+        }
+        #block_2{
+            -webkit-animation-delay: .6s;
+        }
+        #block_3{
+            -webkit-animation-delay: .9s;
+        }
+        #block_4{
+            -webkit-animation-delay: 1.2s;
+        }
+        #block_5{
+            -webkit-animation-delay: 1.5s;
+        }
+        @-webkit-keyframes loading{
+            0%{-webkit-transform: scale(1.5);opacity:1;}
+            100%{-webkit-transform: scale(0.7);opacity:0.1;}
+        }
+    </style>
+</head>
+<body>
+
+<div id='facebook' >
+    <div id='block_1' class='facebook_block'></div>
+    <div id='block_2' class='facebook_block'></div>
+    <div id='block_3' class='facebook_block'></div>
+    <div id='block_4' class='facebook_block'></div>
+    <div id='block_5' class='facebook_block'></div>
+</div>
+
+</body>
+</html>

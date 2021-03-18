@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- 链表：
+1、单向链表 :  线性数据结构 ->  数据中只会有一条数据链来串联 ，前一个元素可指向后一个元素， 每个元素都会有一个next指针， 最后一个元素的next值为null
+单向链表的特点：
+用一组任意的内存空间去存储数据元素（这里的内存空间可以是连续的，也可以是不连续的）
+每个节点(node)都由数据本身和一个指向后续节点的指针组成
+整个链表的存取必须从头指针开始，头指针指向第一个节点
+最后一个节点的指针指向空（NULL） -->
+
+<!-- 2、双向链表：   数据中会有两条数据链来串联， 除了拥有单向链表中的next， 这里多一个prev, prev的 -->
+
+
+<script type="module">
+    import {defaultEquals, Node} from './demo.js'
+
+    class LinkList{
+        constructor(equalsFn = defaultEquals){
+            this.count =0;
+            this.head = undefined;
+            this.equalsFn = equalsFn
+        }
+
+        push(ele){
+            const node = new Node(ele)      //最后一个 Node.next 永远是undefined
+            let current;
+            if(this.head == null){
+                console.log(12)
+                this.head = node
+            }else{
+                current = this.head
+                while(current.next != null){    //获取最后一项
+                    current = current.next
+                }
+                current.next = node
+            }
+
+            this.count++
+
+            console.log(current, this.head, this.count)
+        }
+
+        removeAt(index){
+            if(index>=0 && index<this.count){
+                let current = this.head
+                if(index === 0){
+                    this.head = current.next
+                }else{
+                    let previous;
+                    for(let i = 0; i<index;i++){
+                        previous = current;
+                        current = current.next;
+                    }
+                    previous.next = current.next
+                }
+                this.count --
+
+                return current.element
+            }   
+            return undefined
+        }
+        
+    }
+    const list = new LinkList();
+    list.push(15)       //第一次push时head 是unidentified， 执行第24行，this.head = node
+    list.push(10)       //第二次再次push时 执行27行 给current 赋值， 
+    list.push(5)
+    // console.log('12', '')
+</script>
+</body>
+</html>

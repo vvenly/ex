@@ -18,7 +18,7 @@
 	        <transition name="component-fade" mode="out-in">
 				
 				<!-- 父组件 -->
-	          <component :fData='toData' :is="view" @toSon222='toSon2' @getSon='getSon'></component>
+	          <component :fData='toData' :is="view" @toSon222='toSon2' @getSon='getSon' ref="parentEl"></component>
 
 	        </transition>
 
@@ -81,12 +81,16 @@ export default {
 			},
 			toSon3(n){
 				console.log(3, n)
-				// return n + n;
+				// return n + n; 
 			},
 			//获取子组件的数据： 1，父组件定义一个方法，并在组件标签上绑定该方法；2，在子组件调用这个方法，并传参
 			getSon(V){
 				this.sonShow = true;
 				this.sonData = V
+			},
+
+			toSon4(){
+				this.$refs.parentEl.getVal1('111')
 			}
 		}
 }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+
+<script>
+
+    console.log(...[1, 2, 3])
+    // 1 2 3
+
+    console.log(1, ...[2, 3, 4], 5)
+
+    console.log(document.querySelectorAll('div'))
+    console.log(...document.querySelectorAll('div'))
+
+    let x=0;
+
+    const arr = [
+      ...(x > 0 ? ['a'] : []),'b',
+    ];
+
+    console.log(arr)
+
+
+    //字符串转数组
+    let str='hello';
+    let a1= [...str]
+    console.log('字符串转数组: ',a1)
+    console.log('数组转字符串1: ',a1.toString())
+    let arrObj = [{name:'lucy',age:10},{name:'tpm',age:20}]
+    console.log('数组转字符串2: ',arrObj.toString())
+
+    //数组拼接
+    let arr1 =[1,2,3], arr2=[3,4,5]
+    console.log([...arr1,...arr2])
+    console.log([...arr1,...'abc'])
+
+    //数组填充
+    console.log([1,2,3].fill(7))    //[7, 7, 7]
+    console.log(new Array(3).fill(7))   //[7, 7, 7]
+    // console.log(new Array(3).fill(['a']))   //数组里填充3个数组
+
+    //判断数组是否包含给定的值
+    let str5 = ['a','b','d','k','x','z'];
+    // console.log(str5.includes('c'))
+
+    //获取要查询的值 位于数组的下标, 存在的话返回下标，不存在返回-1
+    // console.log(str5.findIndex(value=> {return value == 'c';}))     //-1
+
+    //find  找出第一个符合条件的数组成员。所有数组成员依次执行该回调函数，
+    // 直到找出第一个返回值为true的成员，然后返回该成员。如果没有符合条件的成员，则返回undefined。
+    let test1 = str5.find((n) => n === 'a')
+    // console.log(test1)
+
+
+    //fill 使用给定值  填充一个数组   语法：array.fill(value, start, end)
+   // value	必需。填充的值。start	可选。开始填充位置。  end	可选 。停止填充位置 (默认为 array.length)
+    // console.log('fill: ', str5.fill('c'));      //[c,c,c]       //
+    console.log('fill2:', new Array(5).fill(7))     //[7,7,7,7,7]
+
+    console.log('fill3:',str5.fill('c',2,4))     //["a", "b", "c", "c", "x", "z"]       从第2个值到第4个值，被替换为c
+
+    console.log('fill4:',str5.fill('c',2))     //["a", "b", "c", "c", "c]       从第2个值开始后面所有的都被替换为c
+
+
+    let f1 = 0;
+    // console.log('fill3:', new Array(5).fill(f1++))
+
+
+    //every  如果数组中检测到有一个元素不满足，则整个表达式返回 false ，且剩余的元素不会再进行检测。
+    // 如果所有元素都满足条件，则返回 true。
+    let arr7 = [2,2,2,2,2]
+   // console.log(arr7.every(x => x===2))          //判断全部等于2 为true
+    let arr8 = [1,2,3,4,5,6]
+    const isEven = x=> x%2 ===0
+   // console.log(arr8.every(isEven))     //第一位1 就不符合条件，直接false
+
+    //some
+    // 与every 相反， 如果有一个元素满足条件，则表达式返回true , 剩余的元素不会再执行检测。
+    // 如果没有满足条件的元素，则返回false。
+   // console.log(arr8.some(isEven))      //数组中有一个符合条件就返回true
+     let arr7_1 = [1,3,5,7]
+    console.log('arr7_1', arr7_1.some(x => x===2))      // 一个符合的都没有，返回false
+
+    let imgTypes = ['image/jpg','image/png','image/jpeg']
+    console.log('imgTypes', imgTypes.some(x => x==='image/jpg1'))
+
+
+    //forEach  方法用于调用数组的每个元素，并将元素传递给回调函数, forEach() 对于空数组是不会执行回调函数的
+    // 语法： array.forEach(函数, index索引, 当前元素所属的数组对象), thisValue)
+   arr8.forEach((x,index)=>{console.log('forEach', x,index)})
+
+    //map
+    //map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值, 方法按照原始数组元素顺序依次处理元素。
+    //map() 不会对空数组进行检测。  map() 不会改变原始数组。  不能用来处理筛选等
+    var numbers = [65, 44, 12, 4];
+    function multiplyArrayElement(num) {
+        return num * 10;
+    }
+    console.log('map1', numbers.map(multiplyArrayElement))
+
+    function testmap(num) {
+        if(num>10){
+          return num * 10;
+        }
+         
+    }
+    console.log('map2', numbers.map(testmap))
+    // function myFunction() {
+    //     document.getElementById("demo").innerHTML = numbers.map(multiplyArrayElement);
+    // }
+
+
+    //filter    filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。
+    //filter() 不会对空数组进行检测 ， 不会改变原始数组
+    // 语法：array.filter(function(currentValue,index,arr), thisValue)
+    console.log(arr8.filter(isEven))
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px;
+            background: linear-gradient(left, #f00, #FFCE5F);
+            background: -webkit-linear-gradient(left, #f00, #FFCE5F);
+            background: -o-linear-gradient(right, #f00, #FFCE5F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation:scratchy 0.5s linear forwards infinite;
+            /* 其它浏览器兼容性前缀 */
+            -webkit-animation:scratchy 0.5s linear forwards infinite;
+            -moz-animation: scratchy 0.5s linear forwards infinite;
+            -ms-animation: scratchy 0.5s linear forwards infinite;
+            -o-animation: scratchy 0.5s linear forwards infinite;
+        }
+        @keyframes  scratchy {
+            0% {
+                background-position: 0 0;
+            }
+            25% {
+                background-position: 0 0;
+            }
+            26% {
+                background-position: 20px -20px;
+            }
+            50% {
+                background-position: 20px -20px;
+            }
+            51% {
+                background-position: 40px -40px;
+            }
+            75% {
+                background-position: 40px -40px;
+            }
+            76% {
+                background-position: 60px -60px;
+            }
+            99% {
+                background-position: 60px -60px;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+        /* 添加兼容性前缀 */
+        @-webkit-keyframes scratchy {
+            0% {
+                background-position: 0 0;
+            }
+            25% {
+                background-position: 0 0;
+            }
+            26% {
+                background-position: 20px -20px;
+            }
+            50% {
+                background-position: 20px -20px;
+            }
+            51% {
+                background-position: 40px -40px;
+            }
+            75% {
+                background-position: 40px -40px;
+            }
+            76% {
+                background-position: 60px -60px;
+            }
+            99% {
+                background-position: 60px -60px;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+        @-moz-keyframes scratchy {
+            0% {
+                background-position: 0 0;
+            }
+            25% {
+                background-position: 0 0;
+            }
+            26% {
+                background-position: 20px -20px;
+            }
+            50% {
+                background-position: 20px -20px;
+            }
+            51% {
+                background-position: 40px -40px;
+            }
+            75% {
+                background-position: 40px -40px;
+            }
+            76% {
+                background-position: 60px -60px;
+            }
+            99% {
+                background-position: 60px -60px;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+
+
+        #loading{
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px;
+            background: linear-gradient(left, #DDD, #000);
+            background: -webkit-linear-gradient(left, #DDD, #000);
+            background: -o-linear-gradient(right, #DDD, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation:scratchy 0.5s linear forwards infinite;
+            /* 其它浏览器兼容性前缀 */
+            -webkit-animation:blackC 0.8s linear forwards infinite;
+            -moz-animation: blackC 0.5s linear forwards infinite;
+            -ms-animation: blackC 0.5s linear forwards infinite;
+            -o-animation: blackC 0.5s linear forwards infinite;
+        }
+
+        @keyframes  blackC {
+            0% {
+                background-position: 0 0;
+            }
+            25% {
+                background-position: 0 0;
+            }
+            26% {
+                background-position: 20px -20px;
+            }
+            50% {
+                background-position: 70px -70px;
+            }
+            51% {
+                background-position: 120px -120px;
+            }
+            75% {
+                background-position: 120px -120px;
+            }
+            76% {
+                background-position: 180px -180px;
+            }
+            99% {
+                background-position: 180px -180px;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+<!--<div class="box">文字想法</div>-->
+
+<div>文件上传中 <span class="box"> ……</span></div>
+
+
+<div id="loading" class="box">文件上传中,请稍等 ……</div>
+
+
+</body>
+</html>
