@@ -8,6 +8,11 @@ import store from './store'
 // import mavonEditor from 'mavon-editor'
 // import 'mavon-editor/dist/css/index.css'
 
+// import echarts from 'echarts'    
+// Vue.prototype.$echarts = echarts
+// 需要注意下使用的时候要放在mounted中，如果报错  Error in mounted hook: "TypeError: Cannot read property 'getAttribute' of undefined" 
+// 加在 this.$nextTick 即可
+
 import { mavonEditor } from "mavon-editor"
 import "mavon-editor/dist/css/index.css"
 

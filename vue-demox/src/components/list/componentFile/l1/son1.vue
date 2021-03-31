@@ -19,6 +19,7 @@
 		<div>
 			<p>Prop  ; 英文翻译是支柱，支撑，道具的意思</p>
 			<p>vue里通过 Prop 向子组件传递数据，一个组件默认可以拥有任意数量的 prop，任何值都可以传递给任何 prop。</p>
+			<p>Prop 单向数据流, 修改父元素参数子元素会监听到，但是不可在子元素内修改 prop中的值</p>
 			<router-link to="https://cn.vuejs.org/v2/guide/components-props.html">Prop 官方文档</router-link>
 			<ol>
 				<li>eventName：这是一个事件名，会绑定一个方法。当组件触发事件后，将调用这个方法。</li>

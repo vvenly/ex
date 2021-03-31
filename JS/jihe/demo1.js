@@ -35,13 +35,35 @@ class Set{
         return Object.values(this.items)
     }
 
-    //并集
+    //并集   返回包含两个集合中所有元素的新集合
     union(otherSet){
         const uSet = new Set()
         this.values().forEach(value => uSet.add(value))
         otherSet.values().forEach(value =>uSet.add(value))
         return uSet
     }
+
+    //交集  返回包含两个集合中共有元素的集合
+    intersection(){
+        const intersectionSet = new Set();
+
+        const values = this.values();
+
+        for(let i =0;i<values.length;i++){
+            if(otherSet.has(values[i])){
+                intersectionSet.add(values[i])
+            }
+        }
+
+        return intersectionSet
+    }
+
+
+    //差集  返回包含所有存在于 第一个集合 且 不存在于第二个集合的元素 新集合
+
+
+
+    //子集  验证一个给定集合是否是另一集合的子集
 }
 
 // const set = new Set();

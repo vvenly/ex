@@ -49,6 +49,13 @@
     console.log([1,2,3].fill(7))    //[7, 7, 7]
     console.log(new Array(3).fill(7))   //[7, 7, 7]
     // console.log(new Array(3).fill(['a']))   //数组里填充3个数组
+    // let timeArr = ()=>{
+    //   // let arr = [];
+    //   for(let i = 0;i<25;i++){
+    //     new Array(24).fill('0:00')
+    //   }
+    // }
+    console.log('fill,map', new Array(24).fill(1).map((item,i) => i)) 
 
     //判断数组是否包含给定的值
     let str5 = ['a','b','d','k','x','z'];
@@ -127,7 +134,12 @@
     console.log(arr8.filter(isEven))
 
 
-
+    // join 把数组中的所有元素 使用指定的分隔符放入一个字符串
+    // 语法：arrayObject.join(separator)  separator	可选。指定要使用的分隔符。如果省略该参数，则使用逗号作为分隔符。
+    console.log([1,2,3,4].join('-'))    //1-2-3-4
+    
+      const d = {arr8}
+    console.log('arr8', arr8, d)
 
 </script>
 

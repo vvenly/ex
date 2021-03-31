@@ -11,7 +11,7 @@ const store = new Vuex.Store({
     getters:{
         showNum: state=>{
             return '当前最新的count:'+ state.count
-        },
+        }, 
         // showArr: (state)=>{
         //     // console.log('index', index)
         //     return i=>{
