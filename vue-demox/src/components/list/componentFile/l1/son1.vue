@@ -42,7 +42,35 @@
 
 export default {
 	props:{
-		fData:String
+		fData:String		// 最简单定义，只能是字符串格式
+
+		//	其他
+        //   propA:Number		必须是数字类型
+        //   //必须是字符串或数字类型
+        //   propB:[String,number]
+        //   //布尔值,如果没有定义，默认值是true
+        //   propC:{
+        //     type:Boolean，
+        //     default:true
+        //   },
+        //   //数字，而且是必传
+        //   propD:{
+        //     type:Number,
+        //     required:true
+        //   },
+        //   //如果是数组或对象，默认值必须是一个函数来返回
+        //   propE:{
+        //     type:Array,
+        //     default:function(){
+        //         return [];
+        //       }
+        //   },
+        //   //自定义一个验证函数
+        //   propF:{
+        //       validator:function (value){
+        //         return value>10
+        //      }
+        //   }
 	},
     data () {
         return{
@@ -85,6 +113,21 @@ export default {
 				preview: true, // 预览
 			},
         	}
+		},
+		watch:{
+			//监听弹框框改变,   watch和props 名字保持一致
+			"$store.state.modalCity"(oldVal, newVal){
+				// console.log('refId2',oldVal, newVal, this.$store.state.modalCity)
+				if(this.$store.state.modalCity){
+					this.$refs['cityList'].show()
+
+					// this.$store.commit('setModalCity', false)
+				}else{
+					this.$refs['cityList'].hide()
+
+					// this.$store.commit('setModalCity', false)
+				}
+			}
 		},
 		methods:{
 			//1、获取父元素， 然后调用想用的方法 

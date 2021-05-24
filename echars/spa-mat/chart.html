@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/canv.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/echarts.min.js"></script>
+</head>
+<body id="bodyDiv" style="background: #171820;overflow: hidden;">
+<div id="titleMain">施 工 计 划</div>
+
+<div id="logo-data">
+    <span class="span-logo4 logo-day"></span>
+    <span class="span-logo4 logo-week"></span>
+    <span class="span-logo4 logo-month"></span>
+</div>
+
+<div class="panel-body" id="canvasDiv">
+    <div class="row">
+        <div class="col-md-6" style="width:50%;padding:0;">
+            <div class="col-md-12 " >
+                <h3 class="chartTitle"> <b></b>违章统计</h3>
+                <div class="lfCanvas" style="height:500px;">
+                    <div class="ltCorner corner" ></div>
+                    <div class="ltopCorner corner"></div>
+                    <div class="ltCorner corner" style="top:468px;left: unset;right: 0;transform: rotate(180deg);"></div>
+
+                    <div id="ec1" style="height: 98%;padding: 15px;"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12 ">
+                <h3 class="chartTitle"> <b></b>计划兑现率</h3>
+                <div class="lfCanvas "  style="height:430px;">
+                    <div class="rtopCorner corner"></div>
+                    <div class="ltCorner corner" ></div>
+                    <div id="ec4" style="height: 100%;padding: 10px 0;"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6" style="width:50%;padding:0;">
+            <div class="col-md-12" >
+                <h3 class="chartTitle" style="top:65px"> <b></b>运输统计</h3>
+                <div id="rtCanvasBig" class="rtCanvas" style="text-align: center;">
+                    <div class="ltCorner corner"></div>
+                    <div class="rtopCorner corner"></div>
+                    <div class="rtopCornerBig corner"></div>
+                    <div class="rbottomCornerBig corner"></div>
+                    <div class="rbottomCorner corner"></div>
+
+                    <div id="ec2" style="float:left;width:45%;height: 100%;margin-left: 2%;"></div>
+                    <div id="ec3" style="float:right;width:45%;height: 100%;margin-right: 2%;"></div>
+
+                    <h3 class="chartBottom"> <b></b>接发列车</h3>
+                    <h3 class="chartBottom" style="left:665px;"> <b></b>接发车</h3>
+                </div>
+            </div>
+            <div class="col-md-12" style="position: relative;">
+                <div class="rtCanvas" style="height:345px;">
+                    <div class="rtopCorner corner"></div>
+                    <div class="ltCorner corner"></div>
+                    <div class="rbCorner corner"></div>
+                    <div class="rbottomCornerSma corner"></div>
+
+                    <div style="color: #fff;padding: 30px 60px;">
+                        <h3 class="chartTitle"> <b></b>其他统计信息</h3>
+
+                        <dl class="col3 dlNum">
+                            <dt>30 <span>t</span></dt>
+                            <dd>货物发送</dd>
+                        </dl>
+
+                        <dl class="col3 dlNum">
+                            <dt>62 <span>条</span></dt>
+                            <dd>施工计划</dd>
+                        </dl>
+
+                        <dl class="col3 dlNum">
+                            <dt>126 <span>km</span></dt>
+                            <dd>铺轨公里</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var dom = document.getElementById("ec1");
+    var myChart = echarts.init(dom);
+    option1 = null;
+
+    option1 = {
+        tooltip: {
+            trigger: 'item',
+            formatter: " {b}：{c} "
+        },
+        //环形颜色
+        color:['#FFFF00','#FFCC00','#CC9900','#996600','#993300','#CC6633'],
+        series: [
+
+            {
+                name: '访问来源',
+                type: 'pie',
+                radius: ['30%', '50%'],
+                labelLine: {
+                    normal: {
+                        length: 35,
+                        length2: 120
+                    }
+
+                },
+                label: {
+                    normal: {
+                        formatter: '{c|{c}}   {b|{b}}  \n\n',
+
+                        borderWidth: 20,
+                        borderRadius: 4,
+                        padding: [0, -120],
+                        rich: {
+                            a: {
+                                color: '#333',
+                                fontSize: 33,
+                                lineHeight: 20
+                            },
+                            b: {
+                                fontSize: 20,
+                                lineHeight: 20,
+                                color: '#CDCDD0'
+                            },
+                            c: {
+                                fontSize: 30,
+                                lineHeight: 20,
+                                color: '#fff'
+                            }
+                        }
+                    }
+                },
+                data: [
+                    {value: 11, name: '超速'},
+                    {value: 15, name: '机车临近'},
+                    {value: 7, name: '防区'},
+                    {value: 4, name: '电子防护牌'},
+                    {value: 3, name: '制动'},
+                    {value: 2, name: '设备故障'}
+                    ],
+                itemStyle: {
+                    normal: {
+                        borderWidth: 2,
+                        borderColor: '#2C2D3B'
+                    }
+                }
+            }
+        ]
+    };
+    if (option1 && typeof option1 === "object") {
+        myChart.setOption(option1, true);
+    }
+
+    //2
+    var dom2 = document.getElementById("ec2");
+    var myChart2 = echarts.init(dom2);
+    option2 = null;
+
+    option2 = {
+        // title: {
+        //     text: '运输统计',
+        //     textStyle: {
+        //         color: '#6D737B',
+        //         fontWeight:'bold',
+        //         fontSize:25
+        //     },
+        //     top:10,
+        //     left:40,
+        //     // subtext:'接发列车',
+        //     // subtextStyle:{
+        //     //     color:'#6D737B',
+        //     //     fontSize:25,
+        //     //     verticalAlign:'bottom'
+        //     // },
+        // },
+        tooltip: {
+            trigger: 'item',
+            formatter: " {b}：{c} "
+        },
+        //环形颜色
+        color:['#006699','#339933','#66CC00'],
+        series: [
+            {
+                name:'',
+                type:'pie',
+                selectedMode: 'center',
+                radius: [0, 0],
+
+                label: {
+                    normal: {
+                        position: 'inner',
+                        color:"#fff",
+                        fontSize:60,
+                        fontWeight:'bold'
+                    }
+                },
+                data:[
+                    {value:335, name:'45'}
+                ]
+            },
+            {
+                name: '',
+                type: 'pie',
+                radius: ['30%', '50%'],
+                labelLine: {
+                    normal: {
+                        length: 25,
+                        length2:60
+                    }
+
+                },
+                label: {
+                    normal: {
+                        formatter: '{c|{c}}   {b|{b}}  \n\n',
+
+                        borderWidth: 20,
+                        borderRadius: 4,
+                        padding: [0, -75],
+                        rich: {
+                            a: {
+                                color: '#333',
+                                fontSize: 33,
+                                lineHeight: 20
+                            },
+                            b: {
+                                fontSize: 20,
+                                lineHeight: 20,
+                                color: '#CDCDD0'
+                            },
+                            c: {
+                                fontSize: 25,
+                                lineHeight: 20,
+                                color: '#fff'
+                            }
+                        }
+                    }
+                },
+                data: [
+                    {value: 9, name: '重车'},
+                    {value: 9, name: '空车'},
+                    {value: 27, name: '单机'}
+                ],
+                itemStyle: {
+                    normal: {
+                        borderWidth: 2,
+                        borderColor: '#2C2D3B'
+                    }
+                }
+            }
+        ]
+    };
+    if (option2 && typeof option2 === "object") {
+        myChart2.setOption(option2, true);
+    }
+
+    //3
+    var dom3 = document.getElementById("ec3");
+    var myChart3= echarts.init(dom3);
+    option3 = null;
+
+    option3 = {
+        tooltip: {
+            trigger: 'item',
+            formatter: " {b}：{c} "
+        },
+        //环形颜色
+        color:['#339933','#66CC00'],
+        series: [
+            {
+                name:'',
+                type:'pie',
+                selectedMode: 'center',
+                radius: [0, 0],
+
+                label: {
+                    normal: {
+                        position: 'inner',
+                        color:"#fff",
+                        fontSize:55,
+                        fontWeight:'bold'
+                    }
+                },
+                data:[
+                    {value:335, name:'158'}
+                ]
+            },
+            {
+                name: '',
+                type: 'pie',
+                radius: ['30%', '50%'],
+                labelLine: {
+                    normal: {
+                        length: 25,
+                        length2: 30
+                    }
+
+                },
+                label: {
+                    normal: {
+                        textStyle:{
+                            fontSize: 15,
+                            color:'#39CCCC'
+                        },
+                        formatter: '{c|{c}}   {b|{b}}  \n\n',
+                        borderWidth: 20,
+                        borderRadius: 4,
+                        padding: [0, -50],
+                        rich: {
+                            a: {
+                                color: '#333',
+                                fontSize: 33,
+                                lineHeight: 20
+                            },
+                            b: {
+                                fontSize: 20,
+                                lineHeight: 20,
+                                color: '#CDCDD0'
+                            },
+                            c: {
+                                fontSize: 25,
+                                lineHeight: 20,
+                                color: '#fff'
+                            }
+                        }
+                    }
+                },
+                data: [
+                    {value: 34, name: '重车'},
+                    {value: 70, name: '空车'}
+                ],
+                itemStyle: {
+                    normal: {
+                        borderWidth: 2,
+                        borderColor: '#2C2D3B'
+                    }
+                }
+            }
+        ]
+    };
+    if (option3 && typeof option3 === "object") {
+        myChart3.setOption(option3, true);
+    }
+
+    //4
+    var dom4 = document.getElementById("ec4");
+    var myChart4 = echarts.init(dom4);
+    option4 = null;
+
+    option4 = {
+        // title: {
+        //     text: '计划兑现率',
+        //     textStyle: {
+        //         color: '#6D737B',
+        //         fontWeight:'bold',
+        //         fontSize:25
+        //     },
+        //     top:0,
+        //     left:40
+        // },
+        tooltip: {
+            trigger: 'item',
+            formatter: " {b}：{c} "
+        },
+        color:['#00CC33','#666'],
+        series: [
+            {
+                name: '',
+                type: 'pie',
+                radius: ['30%', '60%'],
+                labelLine: {
+                    normal: {
+                        length: 35,
+                        length2: 140
+                    }
+                },
+                label: {
+                    normal: {
+                        formatter: '{c|{c}%}  \n  {b|{b}}  \n\n',
+                        borderWidth: 20,
+                        borderRadius: 4,
+                        padding: [10, -140],
+                        rich: {
+                            a: {
+                                color: '#333',
+                                fontSize: 33,
+                                lineHeight: 20
+                            },
+                            b: {
+                                fontSize: 20,
+                                lineHeight: 20,
+                                color: '#A3A3A3',
+                                align: 'left'
+                            },
+                            c: {
+                                fontSize: 25,
+                                lineHeight: 20,
+                                color: '#fff',
+                                align: 'left',
+                                padding: [0, 5],
+                                height:60
+                            }
+                        }
+                    }
+                },
+                data: [
+                    {value: 75, name: '正常兑现'},
+                    {value: 25, name: '超时；延时；'}
+                ]
+            }
+        ]
+    };
+    if (option4 && typeof option4 === "object") {
+        myChart4.setOption(option4, true);
+    }
+</script>
+</body>
+</html>

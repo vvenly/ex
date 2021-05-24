@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 50%"></div>
+       <div id="container2" style="height: 50%"></div>
+       <script type="text/javascript" src="js/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>-->
+       <!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>-->
+       <!--<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>-->
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+app.title = '嵌套环形图';
+
+option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: " {b}：{c} "
+        
+       // ({d}%)   代表该模块所占圆环比例
+        // formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+     //环形颜色
+    color:['#FFFF00','#FFCC00','#CC9900','#996600','#993300','#CC6633'],
+    // legend: {
+    //     orient: 'vertical',
+    //     show: false,
+    //     x: 'left',
+    //     data: ['视频广告', '其他', '其他', '其他']
+    // },
+    series: [
+ 
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['30%', '50%'],
+            labelLine: {
+                normal: {
+                    length: 30,
+                    length2: 120,
+                    lineStyle: {
+                        color: '#333'
+                    }
+                }
+ 
+            },
+            label: {
+                normal: {
+                    // \n\n可让文字居于牵引线上方，很关键
+                    //  {b}  代表显示的内容标题
+                    // {c}代表数据
+                    formatter: '{c|{c}}   {b|{b}}  \n\n',
+                    
+                    borderWidth: 20,
+                    borderRadius: 4,
+                    padding: [0, -120],
+                    rich: {
+                        a: {
+                            color: '#333',
+                            fontSize: 33,
+                            lineHeight: 20
+                        },
+                        b: {
+                            fontSize: 25,
+                            lineHeight: 20,
+                            color: '#CDCDD0'
+                        },
+                        c: {
+                            fontSize: 30,
+                            lineHeight: 20,
+                            color: '#fff'
+                        }
+                    }
+                }
+            },
+            data: [
+                {value: 13, name: '超速'},
+                {value: 9, name: '机车临近'},
+                {value: 7, name: '防区'},
+                {value: 3, name: '电子防护牌'},
+                {value: 2, name: '制动'},
+                {value: 1, name: '设备故障'}
+                ]
+        }
+    ]
+};;
+
+
+var dom2 = document.getElementById("container2");
+var myChart2 = echarts.init(dom2);
+var app2 = {};
+option = null;
+app.title = '嵌套环形图';
+option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: " {b}：{c} "
+
+        // ({d}%)   代表该模块所占圆环比例
+        // formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    //环形颜色
+    color:['#FFFF00','#FFCC00','#CC9900','#996600','#993300','#CC6633'],
+    // legend: {
+    //     orient: 'vertical',
+    //     show: false,
+    //     x: 'left',
+    //     data: ['视频广告', '其他', '其他', '其他']
+    // },
+    series: [
+
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['30%', '50%'],
+            labelLine: {
+                normal: {
+                    length: 30,
+                    length2: 120,
+                    lineStyle: {
+                        color: '#333'
+                    }
+                }
+
+            },
+            label: {
+                normal: {
+                    // \n\n可让文字居于牵引线上方，很关键
+                    //  {b}  代表显示的内容标题
+                    // {c}代表数据
+                    formatter: '{c|{c}}   {b|{b}}  \n\n',
+
+                    borderWidth: 20,
+                    borderRadius: 4,
+                    padding: [0, -120],
+                    rich: {
+                        a: {
+                            color: '#333',
+                            fontSize: 33,
+                            lineHeight: 20
+                        },
+                        b: {
+                            fontSize: 25,
+                            lineHeight: 20,
+                            color: '#CDCDD0'
+                        },
+                        c: {
+                            fontSize: 30,
+                            lineHeight: 20,
+                            color: '#fff'
+                        }
+                    }
+                }
+            },
+            data: [
+                {value: 13, name: '超速'},
+                {value: 9, name: '机车临近'},
+                {value: 7, name: '防区'},
+                {value: 3, name: '电子防护牌'},
+                {value: 2, name: '制动'},
+                {value: 1, name: '设备故障'}
+            ]
+        }
+    ]
+};;
+
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+    myChart2.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

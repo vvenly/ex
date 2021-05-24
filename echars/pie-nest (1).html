@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+app.title = '嵌套环形图';
+
+option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: " {b}：{c} "
+        
+       // ({d}%)   代表该模块所占圆环比例
+        // formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+     //环形颜色
+    color:['#ffb616','#ccc','#faf','#afa'],
+    // legend: {
+    //     orient: 'vertical',
+    //     show: false,
+    //     x: 'left',
+    //     data: ['视频广告', '其他', '其他', '其他']
+    // },
+    series: [
+ 
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['30%', '50%'],
+            labelLine: {
+                normal: {
+                    length: 30,
+                    length2: 120,
+                    lineStyle: {
+                        color: '#333'
+                    }
+                }
+            },
+            top: '5%',          // 圆图距离容器的位置
+
+             // label: {   // 标题文字
+            //   position: 'inner',   显示在饼图上
+            //   fontSize: 14,
+            //   formatter: '{c}'           // 不写默认是name ， 加上显示value， 或 formatter: function(a) { return a.value || '' } 为0 不显示
+            // },
+
+            label: {
+                normal: {
+                    // \n\n可让文字居于牵引线上方，很关键
+                    //  {b}  代表显示的内容标题
+                    // {c}代表数据
+                    formatter: '{c|{c}}   {b|{b}}  \n\n',
+                    borderWidth: 20,
+                    borderRadius: 4,
+                    padding: [0, -120],
+                    rich: {
+                        a: {
+                            color: '#333',
+                            fontSize: 33,
+                            lineHeight: 20
+                        },
+                        b: {
+                            fontSize: 25,
+                            lineHeight: 20,
+                            color: '#f00'
+                        },
+                        c: {
+                            fontSize: 30,
+                            lineHeight: 20,
+                            color: '#f00'
+                        }
+                    }
+                }
+            },
+            data: [
+                {value: 8, name: '视频广告'}, 
+                {value: 9, name: '视频'}, 
+                {value: 20, name: '广告'}, 
+                {value: 8, name: '视频广告'}, 
+                {value: 35, name: '其他'}]
+        }
+    ]
+};;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

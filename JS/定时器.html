@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="d1">0</div>
+
+
+<button id="an1SclBtn">暂停</button>
+
+<script src="jQuery-3.3.1.min.js"></script>
+<script>
+
+    var topY=0;
+
+    function fn1() {
+        if(topY>100){
+            topY=0;
+        }else{
+            topY+=0.5;
+        }
+
+        $("#d1").html(topY);
+
+    }
+
+
+    var anTimer=setInterval(fn1,1000);
+
+
+  $("#an1SclBtn").click(function () {
+
+      var content=$(this).html();
+      if(content=="暂停"){
+          console.log(2);
+          clearInterval(anTimer);        //关闭
+
+          $(this).html("继续");
+      }else{
+
+          anTimer=setInterval(fn1,1000);     //继续， anTimer 前面一定不能加 var
+
+          $(this).html("暂停");
+      }
+  })
+
+</script>
+</body>
+</html>

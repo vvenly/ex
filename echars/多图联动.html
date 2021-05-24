@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div id="container" style="width:800px;height: 600px;"></div>
+
+
+<script src="echarts.min.js"></script>
+<script type="text/javascript">
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom);
+    option = null;
+    var xdatak=[
+        "2018/01/12",
+        "2018/02/01",
+        "2018/02/02",
+        "2018/02/12",
+        "2018/03/01",
+        "2018/03/02",
+        "2018/03/11",
+        "2018/03/12",
+        "2018/03/13",
+        "2018/03/14",
+
+        "2018/04/11",
+        "2018/04/12",
+        "2018/04/13",
+        "2018/04/14",
+        "2018/04/15",
+        "2018/04/16",
+        "2018/04/17",
+        "2018/04/18",
+        "2018/04/19",
+        "2018/04/20",
+
+
+        "2018/05/01",
+        "2018/05/02",
+        "2018/05/03",
+        "2018/05/04",
+        "2018/05/05",
+        "2018/05/06",
+        "2018/05/07",
+        "2018/05/08",
+        "2018/05/09",
+        "2018/05/11",
+    ]
+    var dataAll = [
+        [
+            ["2018/01/12", 8.04],
+            ["2018/02/01", 6.95],
+            ["2018/02/02", 7.58],
+            ["2018/02/12", 8.81],
+            ["2018/03/01", 8.33],
+            ["2018/03/02", 9.96],
+            ["2018/03/11", 7.24],
+            ["2018/03/12", 4.26],
+            ["2018/03/13", 10.84],
+            ["2018/03/14", 12],
+
+        ],
+        [
+            ["2018/04/11", 91],
+            ["2018/04/12", 98],
+            ["2018/04/13", 87],
+            ["2018/04/14", 87],
+            ["2018/04/15", 92],
+            ["2018/04/16", 80],
+            ["2018/04/17", 63],
+            ["2018/04/18", 90],
+            ["2018/04/19", 93],
+            ["2018/04/20", 76],
+
+        ],
+        [
+            ["2018/05/01", 5.0],
+            ["2018/05/02", 4.7],
+            ["2018/05/03", 12.7],
+            ["2018/05/04", 11.1],
+            ["2018/05/05", 13.1],
+            ["2018/05/06", 14.4],
+            ["2018/05/07", 14.8],
+            ["2018/05/08", 13.9],
+            ["2018/05/09", 13.5],
+            ["2018/05/11", 14.2],
+
+        ],
+
+    ];
+
+    var dataNew=[
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:39:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:40:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:41:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:42:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:43:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:44:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:45:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:46:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:47:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:48:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+        {brakeCylinder: "0",dateTime: "2019-08-12 20:49:54", equilibrium: "0", equilibriumT: "0", mileage: "388", speed: "0.0", speedLimit: "0", trainpipe: "0"},
+    ]
+
+
+    option = {
+        title: {
+            text: '多图联动',
+            x: 'center',
+            y: 0
+        },
+        grid: [ //网格
+            {x: 40, y: 40, width: "92%", height: 79 },
+            {x: 40, y:40*2+79, width:"92%", height: 100},
+            {x: 40, y: 40*3+100+79, width: "92%", height: 79},
+        ],
+        tooltip:
+            {
+                trigger: 'axis',
+            },
+        xAxis: [
+            {gridIndex: 0, type:"category",data:xdatak,show:false},
+            {gridIndex: 1, type:"category",data:xdatak,show:false},
+            {gridIndex: 2, type:"category",data:xdatak},
+        ],
+        yAxis: [
+            {gridIndex: 0,name:"风速"},
+            {gridIndex: 1 ,name:"进度"},
+            {gridIndex: 2, name:"压力"},
+        ],
+        axisPointer: {
+            link:[
+                {xAxisIndex: "all"}], //link 是一个数组，其中每一项表示一个 link group，一个 group 中的坐标轴互相联动
+            label: {
+                backgroundColor: '#777'
+            }
+        },
+        series: [
+            {
+                name: '风速',
+                type: 'line',
+                xAxisIndex: 0,
+                yAxisIndex: 0,
+                data: dataAll[0],
+            },
+            {
+                name: '进度',
+                type: 'line',
+                xAxisIndex: 1,
+                yAxisIndex: 1,
+                data: dataAll[0].concat(dataAll[1]).concat(dataAll[2]),
+            },
+            {
+                name: '压力',
+                type: 'scatter',
+                xAxisIndex: 2,
+                yAxisIndex: 2,
+                data: dataAll[0].concat(dataAll[1]).concat(dataAll[2]),
+            },
+
+        ]
+    };
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+
+
+</script>
+
+
+</body>
+</html>

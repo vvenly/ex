@@ -7,6 +7,10 @@
 <body>
 
 <script>
+    // 每次对象赋值时注意浅拷贝问题
+
+
+
     let name = 'lucy', age=18, sex2='boy';
     const obj1={name,age,sex2}
 
@@ -47,17 +51,19 @@
 
     //扩展运算符   ...只能放在最后一个，一次性获取剩余的全部
     let {a,b,...v} = {a:'aa',b:'bb',c:'cc',d:'dd',e:'ee'}
-    console.log(a,b,v)  //aa bb {c: "cc", d: "dd", e: "ee"}
+    // console.log(a,b,v)  //aa bb {c: "cc", d: "dd", e: "ee"}
     // ...
 
     let obj10 = {name:'lucu',age:18}
     let obj11 =  { ...obj10, ...{sex:'man'} }
-    console.log(1, obj11)
+    // console.log(1, obj11)
 
-    let obj11 = {name:'lucu',age:18}
-    console.log(obj10)
+    let obj12 = []
+    console.log(obj12[0]?.name)
 
     //  obj11:{name:'lucu',age:18}
+
+    
 </script>
 
 </body>

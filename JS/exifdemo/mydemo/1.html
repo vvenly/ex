@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<input type="file" id="file-input"> 选取文件
+
+<script src="../exif.js"></script>
+<script src="ex.js"></script>
+<script>
+  document.getElementById("file-input").onchange = function(e) {
+      let Orientation = ''      // 旋转角度
+        var file = e.target.files[0]
+        // EXIF.getData(file, function() {
+        // var exifData = EXIF.pretty(this);
+        // if (exifData) {
+        //     console.log(exifData);
+        // } else {
+        //     console.log("No EXIF data found in image '" + file.name + "'.");
+        // }
+    // });
+
+    EXIF.getData(file, function() {
+        // console.log(this)
+        alert(1,EXIF.pretty(this));
+        alert(2,EXIF.getTag(this));
+        alert(3,EXIF.getAllTags(this));
+        EXIF.getAllTags(this);   
+        // alert(EXIF.getTag(this, 'Orientation'));
+        Orientation = EXIF.getTag(this, 'Orientation'); 
+        // alert('Orientation:', Orientation)
+        if(Orientation == ""||Orientation == undefined||Orientation == null){
+            Orientation = 1;
+        }
+    });
+
+
+}
+
+
+
+    
+
+</script>
+</body>
+</html>

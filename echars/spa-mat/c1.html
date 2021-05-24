@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    body{
+        background: #30313F;
+    }
+    </style>
+    <script src="js/echarts.min.js"></script>
+</head>
+<body>
+
+    <div style="height:500px;">
+        <div id="ec1" style="height: 98%;padding: 15px;"></div>
+    </div>
+
+
+    <script>
+        var dom = document.getElementById("ec1");
+        var myChart = echarts.init(dom);
+        option1 = null;
+
+        option1 = {
+            tooltip: {
+                trigger: 'item',
+                formatter: " {b}：{c} "
+            },
+            color:['#FFFF00','#FFCC00','#CC9900','#996600','#993300','#CC6633'],    //环形颜色
+            series: [
+
+                {
+                    name: '来源',
+                    type: 'pie',
+                    radius: ['30%', '50%'],     //饼图大小
+                    labelLine: {
+                        normal: {
+                            length: 35,     //折线
+                            length2: 150    //文字下面的线
+                        }
+
+                    },
+                    label: {
+                        normal: {
+                            formatter: '{c|{c}}   {b|{b}}  \n\n',   //上下显示文字
+
+                            borderWidth: 20,
+                            borderRadius: 4,
+                            padding: [0, -120],     //文字和图的边距
+                            rich: {
+                                // a: {
+                                //     color: '#333',
+                                //     fontSize: 33,
+                                //     lineHeight: 20
+                                // },
+                                b: {
+                                    fontSize: 20,
+                                    lineHeight: 20,
+                                    color: '#CDCDD0'
+                                },
+                                c: {
+                                    fontSize: 30,
+                                    lineHeight: 20,
+                                    color: '#fff'
+                                }
+                            }
+                        }
+                    },
+                    data: [
+                        {value: 11, name: '数据1'},   //value ->C  name ->B
+                        {value: 15, name: '数据2'},
+                        {value: 7, name: '数据3'},
+                        {value: 4, name: '数据4'},
+                        {value: 3, name: '数据5'},
+                    ],
+                    itemStyle: {        //饼图按块划分时是否需要用线隔开，  不需要注释即可
+                        normal: {
+                            borderWidth: 2,
+                            borderColor: '#2C2D3B'
+                        }
+                    }
+                }
+            ]
+        };
+        if (option1 && typeof option1 === "object") {
+            myChart.setOption(option1, true);
+        }
+    </script>
+</body>
+</html>

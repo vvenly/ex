@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    选择图片：
+<input type="file" onchange="compressImg(this, getBase64)"> 
+
+<script>
+
+    //FileReader 实例中有四个方法来读取文件数据
+    // 1、readAsBinaryString(Blob|File)
+    // 2、readAsDataURL(Blob|File)
+    // 3、readAsText(Blob|File)
+    // 4、readAsArrayBuffer(Blob|File)
+function getBase64(v){
+    console.log(12, v)
+}
+
+function compressImg(that, callback) {
+    console.log(that.files)
+    if (window.FileReader) {
+        var reader = new FileReader();
+        reader.readAsDataURL(that.files[0]);
+        //监听文件读取结束后事件    
+        reader.onloadend = function(e) {
+            console.log(e)
+        console.log(e.target.result)        // 获取图片base64码
+        
+
+        var newImage = new Image();
+        newImage.src = e.target.result;     // 图片路径， 可以是base64
+        newImage.setAttribute("crossOrigin", 'Anonymous');  //url为外域时需要
+        var imgWidth, imgHeight, radio;
+        newImage.onload = function () {
+            imgWidth = this.width;
+            imgHeight = this.height;
+            radio = imgWidth/imgHeight
+            var canvas = document.createElement("canvas");
+            var ctx = canvas.getContext("2d");
+            canvas.width = 300;         // 宽高越小图片压缩越小
+            canvas.height = 300/radio;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(this, 0, 0, canvas.width, canvas.height);
+
+            //canvas.toDataURL(图片类型, 图片质量 0-1);  
+            var base64 = canvas.toDataURL("image/jpeg", 0.95); //压缩语句 
+            
+            if(typeof callback == 'function') {
+                callback(base64);//必须通过回调函数返回，否则无法及时拿到该值
+            }
+	    }
+        };
+    }
+}
+
+
+</script>
+</body>
+</html>

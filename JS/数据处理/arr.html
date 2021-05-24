@@ -45,9 +45,12 @@
     console.log([...arr1,...arr2])
     console.log([...arr1,...'abc'])
 
+    let arr61 =[{name:111},{name:222}]
+    console.log(22222, [...arr61,...[{name:333}]], [...arr1,...[{name:333}]])
+
     //数组填充
-    console.log([1,2,3].fill(7))    //[7, 7, 7]
-    console.log(new Array(3).fill(7))   //[7, 7, 7]
+    // console.log([1,2,3].fill(7))    //[7, 7, 7]
+    // console.log(new Array(3).fill(7))   //[7, 7, 7]
     // console.log(new Array(3).fill(['a']))   //数组里填充3个数组
     // let timeArr = ()=>{
     //   // let arr = [];
@@ -79,7 +82,6 @@
 
     console.log('fill4:',str5.fill('c',2))     //["a", "b", "c", "c", "c]       从第2个值开始后面所有的都被替换为c
 
-
     let f1 = 0;
     // console.log('fill3:', new Array(5).fill(f1++))
 
@@ -107,7 +109,8 @@
     // 语法： array.forEach(函数, index索引, 当前元素所属的数组对象), thisValue)
    arr8.forEach((x,index)=>{console.log('forEach', x,index)})
 
-    //map
+    //map   array.map(function(currentValue,index,arr), thisValue)
+    //currentValue	必须。当前元素的值 index	可选。当前元素的索引值 arr	可选。当前元素属于的数组对象
     //map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值, 方法按照原始数组元素顺序依次处理元素。
     //map() 不会对空数组进行检测。  map() 不会改变原始数组。  不能用来处理筛选等
     var numbers = [65, 44, 12, 4];
@@ -123,6 +126,28 @@
          
     }
     console.log('map2', numbers.map(testmap))
+
+
+    // e.provider.map((value) => {
+		// 				switch (value) {
+		// 					case 'alipay':
+		// 						providerList.push({
+		// 							name: '支付宝',
+		// 							id: value,
+		// 							loading: false
+		// 						});
+		// 						break;
+		// 					case 'wxpay':
+		// 						providerList.push({
+		// 							name: '微信',
+		// 							id: value,
+		// 							loading: false
+		// 						});
+		// 						break;
+		// 					default:
+		// 						break;
+		// 				}
+		// 			})
     // function myFunction() {
     //     document.getElementById("demo").innerHTML = numbers.map(multiplyArrayElement);
     // }

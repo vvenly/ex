@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+   </head>
+   <body style="height: 100%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script src="../jquery-1.12.4.min.js"></script>
+       <script src="js/echarts.min.js"></script>
+       <!--<script src="js/ecStat.min.js"></script>-->
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+
+var data1=[
+    {id: 16328574, pos_dis: 493177, speed: 0, record_time: "2019-04-02 11:37:17"},
+    {id: 16328575, pos_dis: 493177, speed: 20, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 30, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 40, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 50, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 50, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 60, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 40, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 50, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 60, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 70, record_time: "2019-04-02 11:42:13"},
+    {id: 16328575, pos_dis: 493177, speed: 30, record_time: "2019-04-02 11:42:13"},
+];
+
+var data=[["18:00",116],["18:10",129],["18:20",135],["18:30",86],["18:30",73],["18:35",85],["18:36",73],["19:37",68]];
+
+var time=[
+    "18:00",
+    "19:00",
+    "20:00",
+    "21:00",
+    "22:00",
+    "23:00",
+    "0:00",
+    "1:00",
+    "2:00",
+    "3:00",
+    "4:00",
+    "5:00",
+    "6:00",
+    "7:00",
+    "8:00",
+    "9:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
+]
+
+myChart.setOption(option = {
+    title: {
+        text: '24小时统计图'
+    },
+    // tooltip: {
+    //     trigger: 'axis'
+    // },
+    xAxis: {
+        type: 'category',
+        // offset:0,
+        // nameLocation:"start",
+        data:time
+        // data: data.map(function (item) {
+        //     console.log(item[0]);
+        //     return item[0];
+        // })
+    },
+    yAxis: {
+        splitLine: {
+            show: false
+        }
+    },
+    toolbox: {  //img
+        left: '1300',
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    visualMap: {
+        top: 10,
+        right: 0,
+        pieces: [{
+            gt: 0,
+            lte: 50,
+            color: '#096'
+        }, {
+            gt: 50,
+            lte: 100,
+            color: '#ffde33'
+        }, {
+            gt: 100,
+            lte: 150,
+            color: '#ff9933'
+        }, {
+            gt: 150,
+            lte: 200,
+            color: '#cc0033'
+        }, {
+            gt: 200,
+            lte: 300,
+            color: '#660099'
+        }, {
+            gt: 300,
+            color: '#7e0023'
+        }],
+        outOfRange: {
+            color: '#999'
+        }
+    },
+    series: {
+        name: 'Beijing AQI',
+        type: 'line',
+        data:data,
+        // data: data.map(function (item) {
+        //     return item[1];
+        // }),
+        markLine: {
+            silent: true,
+            data: [{
+                yAxis: 50
+            }, {
+                yAxis: 100
+            }, {
+                yAxis: 150
+            }, {
+                yAxis: 200
+            }, {
+                yAxis: 300
+            }]
+        }
+    }
+});
+// $.get('js/aqi-beijing.json', function (data) {
+//
+// });
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+   </body>
+</html>

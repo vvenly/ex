@@ -24,3 +24,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 <!-- vue-cli3 脚手架搭建完成后，项目目录中没有 vue.config.js 文件，需要手动创建 -->
 <!-- vue.config.js 是一个可选的配置文件，如果项目的 (和 package.json 同级的) 根目录中存在这个文件，那么它会被 @vue/cli-service 自动加载。你也可以使用 package.json 中的 vue 字段，但是注意这种写法需要你严格遵照 JSON 的格式来写。-->
+
+npm install moduleName # 安装模块到项目目录下
+ 
+npm install -g moduleName # -g 的意思是将模块安装到全局，具体安装到磁盘哪个位置，要看 npm config prefix 的位置。
+ 
+npm install -save moduleName # -save 的意思是将模块安装到项目目录下，并在package文件的dependencies节点写入依赖。
+ 
+npm install -save-dev moduleName # -save-dev 的意思是将模块安装到项目目录下，并在package文件的devDependencies节点写入依赖。

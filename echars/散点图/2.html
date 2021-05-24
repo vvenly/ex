@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body style="height: 800px;">
+
+<!--<div id="mapBg">-->
+    <!--<canvas id="bgCanvas"></canvas>-->
+<!--</div>-->
+<div id="container" style="height: 100%; background: url('../img/map1.svg')" ></div>
+
+<script src="../js/echarts.min.js"></script>
+<!--<script>-->
+    <!--var cans=document.getElementById("bgCanvas");-->
+    <!--var ctx=cans.getContext("2d");-->
+
+    <!--var image=new Image();-->
+    <!--image.src="../img/map1.svg";-->
+
+    <!--//必须在图片加载完后才能绘制-->
+    <!--image.onload=function () {-->
+        <!--ctx.drawImage(image,100,100);   //在画布X轴 坐标100  Y轴坐标100处添加一张图片-->
+
+        <!--//截取图片-->
+        <!--ctx.drawImage(image,10,10,180,170,400,100,180,180);   //从图片横坐标10px 纵坐标10px 处开始截取 裁剪出宽180，高170的图片   放在画布X轴 坐标400  Y轴坐标100处，并设置宽为180，高为180;-->
+
+    <!--};-->
+<!--</script>-->
+<script type="text/javascript">
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom);
+    var app = {};
+    option = null;
+    option = {
+        xAxis: {},
+        yAxis: {},
+        dataZoom: [{
+            type: 'inside'
+        }, {
+            type: 'slider'
+        }],
+        series: [{
+            symbolSize: 20,
+            data: [
+                [10.0, 8.04],
+                [8.0, 6.95],
+                [13.0, 7.58],
+                [9.0, 8.81],
+                [11.0, 8.33],
+                [14.0, 9.96],
+                [6.0, 7.24],
+                [4.0, 4.26],
+                [12.0, 10.84],
+                [7.0, 4.82],
+                [5.0, 5.68]
+            ],
+            type: 'scatter'
+        }]
+    };
+    ;
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+
+
+    var cans=document.getElementById("bgCanvas");
+    var ctx=cans.getContext("2d");
+
+    var image=new Image();
+    image.src="../img/map1.svg";
+
+    //必须在图片加载完后才能绘制
+    image.onload=function () {
+        ctx.drawImage(image,100,100);   //在画布X轴 坐标100  Y轴坐标100处添加一张图片
+
+        //截取图片
+        ctx.drawImage(image,10,10,180,170,400,100,180,180);   //从图片横坐标10px 纵坐标10px 处开始截取 裁剪出宽180，高170的图片   放在画布X轴 坐标400  Y轴坐标100处，并设置宽为180，高为180;
+
+    };
+</script>
+</body>
+</html>

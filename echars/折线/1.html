@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    //关于折线图的  数据折线显示配置： https://echarts.baidu.com/option.html#series-line
+    option = {
+        visualMap:{     //视觉映射  渐变过渡等效果
+            show: false,
+            type: 'continuous',
+            seriesIndex: 0,
+            min: 0,     //控制最小的数据显示色
+            max: 60,    //控制最大的数据显示色
+            // color:["#4C8400","#80BB0D","#B4DA20","#B6DA8C"], //折线渐变色 ， 由大到小排序  ECharts2的用法，ECharts3用inRange，如下
+            inRange: {
+                color: ["#4C8400","#80BB0D","#B4DA20","#B6DA8C"],
+                symbolSize: [30, 100]   //折线点的过渡大小， 从小到大
+            }
+
+        },
+        xAxis: {
+            data: ["a","b","c","d","e"],
+            axisLine:{
+                lineStyle:{
+                    color:"#D8E3EA",
+                }
+            },
+            axisLabel:{
+                interval:55 ,
+                fontSize:12,
+                color:"#fff",
+            },
+            splitLine: {show: false}
+        },
+        yAxis: {
+            splitLine: {
+                show: true,
+                lineStyle:{
+                    color:"#A5C1D8"
+                }
+            },
+            axisLine:{
+                lineStyle:{
+                    color:"#D8E3EA",
+                }
+            },
+            axisLabel:{
+                interval:55 ,
+                fontSize:14,
+                color:"#fff",
+            },
+        },
+        series: {
+            type: 'line',
+            showSymbol: false,
+            data: [1,2,3,4,5,6,7,8],
+            symbol: 'circle',   //折线点的图形
+            symbolSize: 10,     //图形大小
+            itemStyle:{     //图形点和折线的颜色， 可以是单一的，也可以是渐变的
+                // color:"#f00"  //单一
+                color:{     //渐变  属性值 同CSS
+                    type:"linear",
+                    x: 0,
+                    y: 0,
+                    x2: 0,
+                    y2: 1,
+                    colorStops: [{
+                        offset: 0, color: 'red' // 0% 处的颜色
+                    }, {
+                        offset: 1, color: 'blue' // 100% 处的颜色
+                    }],
+                }
+            },
+            lineStyle:{     //单独配置折线图线条的显示效果， 配置基本和 itemStyle差不多
+                color:"#f0f",        //颜色
+                width:5,    //线宽
+            },
+            areaStyle:{   //折线下面区域块的样式
+                color:"#fff"
+            }
+        },
+    };
+</script>
+</body>
+</html>

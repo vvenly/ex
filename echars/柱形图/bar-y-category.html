@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+   <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0;background: #2d4877">
+   <div id="container" style="width:800px;height: 600px;margin: 100px auto;"></div>
+   <script type="text/javascript" src="../echarts.min.js"></script>
+
+   <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        option = null;
+        option = {
+            title: {            //图表标题
+                text: '世界人口总量',
+                textStyle:{
+                    color:'#ddd',        //颜色
+                    fontSize:16,     //大小
+                    fontWeight:'normal',    //粗细
+                    // fontFamily:'Microsoft yahei',   //字体
+                },
+            },
+            tooltip: {   //悬浮框  show 的默认值是true
+                show:false,
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['2011年', '2012年']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                axisLabel: {    //X轴文字样式    详情：https://echarts.baidu.com/option.html#xAxis.axisLabel
+                    show: true,
+                    textStyle: {
+                        color: '#faf',
+                        fontSize:'16'
+                    }
+                },
+                axisLine:{      //X轴坐标轴的样式    详情：https://echarts.baidu.com/option.html#xAxis.axisLine
+                    lineStyle:{
+                        color:'#1283C4',
+                        width:2,
+                    }
+                },
+                // boundaryGap: [0, 0.01]
+            },
+            yAxis: {
+                type: 'category',
+                axisLabel: {    //Y轴文字样式
+                    show: true,
+                    textStyle: {
+                        color: '#aff'
+                    }
+                },
+                axisLine:{      //Y轴坐标轴的样式
+                    lineStyle:{
+                        color:'#fff',
+                        width:2,
+                    }
+                },
+                data: ['巴西','印尼','美国','印度','中国','世界人口(万)']
+            },
+            series: [
+                {
+                    name: '2019年',
+                    type: 'bar',        //跟柱形图有关的大部分都在这里查： https://echarts.baidu.com/option.html#series-bar.type
+                    barWidth : 30,  //柱行的宽度!!!
+                    itemStyle:{ //只列举几个常用的，详细的参考https://echarts.baidu.com/option.html#series-bar.itemStyle
+                        normal:{
+                            color:"#12C48B",    //柱行颜色
+                            borderColor:"#F5460F",  //柱行边框颜色，
+                            borderWidth:2,
+                            label:{    //数值是否直接显示在表格中， 这个要注意版本问题，老一点的版本写在这里，
+                                show:true,
+                            }
+                        }
+                    },
+                    data: [18203, 23489, 29034, 104970, 131744, 630230],
+                    // label:{       //数值是否直接显示在表格中， 这个要注意版本问题，新的版本写在这里，
+                    //     show:true,
+                    //     // position:[100, 100],
+                    //     // // position:"right",
+                    //     // fontWeight:"bold",
+                    //     // fontSize:25,
+                    //     // color:"#fff"
+                    // }
+                }
+            ]
+        };
+
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+   </script>
+</body>
+</html>

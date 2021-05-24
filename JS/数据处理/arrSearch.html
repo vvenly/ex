@@ -12,9 +12,37 @@
     let arr2 = [{id:20001,name:'lucy1'},{id:20033,name:'lucy2'},{id:20045,name:'lucy3'}] 
    
     // element => element > 10
-    console.log(arr2.filter(v=> v.id===20001 ).length)   
+    // console.log(arr2.filter(v=> v.id===21045 ).length)   
+
+    //  arr2.filter((v,i)=> { 
+    //     console.log(i)
+    //     if(v.id === 20033){ return i } })
+
+    console.log(77, arr2.map(a => a.id).indexOf(20045))     //存在返回所在的下标，不存在返回-1；
     
-    //存在返回所在的下标，不存在返回-1；
+    // 1、判断数组中是否每个对象都不包含sex这个字段
+
+    let arr3 = [ { name: 'Tom', age: 22 }, { name: 'Sun', age: 23 }, { name: 'Mack', age: 25, sex: '男' }, ]
+    arr3.every(item => !('sex' in item))
+ 
+
+   // js实现查找数组中对象的属性值是否存在
+
+
+var arrList = [ { "rollnumber": 1, "name": "dj", "subject": "physics" }, { "rollnumber": 2, "name": "tanmay", "subject": "biology" }, { "rollnumber": 3, "name": "amit", "subject": "chemistry" } ];
+  function arrDemo(arr, key, value) {
+    for (var i = 0; i < arr.length; i++) {
+        // 遍历每个数组的对象元素的某个key值和value进行对比，相等返回当前元素下标，不等的话，返回null
+      if (arr[i][key] == value) {
+        return i;
+      }
+    }
+    return null;
+  }
+  var index = arrDemo(arrList, "rollnumber", 1);
+  console.log(index);
+//  返回结果： 0
+
 </script>
 </body>
 </html>
