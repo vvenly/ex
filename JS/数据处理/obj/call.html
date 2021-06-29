@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>call</title>
+</head>
+<body>
+
+
+
+<script>
+
+var name="lucy", age= 18;
+var obj = {
+    title: "devpoint",
+    id: 123,
+    objAge:this.age,        // 指向window
+    toString() {
+        // 这里的this指向 obj， 所以没有age, 
+        console.log(this.title +' , '+ this.age)
+    },
+    argFn(a,b,c,d){
+        console.log('argFn', a,b,c,d)
+    }
+};
+
+console.log(obj.objAge)
+obj.toString()
+
+var fav = 'fav'
+function show(){
+    console.log(this.fav) // 指向window
+}
+show()
+
+// call()、apply()、bind() 都是用来重定义 this 这个对象的！
+var d = {
+    title:'dd', age:88
+}
+
+// 将this的指向 指到 d上面
+obj.toString.call(d)
+obj.toString.apply(d)
+
+//bind 返回的是一个新的函数，必须加上() 调用才会执行
+obj.toString.bind(d)()
+
+// 传参  --- 参数不限定数据类型
+
+//call 的参数是直接放进去的，第一个参数为要指向的对象，后面参数全都用逗号分隔，
+obj.argFn.call(d, 'call1','call2','call3','call4' )
+
+// apply 的所有参数都必须放在一个数组里面传进去
+obj.argFn.apply(d, ['apply1','apply2','apply3','apply4'])
+
+//bind 除了返回是函数以外，它 的参数和 call 一样
+obj.argFn.bind(d, 'bind1','bind2','bind3','bind4')()
+
+</script>
+
+
+</body>
+</html>

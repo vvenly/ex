@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
+    <style>
+        #d1{
+            position: relative;
+            display: block;
+            width: 200px;
+            margin: 50px auto;
+        }
+    </style>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+
+<div id="d1">
+    <fieldset>
+
+        <div class="control-group">
+            <label class="control-label">年月日</label>
+            <!--各自通过class名查找下面对应的JS，  这里是form_datetime-->
+            <div class="controls input-append date form_datetime" data-date="" data-date-format="yyyy-MM-dd" data-link-field="dtp_input1">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <input type="hidden" id="dtp_input1" value="" /><br/>
+        </div>
+
+
+        <div class="control-group">
+            <label class="control-label">月</label>
+            <!--各自通过class名查找下面对应的JS，  这里是form_date-->
+            <div class="controls input-append date form_date" data-date="" data-date-format="yyyy-MM" data-link-field="dtp_input2" data-link-format="yyyy-MM">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <input type="hidden" id="dtp_input2" value="" /><br/>
+        </div>
+
+
+        <div class="control-group">
+            <label class="control-label">年月日时分秒1</label>
+            <!--各自通过class名查找下面对应的JS，  这里是form_time-->
+            <!--<div class="controls input-append date form_time" data-date="" data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="dtp_input3">-->
+            <div class="controls input-append date form_time" data-date="" data-date-format="yyyy-mm-dd hh:ii:ss" data-link-field="dtp_input3">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <input type="hidden" id="dtp_input3" value="" /><br/>
+        </div>
+
+
+        <div class="control-group">
+            <label class="control-label">年月日时分</label>
+            <!--各自通过class名查找下面对应的JS，  这里是form_time-->
+            <div class="controls input-append date form_time" data-date="" data-date-format="yyyy-mm-dd hh:ii" data-link-field="dtp_inputq">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <input type="hidden" id="dtp_inputq" value="" /><br/>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">年月日时分</label>
+            <input size="16" type="text" value="" class="form_time"  readonly>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">时分</label>
+            <!--各自通过class名查找下面对应的JS，  这里是form_time-->
+            <div class="controls input-append date form_hour" data-link-field="dtp_input4">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+            <input type="hidden" id="dtp_input4" value="" /><br/>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">24小时 ——年月日时分</label>
+            <div class="controls input-append date time_new">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+<script type="text/javascript">
+
+    //年月日
+    $('.form_datetime').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+
+    //月
+    $('.form_date').datetimepicker({
+        format: 'yyyy-mm',
+        autoclose: true,
+        todayBtn: true,
+        startView: 'year',
+        minView:'year',
+        maxView:'decade',
+        language:  'zh-CN'
+    });
+
+    //年月日时分秒
+    $('.form_time').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        maxView:4,
+        showMeridian: 1
+    });
+
+    //时分
+    $('.form_hour').datetimepicker({
+        format: 'hh:ii',
+        autoclose: true,
+        language: 'zh-CN',
+        minuteStep: 5,
+        startView:1,
+        startDate:"2018-12-25"
+    });
+
+    //24小时 ——年月日时分
+    $(".time_new").datetimepicker({
+        format: "yyyy-mm-dd hh:ii",
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        maxView:4,
+    });
+
+    // $('.time_new').datetimepicker({
+    //     format: "dd MM yyyy - hh:ii",
+    //     language:  'zh-CN',
+    //     weekStart: 1,
+    //     todayBtn:  1,
+    //     autoclose: 1,
+    //     todayHighlight: 1,
+    //     startView: 2,
+    //     forceParse: 0,
+    //     maxView:4,
+    //     showMeridian: 1
+    // });
+
+    // dateTimePicker.Format = DateTimePickerFormat.Custom;
+    // dateTimePicker.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" media="screen">
+    <style>
+        #d1{
+            position: relative;
+            display: block;
+            width: 200px;
+            margin: 50px auto;
+        }
+    </style>
+
+    <script src="js/jQuery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/new-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+
+<div id="d1">
+    <fieldset>
+
+        <div class="control-group">
+            <label class="control-label">年月日</label>
+            <!--各自通过class名查找下面对应的JS，  这里是form_datetime-->
+            <div class="controls input-append date form_datetime">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">24小时 ——年月日时分</label>
+            <div class="controls input-append date time_new">
+                <input size="16" type="text" value="" readonly>
+                <span class="add-on"><i class="icon-remove"></i></span>
+                <span class="add-on"><i class="icon-th"></i></span>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+
+<script type="text/javascript">
+    $(".time_new").datetimepicker({
+        format: "yyyy-mm-dd hh:ii",
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        maxView:4,
+    });
+</script>
+
+
+<script type="text/javascript">
+
+    //年月日
+    $('.form_datetime').datetimepicker({
+        format: "yyyy-MM-dd",
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+
+    //月
+    $('.form_date').datetimepicker({
+        format: 'yyyy-mm',
+        autoclose: true,
+        todayBtn: true,
+        startView: 'year',
+        minView:'year',
+        maxView:'decade',
+        language:  'zh-CN'
+    });
+
+    //年月日时分秒
+    $('.form_time').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        maxView:4,
+        showMeridian: 1
+    });
+
+    $('.form_hour').datetimepicker({
+        format: 'hh:ii',
+        autoclose: true,
+        language: 'zh-CN',
+        minuteStep: 5,
+        startView:1,
+        startDate:"2018-12-25"
+    });
+
+    // $('.time_new').datetimepicker({
+    //     format: "dd MM yyyy - hh:ii",
+    //     language:  'zh-CN',
+    //     weekStart: 1,
+    //     todayBtn:  1,
+    //     autoclose: 1,
+    //     todayHighlight: 1,
+    //     startView: 2,
+    //     forceParse: 0,
+    //     maxView:4,
+    //     showMeridian: 1
+    // });
+
+    // dateTimePicker.Format = DateTimePickerFormat.Custom;
+    // dateTimePicker.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrapValidator.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.12.4.min.js"></script>
+    <!--<script src="bootstrap.js"></script>-->
+    <!--<script src="bootstrapValidator.js"></script>-->
+</head>
+<body>
+<iframe hidden id="exec_target" name="exec_target"></iframe>
+
+<form id="company_modal" target="exec_target" class="validatorTest" style="width: 600px;">
+    <div class="modal-header">
+        <h3 class="modal-title">添加用户信息</h3>
+    </div>
+
+    <div class="modal-body m_bd1">
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="form-group">
+                    <label>
+                        <span class="label-title1"><b class="mustWord2">*</b> 姓名</span>
+                        <input class="form-control" data-ky="name" name="name" type="text" id="add_name" maxlength="30" autocomplete="off"/>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="form-group">
+                    <label>
+                        <span class="label-title1"><b class="mustWord2">*</b> 密码</span>
+                        <input class="form-control" data-ky="password" name="password" type="password" id="add_password" maxlength="20" autocomplete="off"/>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="form-group">
+                    <label>
+                        <span class="label-title1"><b class="mustWord2">*</b> 手机</span>
+                        <input class="form-control" data-ky="phone" name="phone" type="text" maxlength="11" autocomplete="off"/>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="form-group">
+                    <label>
+                        <span class="label-title1"><b class="mustWord2">*</b> 选项</span>
+                        <select class="form-control" data-ky="num" name="num">
+                            <option value="1">11</option>
+                            <option value="2">22</option>
+                            <option value="3">33</option>
+                        </select>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="form-group">
+                    <label class='labelRadio3'>
+                        <input type='radio' value='1' data-ky="type"  checked name="type">
+                        <span class='inputStyle3'></span> 牵引
+                    </label>
+
+                    <label class='labelRadio3'>
+                        <input type='radio' value="2"  data-ky="type" name="type">
+                        <span class='inputStyle3'></span> 推进
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <!--<input type="text"   name="inn">-->
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="form-group">
+                    <label class='labelRadio3'>
+                        <input type='checkbox' value='1' data-ky="inn"  name="inn">
+                        <span class='inputStyle3'></span> 牵引
+                    </label>
+
+                    <label class='labelRadio3'>
+                        <input type='checkbox' value="2"  data-ky="inn" name="inn">
+                        <span class='inputStyle3'></span> 推进
+                    </label>
+
+                    <label class='labelRadio3'>
+                        <input type='checkbox' value="3"  data-ky="inn" name="inn">
+                        <span class='inputStyle3'></span> 推进
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--<div class="row">-->
+            <!--<div class="col-xs-10 col-xs-offset-1">-->
+                <!--<div class="form-group">-->
+                    <!--<label class="onOffParent">-->
+                        <!--<span class="label-title1">超级管理员</span>-->
+                        <!--<div class="onOffLabel">-->
+                            <!--<input type="checkbox" class="btnOnOff" id="add_manager">-->
+                            <!--<span class="circle"></span>-->
+                        <!--</div>-->
+                    <!--</label>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <p id="add_message" class="sub_message"></p>
+    </div>
+    <div class="modal-footer">
+        <p class="remarks">备注 ： <b class="mustWord2">*</b> 为必填项</p>
+
+        <!--<button type="button" class="mine-btn btn-blue" onclick="test('data-ky')">确定</button>-->
+        <!--<button type="button" class="mine-btn btn-blue" onclick="test2('company_modal','inn')">确定</button>-->
+        <button type="button" class="mine-btn btn-blue" onclick="serTe();">确定</button>
+
+    </div>
+</form>
+
+
+<script>
+
+    // console.log(serialize);
+
+
+    function test2(id,rdu){
+        var FS=document.getElementById(id).querySelectorAll('[data-ky]'),obj={};
+
+        var length=FS.length;
+        console.log(FS);
+
+        var chk=false;
+        for(var i=0;i<length;i++){
+            // chk=
+            console.log(FS[i].attributes.name.value);
+
+            obj[FS[i].attributes["data-ky"].value]=FS[i].value;
+
+
+
+            // if(FS[i].value===""){       //验证，可不要
+            //     console.log("必填项不能为空");
+            // }
+        }
+
+        if(rdu){
+            console.log($('input:checkbox[name="'+rdu+'"]:checked').val());
+            obj[rdu]=$('input:radio[name="'+rdu+'"]:checked').val();
+        }
+
+
+        console.log(obj);
+
+    }
+
+
+    //表单数据转json
+    $.fn.serializeObject = function () {
+        var o = {};
+        var a = this.serializeArray();
+
+        console.log(a);
+
+        $.each(a, function () {
+
+
+            if (o[this.name]) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        // return o;
+    };
+
+
+    function serTe(){
+        console.log($("#company_modal").serializeObject());
+    }
+
+
+
+
+
+
+
+
+    function test(k){
+        var FS=document.querySelectorAll('['+k+']'),obj={};
+        console.log(document.getElementById("company_modal").querySelectorAll('['+k+']'));
+        for(var i=0;i<FS.length;i++){
+            obj[FS[i].attributes[k].value]=FS[i].value;
+        }
+
+        console.log(obj);
+
+    }
+
+</script>
+</body>
+</html>

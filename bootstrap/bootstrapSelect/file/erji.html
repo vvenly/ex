@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--bootstrap、font、bootstrap-select 合到一起了-->
+    <link rel="stylesheet" href="boot-font.css">
+    <script src="../../jquery-1.12.4.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap-select.js"></script>
+</head>
+<body>
+<br><br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <select id="1" class="selectpicker">
+                <option value="1">陕西省</option>
+                <option value="2">浙江省</option>
+            </select>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+                            <!--多选的时候关键就是多加个   multiple-->
+            <select id="test1" class="selectpicker" multiple>
+                <option value="1">陕西省</option>
+                <option value="2">浙江省</option>
+                <option value="3">江苏省</option>
+                <option value="4">安徽省</option>
+                <option value="5">吉林省</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var firstData=[
+        {id: 1, name: "城市1",belong:1}, {id: 2, name: "城市2",belong:1}, {id: 3, name: "城市3",belong:1},
+        {id: 4, name: "城市4",belong:2}, {id: 5, name: "城市5",belong:2}, {id: 6, name: "城市6",belong:2}
+        ];
+
+    function selTest(v) {
+        $.ajax({
+            // async:false,             //根据需求，选择同步或异步获取数据
+            type: "post",
+            url: url,
+            dataType: "json",
+            data:{"project_id": currentProId},
+            success: function (json) {
+                console.log(json);
+                var Data=json.data,length=Data.length;
+                if(length>0){
+                    var html = "<option value=''>请选择</option>";
+                    for (var i = 0; i < length; i++) {
+                        html += "<option value='" +Data[i].id+ "'>" +Data[i].title+"</option>";
+                    }
+                    $(ele).html(html);
+                }else{
+                    $(ele).html("<option value=''>暂无</option>");
+                }
+
+                $(ele).selectpicker('refresh');     //刷新
+
+                if(v>0){
+                    $(ele).selectpicker('val',v);        //如果需要同时设置显示指定的val
+                }
+            },
+            error: function () {
+                console.log("请求失败");
+            }
+        });
+    }
+
+    //多选时收集选中项
+    function selectedTrain(id1){
+        var str=[];
+        var obj = document.getElementById(id1);
+        for(var i=0;i<obj.options.length;i++){
+            if(obj.options[i].selected){
+                str.push(obj.options[i].value);
+            }
+        }
+
+        return str;
+    }
+
+    $(function(){
+        $('.testForm')
+            .bootstrapValidator({
+                message: 'This value is not valid',
+                excluded: [":disabled"],
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    bind:{
+                        validators: {
+                            notEmpty: {
+                                message: '请选择'
+                            },
+                            callback:{      //多选验证用
+                                message:'请选择',
+                                callback:function (value,validator) {
+                                    if(value==""){
+                                        return false;
+                                    }else{
+                                        return true;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+            .on('success.form.bv', function(e) {
+                e.preventDefault();
+            });
+    });
+
+
+</script>
+</body>
+</html>

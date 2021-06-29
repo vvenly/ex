@@ -1,0 +1,1052 @@
+body {
+    font-family: '微软雅黑', sans-serif;
+    font-size:14px;
+    margin:0;padding:0;
+    height: 100%;
+    line-height: 20px;
+    min-height: 100%;
+    z-index: -2;
+    background:#fff;
+    color:#586267;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+input[type="number"]{
+    -moz-appearance:textfield;
+}
+hr{height:3px;margin:0;border:0;background:#58BC58}
+.lf{float: left}
+.rt{float: right}
+.clear{clear: both}
+.margin10{margin:10px 0}
+.colorF00{
+    color:#f00;
+}
+.disNone{display: none;}
+
+textarea{
+    resize: none;
+}
+
+.inBlock{
+    display: inline-block;
+}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    min-width: 1250px;
+}
+
+#page-wrapper {
+    padding: 10px;
+    height:92%;
+    /*background: #ff;*/
+    border-left: 2px solid #ededed;
+    border-radius: 3px;
+}
+
+#page-inner {
+    width: 100%;
+    padding: 10px;
+    min-height: 800px;
+}
+
+/*后台表格不需要边框*/
+#page-inner>.panel-default{
+    border: 0;}
+
+.navbar-side {
+    z-index: 1;
+    position: absolute;
+    top:60px;
+    left:0;
+    width: 160px;
+    height:100%;
+}
+
+button.close{
+    color: #fff;
+    opacity: 1;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.page-wrapper-cls {
+    margin: 0 0 0 160px;
+}
+
+#accordion li>a span.glyphicon{
+    float: right;
+    font-size: 12px;
+}
+
+#accordion li>a{
+    color: #282828;
+}
+
+#main_top{
+    margin-bottom: 0;
+    height: 50px;
+    background: #008AEC;
+    color: #fff;
+}
+
+#main_top h3{
+    font-size: 22px;
+    margin: 13px;
+}
+
+#main_top ul a{
+    color:#fff;
+}
+
+#mainUserUl{
+    margin-right: 0.5rem;
+}
+
+#mainUserUl>li>a{
+    background: #008aec;
+}
+
+#mainUserUl a:hover, #mainUserUl a:focus{
+    background-color: #2eb0fc;
+    color: #fff;
+}
+
+#mainUserUl .open>a:hover, #mainUserUl .open>a:focus{
+    background-color: #2eb0fc;
+}
+
+#mainUserUl ul{
+    top:80%;
+}
+
+#mainUserUl ul a{
+    color: #3d3d3d;
+}
+
+#main_left{
+    background: #fafafa;
+    font-size: 15px;
+}
+
+#main_left li>.actives{
+    color: #fff;
+    background: #0084EB;
+}
+
+#main_left .in{
+    background: #fff;
+}
+
+#title-list{
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ededed;
+}
+
+#title-list:after,#inter-list:after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+#inter-list{
+    position: relative;
+    margin: -20px 0 0;
+}
+
+#title-list ul>li>a{
+    padding: 12px 20px;
+    margin: 0 15px;
+    font-size: 17px;
+}
+
+#inter-list ul>li>a{
+    padding: 7px 15px;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+#inter-list li>.actives{
+    color: #0790f0;
+    background: #e5eff0;
+    border-radius: 5px;
+}
+
+#title-list li>.actives{
+    color: #0084EB;
+    border-bottom: 3px solid #0084EB;
+}
+
+.mine-btn{
+    display: inline-block;
+    padding: 6px 18px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+}
+
+.backA{
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    font-size: 16px;
+}
+
+.mine-btn:disabled{
+    opacity: 0.5;
+}
+
+.ta-btn, .toFront .btn ,.new-add{
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.btn-org,.new-add{
+    color: #fff;
+    background-color: #EF6C00;
+    border-color: #E56A00;
+}
+
+.btn-light-blue{
+    color: #fff;
+    /*background-color: #27BDFF;*/
+    background-color: #0597ff;
+    border-color: #6AD1FF;
+}
+
+.btn-blue{
+    color: #fff;
+    background-color: #008AEC;
+    border-color: #0095FF;
+}
+
+.btn-update, .toFront .btn-primary{
+    color: #03AAF7;
+    border-color: #03AAF7;
+    background: #fff;
+}
+
+.btn-look{
+    color: #0999dd;
+    border-color: #0069c3;
+}
+
+.btn-del, .toFront .btn-danger{
+    color: #F53E3E;
+    border-color: #F53E3E;
+    background: #fff;
+}
+
+.btn-so{
+    color: #EF6C00;
+    border-color: #E56A00;
+}
+
+.btn-no{
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.btn-set,.toFront .btn-success{
+    color: #6fc06f;
+    border-color: #6fc06f;
+}
+
+/****选取颜色****/
+
+.picker3,#picker4 {
+    padding:0;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-right:25px solid #ccc;
+}
+
+.picker3[readonly],#picker4[readonly]{background: #fff;.m_bd1 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn)}
+.picker3:hover{
+    cursor: pointer;
+}
+
+div[id^="collorpicker_"]{
+    z-index: 1050;
+}
+
+.table-responsive>table>thead>tr th:first-child,.table-responsive>table>tbody>tr td:first-child{
+    padding-left: 20px;
+}
+
+.modal-header{
+    background: #008AEC;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-header h4{
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+
+.m_bd1 label,.m_bd2 label{
+    display: block;
+    font-size: 15px;
+}
+
+.m_bd1 .form-group{
+    margin-bottom: 20px;
+}
+
+.m_bd1 .help-block{
+    position: absolute;
+    top: 30px;
+    left: 25%;
+}
+
+.m_bd2 .form-group small.help-block{
+    position: absolute;
+    top: 26px;
+    left: 28.5%;
+}
+
+.videoFront div.form-group small.help-block{
+    left: 44%;
+}
+
+.label-title1{
+    display: inline-block;
+    width: 22%;
+    text-align: right;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.label-title2{
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    margin-right: 2%;
+}
+
+.m_bd1 label .form-control{
+    display: inline-block;
+    width: 75%;
+}
+
+.m_bd1 label button.form-control{
+    width: 100%;
+}
+
+.m_bd1 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 74.5%;
+}
+
+.m_bd2 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 70%;
+}
+
+.m_bd2 label input.form-control{
+    display: inline-block;
+    width: 70%;
+}
+
+.m_bd2 .form-control-feedback{
+    right:10px;
+}
+
+.mustWord2 {
+    vertical-align: middle;
+    color: red;
+}
+
+.remarks{
+    color: #a4a4a4;
+    float: left;
+}
+
+#search_titleRight{float: right;}
+
+#search_titleRight .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 185px;
+    margin-right: 8px;
+}
+.onlySearch{position: relative;}
+.onlySearch input{
+    border-color: #008AEC;
+    margin-right: 50px;
+}
+
+.onlySearch button{
+    position: absolute;
+    top:0;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+    padding: 7px 12px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td,.table>thead>tr>th{
+    border: 1px solid #ddd;
+    padding:12px 0;
+    text-align: center;
+}
+
+.table{
+    font-size: 15px;
+}
+
+.table tbody{
+    font-size: 14px;
+}
+
+.table>thead>tr>th{
+    vertical-align: top;
+}
+
+@media (max-width: 1610px) {
+    .table,.ta-btn,.table tbody{
+        font-size: 12px;
+    }
+
+    #title-list ul>li>a{
+        padding: 12px 15px;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td, .table>thead>tr>th{
+        padding: 5px;
+    }
+
+    .table{
+        font-size: 13px;
+    }
+
+    .table tbody{
+        font-size: 12px;
+    }
+}
+
+.onOffParent{
+    width: 45%;
+}
+.col-xs-6 .onOffParent{
+    width: 50%;
+}
+
+.onOffParent>span{
+    width: 49%;
+}
+
+.onOffLabel{
+    display: inline-block;
+    position: relative;
+    top:0;
+    left:25px;
+    width:65px !important;
+    height:25px;
+    background: #CBCBCB;
+    border-radius: 30px;
+    transition: all 0.3s;
+    margin: 0 !important;
+}
+
+td .onOffLabel{
+    left:0;
+}
+
+.btnOn {
+    position: absolute;
+    top:5px;
+    left:5px;
+    color: #fff;
+    text-indent: 10px;
+}
+.btnOff {
+    position: absolute;
+    top:5px;
+    right:10px;
+    color: #000;
+    text-indent: 34px;
+}
+
+.btnOnOff{
+    opacity: 0;
+}
+
+.circle{
+    position: absolute;
+    top:1px;
+    left: 1px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.btnOnOff:checked + .circle{
+    left:41px;
+}
+
+.onOffBg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+
+.sub_message{
+    text-align: center;
+    color: #e4393c;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#maillist{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left:26%;
+    width: 242px;
+    z-index: 999;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#maillist ul{
+    list-style: none;
+    padding: 0;
+}
+
+#maillist ul li{
+    color:#666;
+    cursor:pointer;
+    padding: 5px;
+}
+
+#maillist ul li:hover{
+    color:#fff;
+    background: #0a8ed3;
+}
+
+.emailList{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left:26%;
+    width: 242px;
+    z-index: 999;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.emailList ul{
+    list-style: none;
+    padding: 0;
+}
+
+.emailList ul li{
+    color:#666;
+    cursor:pointer;
+    padding: 5px;
+}
+
+.emailList ul li:hover{
+    color:#fff;
+    background: #0a8ed3;
+}
+
+
+.m_body_first_div {
+    width: 95%;
+    min-height: 280px;
+    padding: 5px 10px;
+    margin: 15px auto 5px;
+    border: 1px solid #ccc;
+}
+
+.half-block{
+    display: inline-block;
+    width: 48%;
+}
+
+#showCol3 .half-block{
+    width: 33%;
+}
+
+.half-block label{
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding: 5px 12px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.half-block label .inputStyle2{
+    top: 12px;
+    left: 8px;
+}
+
+.half-block label:hover{
+    border: 1px solid #0a8ed3;
+}
+
+.half-half{
+    display: inline-block;
+    width: 33%;
+}
+
+.half-half label{
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding: 5px 12px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.half-half .inputStatus2{
+    margin-left: -5px !important;
+}
+
+.half-half .inputStyle2 {
+    top: 12px;
+    left: 0;
+}
+
+.pad530{
+    padding: 5px 10px;
+    display: inline-block;
+    min-width: 32%;
+}
+
+.selectpicker + i{
+    display: none !important;
+}
+
+.inputStatus2 ,.inputStatus3{
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+.inputStyle2 {
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    border: 1px solid #666;
+    padding:10px;
+}
+.inputStatus2:checked+.inputStyle2 {
+    background: url("../img/Bg3.png") no-repeat 0 0;
+    border: 0;
+}
+
+.inputStatus2:checked+.radioSpan{
+    background: url("../img/Bg3.png") no-repeat -24px 0;
+    border: 0;
+    padding:9px;
+}
+
+.inputStyle3{
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #4c5356;
+}
+
+.inputStatus3:checked+.inputStyle3{
+    top: 17px;
+    border-color: #4c5356 transparent transparent transparent;
+}
+
+.radioSpan{
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding:8px;
+}
+
+.radioLabel{
+    position:  relative;
+    display:  inline-block !important;
+    width: 32% !important;
+}
+
+.date .form-control[disabled],.date  .form-control[readonly]{
+    background: #fff;
+}
+
+.modal .mileageSet{
+    display: inline-block;
+    width: 75%;
+}
+.modal .m_bd2 .mileageSet{
+    width: 70%;
+}
+
+.modal .mileageSet .form-control{
+    display: inline-block;
+    width: 41.2%;
+    text-align: center;
+}
+
+.modal .m_bd2 .mileageSet .form-control{
+    width: 38.2%;
+}
+
+.modal .mileageSet b:first-child{
+    padding: 0 7px 0 0;
+}
+
+.modal .mileageSet b.plusIcon{
+    padding: 0 3px;
+    font-size: 18px;
+}
+
+#track_title{
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#track_title>li{
+    float: none;
+    display: inline-block;
+}
+
+.mileageShow{
+    position: absolute;
+    top: 33px;
+    right: 7%;
+    color: #0c7ed0;
+}
+
+.btn-new{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    background: #fff;
+    color: #333;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+}
+
+.btn-new:hover{
+    background: #129086;
+    color: #fff;
+}
+
+.m_bd2 .speSel1 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 60%;
+}
+
+.check40{
+    position: relative;
+    display: inline-block !important;
+    width: 46%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+    background-color: #ffa;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background-color: #7C9DB2;
+    box-shadow: inset 0 0 3px #7C9DB2;
+}
+
+#track_title{
+    scrollbar-arrow-color: #7C9DB2;
+    scrollbar-face-color: #7C9DB2;
+    scrollbar-highlight-color: #00f;
+    scrollbar-shadow-color: #7C9DB2;
+    scrollbar-track-color: #ffa;
+}
+
+.m_bd2 .cyy_mileageSet .form-control-feedback{
+    right: 18px;!important;
+}
+
+#result_title{
+    text-align: center;
+    border-top: 1px solid #1fade4;
+}
+
+#result_title li{
+    display: inline-block;
+}
+
+#result_title li a.actives{
+    background: #eee;
+    color: #008aec;
+    font-weight: bold;
+}
+
+.imgBody img{
+    width: 50px;
+    height:49px;
+}
+
+.imgBody td{
+    vertical-align: middle !important;
+}
+
+.videoFront>div.row>div.col-xs-6:first-child{
+    padding: 0 !important;
+}
+
+.videoFront>div.row>div.col-xs-6:first-child span.label-title2{
+    width: 41%;
+}
+
+.videoFront>div.row>div.col-xs-6:first-child input{
+    width: 55%;
+}
+
+.imgShow{
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: -5px;
+    width: 50px;
+    height: 50px;
+}
+
+#img_show1{
+    display: none;
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height:100%;
+}
+
+#img_show1 img{
+    width: 100%;
+    height:100%;
+}
+
+.breadcrumb>li>a.active{
+    color: #0084EB;
+}
+
+button.setCans{
+    margin: 0 15px;
+    background: #fff;
+    /*border-color: #ccc;*/
+}
+
+button.setCans:hover{
+    background: #62BFFF;
+}
+
+/*#q-app>.q-layout{*/
+    /*width: 452px;*/
+/*}*/
+
+#myModal-set .modal-dialog,#myModal-set .modal-body{
+    max-width: 1280px;
+    overflow: hidden;
+    min-width: 400px;
+    min-height: 300px;
+}
+
+#myModal-set .modal-body #q-app .draw{
+    /*width: 452px;*/
+     max-width: 1250px;
+    max-height: 700px;
+     overflow: auto;
+ }
+
+#Canvas{
+    display: block;
+    margin: 0 auto;
+}
+
+#myModal-img .modal-body{
+    max-width: 800px;
+    max-height: 600px;
+    overflow: auto;
+    text-align: center;
+}
+
+.myBread{position: absolute;top:-30px;left: -30px;}
+#title-list ul.myBread>li>a{padding:7px;margin: 0 10px;color: #53585a;font-size: 16px;}
+#title-list ul.myBread>li.active>a{color: #0c9be2;font-size: 15px;}
+
+.acFrom, .acEnd {
+    display: none;
+}
+
+.rangeShow{
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    color: #329d9e;
+}
+
+.modal-footer .btn-warning{margin-right: 20px;}
+
+.modal-check label{
+    width: 32% !important;
+}
+div.searchDiv div.proSelect div.dropdown-menu{
+    left: auto;
+    right: 0;
+}
+
+.spanColor{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+}
+
+/*前台转后台机车管理样式*/
+#TrainForm label{display: block;margin-bottom: 25px;}
+
+#TrainForm label b{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+#TrainForm .myForm{
+    display: inline-block;
+    width: 71%;
+    height: 35px;
+    padding: 6px 12px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+#TrainForm  div.bootstrap-select{
+    width: 71%;
+    margin-left: 10px;
+}
+
+#TrainForm .help-block {
+    position: absolute;
+    top: 30px;
+    left: 23%;
+}
+#TrainForm .form-control-feedback{
+    right: 36px;
+}
+#search_titleS {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 0;
+}
+#trainList01 .new-add{
+    line-height: 24px;
+}
+
+.paginations {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px
+}
+
+.paginations > li {
+    display: inline
+}
+
+.paginations > li > a, .paginations > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+
+.paginations > li:first-child > a, .paginations > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.paginations > li:last-child > a, .paginations > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.paginations > li > a:hover, .paginations > li > span:hover, .paginations > li > a:focus, .paginations > li > span:focus {
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd
+}
+
+.paginations > .active > a, .paginations > .active > span, .paginations > .active > a:hover, .paginations > .active > span:hover, .paginations > .active > a:focus, .paginations > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #3481c6;
+    border-color: #337ab7
+}
+
+.paginations > .disabled > span, .paginations > .disabled > span:hover, .paginations > .disabled > span:focus, .paginations > .disabled > a, .paginations > .disabled > a:hover, .paginations > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd
+}
+#DeviceForm div.trainSelect{
+    width: 355px;
+}
+#trainList01body .btn.btn-warning{
+    color: #6fc06f;
+    border-color: #6fc06f;
+}

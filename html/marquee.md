@@ -22,7 +22,7 @@ onMouseOver="this.stop()"：用来设置鼠标移入该区域时停止滚动
 
 代码如下:
 
-<marquee id="affiche" align="left" behavior="scroll" bgcolor="#FF0000" direction="up" height="300" width="200" hspace="50" vspace="20" loop="-1" scrollamount="10" scrolldelay="100" onMouseOut="this.start()" onMouseOver="this.stop()">
+<marquee id="affiche" align="left" behavior="scroll" bgcolor="#000" direction="up" height="200" width="200" hspace="50" vspace="20" loop="-1" scrollamount="10" scrolldelay="100" onMouseOut="this.start()" onMouseOver="this.stop()">
 
 这是一个完整的例子
 

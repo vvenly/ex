@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <style>
+        div{
+            position: relative;
+            display: block;
+            width: 200px;
+            margin: 50px auto;
+        }
+    </style>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+
+<div>
+    <label class="input-append date form_datetime">
+        时间：
+        <input size="16" type="text" value="" readonly class="form-control">
+    </label>
+</div>
+
+
+<script type="text/javascript">
+
+    $(".form_datetime").datetimepicker({
+        format: 'yyyy-mm',
+        autoclose: true,
+        todayBtn: true,
+        startView: 'year',
+        minView:'year',
+        maxView:'decade',
+        language:  'zh-CN',
+        // pickerPosition: "bottom-right"
+    });
+</script>
+</body>
+</html>

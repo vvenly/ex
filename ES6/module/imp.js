@@ -25,6 +25,6 @@
 // console.log(exp.e)
 
 //第三种引入方式， 配合export default ， import后面的名字可以自定义
-import mine from './exp.js'
-console.log(mine.a)
+import mine from './exp.js'     //注意这种引入 没有{}
+console.log(mine.a) 
 console.log(mine.Cat)

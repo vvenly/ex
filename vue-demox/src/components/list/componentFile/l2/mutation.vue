@@ -43,7 +43,7 @@ export default {
         this.$store.commit('add')
       },
       handleAddNum(){
-        this.$store.commit('addN', 10)
+        this.$store.commit('addN', 10) 
       },
       //mutation 第二种调用:  通过import 引用 mapMutations  一次性将需要引用的函数映射到全局上，通过this直接调用
       ...mapMutations(['subtract','subtractNum']),

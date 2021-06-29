@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        #d1{width:500px;height: 300px;background: #faf;}
+    </style>
+
+  </head>
+  <body>
+      <!-- <div id="d1" onclick="getClickEmail1(1)" ondblclick="getClickEmail1(2)">1111. 1. 1. 1. 11</div> -->
+
+      <div id="d1" onclick="click1()" ondblclick="dbclick1()">1111. 1. 1. 1. 11</div>
+
+      <script type="text/javascript">
+   
+        //1、 timer为全局变量
+        // function  getClickEmail1(_type) {
+        //       clearTimeout(this.timer);
+        //       if (_type == 1) {
+        //           if (event.detail == 2) return;
+        //           this.timer = setTimeout(function() {
+        //           console.log("单击");
+        //           }, 300);
+        //       } else {
+        //           console.log("双击");
+        //       }
+        //   }
+
+
+          //2、
+          var timer = null;
+
+          function click1(){
+            clearTimeout(timer);                
+               timer = setTimeout(function(){                    
+                console.log("单击！！");                  
+               }, 300);
+          }
+
+          function dbclick1(){
+            clearTimeout(timer);                
+            console.log("双击！！！");
+          }
+    // function bindClick(){
+        
+    //     $("div[name='divTest']").bind("click",function(){                
+    //            clearTimeout(timer);                
+    //            timer = setTimeout(function(){                    
+    //                 alert("单击！！");                  
+    //            }, 300);
+    //      }).bind("dblclick",function(){                
+    //            clearTimeout(timer);                
+    //           alert("双击！！！");
+    //      })
+    // }
+      </script>
+  </body>
+</html>
